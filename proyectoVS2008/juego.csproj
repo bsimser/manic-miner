@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="..\fuentes\Creditos.cs" />
     <Compile Include="..\fuentes\ElemGrafico.cs" />
+    <Compile Include="..\fuentes\Enemigo.cs" />
     <Compile Include="..\fuentes\Fuente.cs" />
     <Compile Include="..\fuentes\Hardware.cs" />
     <Compile Include="..\fuentes\Imagen.cs" />

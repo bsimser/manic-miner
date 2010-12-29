@@ -14,6 +14,8 @@
                       Version inicial: esqueleto, muestra el personaje,
                         permite moverlo a la derecha, izquierda, arriba,
                         abajo y (vacio) Disparar
+   0.02  21-Dic-2010  Nacho Cabanes
+                      Crea, muestra y mueve un primer enemigo
  ---------------------------------------------------- */
 
 
@@ -23,6 +25,7 @@ public class Partida
 
     // Componentes del juego
     private Personaje miPersonaje;
+    private Enemigo miEnemigo;
     
     // Otros datos del juego
     int puntos;             // Puntuacion obtenida por el usuario
@@ -33,6 +36,7 @@ public class Partida
     public Partida()
     {
         miPersonaje = new Personaje(this);        
+        miEnemigo = new Enemigo(this);
         puntos = 0;
         partidaTerminada = false;        
     }
@@ -44,6 +48,7 @@ public class Partida
           // Muevo si se pulsa alguna flecha del teclado
           if (Hardware.TeclaPulsada(Hardware.TECLA_DER) )
               miPersonaje.MoverDerecha();
+          
           if (Hardware.TeclaPulsada(Hardware.TECLA_IZQ))
               miPersonaje.MoverIzquierda();
 
@@ -86,7 +91,7 @@ public class Partida
     // --- Animación de los enemigos y demás objetos "que se muevan solos" -----
      void moverElementos()
     {
-        // Nada por ahora
+       miEnemigo.Mover();
     }
     
         
@@ -103,8 +108,9 @@ public class Partida
         // Borro pantalla      
         Hardware.BorrarPantallaOculta(0,0,0);
           
-        // Dibujo el personaje
+        // Dibujo el personaje y el enemigo
         miPersonaje.DibujarOculta();
+        miEnemigo.DibujarOculta();
         
         // Finalmente, muestro en pantalla
         Hardware.VisualizarOculta();        

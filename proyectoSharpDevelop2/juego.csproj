@@ -40,6 +40,9 @@
     <Compile Include="..\fuentes\ElemGrafico.cs">
       <Link>ElemGrafico.cs</Link>
     </Compile>
+    <Compile Include="..\fuentes\Enemigo.cs">
+      <Link>Enemigo.cs</Link>
+    </Compile>
     <Compile Include="..\fuentes\Fuente.cs">
       <Link>Fuente.cs</Link>
     </Compile>
