@@ -1,0 +1,16 @@
+0.01 
+  - Entrar a modo gráfico
+  - Mostrar pantalla de presentación
+  - Mostrar personaje que se mueve
+
+0.02
+  - Mostrar enemigo, que se mueve solo
+  - Mejorar pantalla de presentación
+
+0.03
+  - Dibujar mapa de tiles para una pantalla
+
+0.04
+  - Comprobar colisiones con el fondo
+
+...

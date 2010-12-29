@@ -1,0 +1,69 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{DCE1BD2E-3AD2-4C0A-BF2F-94D55C6AB330}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Juego</RootNamespace>
+    <AssemblyName>Juego</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>..\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>..\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.Sdl">
+      <HintPath>..\Tao.Sdl.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\fuentes\Creditos.cs">
+      <Link>Creditos.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\ElemGrafico.cs">
+      <Link>ElemGrafico.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Fuente.cs">
+      <Link>Fuente.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Hardware.cs">
+      <Link>Hardware.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Imagen.cs">
+      <Link>Imagen.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Juego.cs">
+      <Link>Juego.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Partida.cs">
+      <Link>Partida.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Personaje.cs">
+      <Link>Personaje.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Presentacion.cs">
+      <Link>Presentacion.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Sonido.cs">
+      <Link>Sonido.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+</Project>
