@@ -19,6 +19,8 @@
                          lo permite.
                       Indicados ancho y alto, para que las colisiones sean
                          correctas.
+   0.05  25-Dic-2010  Nacho Cabanes
+                      Permite saltar en vertical, o bien a ambos lados.s
  ---------------------------------------------------- */
 
 public class Personaje : ElemGrafico
@@ -27,17 +29,28 @@ public class Personaje : ElemGrafico
   // Datos del personaje
   Partida miPartida; // Para poder comunicar con la partida
                      // y preguntarle sobre enemigos, mapa, etc   
-  short vidas;  // Vidas restantes
+  short vidas;       // Vidas restantes
+  bool saltando;
+  int incrXSalto;
+  int fotogramaMvto;
+  int cantidadMovimientoSalto;
+  int[] pasosSaltoArriba = {-14, -14, -11, -8, -6, -4, -2, 0,
+                             0, 2, 4, 6, 8, 11, 14, 14 };
+
     
   // Constructor
   public Personaje(Partida p)
   {
     miPartida = p;   // Para enlazar con el resto de componentes
-    x = 400;         // Resto de valores iniciales
-    y = 350;
+    x = 70;         // Resto de valores iniciales
+    y = 424;
     SetAnchoAlto(30, 48);
     SetVelocidad(4, 4);
     vidas = 3;
+    saltando = false;
+    incrXSalto = 0;
+    cantidadMovimientoSalto = pasosSaltoArriba.Length;
+    
     CargarImagen("imagenes/personaje.png");
   }
   
@@ -45,6 +58,7 @@ public class Personaje : ElemGrafico
   // Métodos de movimiento
   public void MoverDerecha() 
   {
+      if (saltando) return; // No debe moverse mientras salta
       if (miPartida.GetMapa().EsPosibleMover(x + incrX, y, 
                 x + ancho + incrX, y + alto))
             x += incrX;
@@ -53,6 +67,7 @@ public class Personaje : ElemGrafico
 
   public void MoverIzquierda()
   {
+      if (saltando) return; // No debe moverse mientras salta
       if (miPartida.GetMapa().EsPosibleMover(x - incrX, y,
                 x + ancho - incrX, y + alto))
             x -= incrX;
@@ -60,6 +75,7 @@ public class Personaje : ElemGrafico
 
   public void MoverArriba()
   {
+      if (saltando) return; // No debe moverse mientras salta
       if (miPartida.GetMapa().EsPosibleMover(x,y-incrY,
                 x+ancho,y+alto-incrY))
             y -= incrY;
@@ -67,16 +83,68 @@ public class Personaje : ElemGrafico
 
   public void MoverAbajo()
   {
+      if (saltando) return; // No debe moverse mientras salta
       if (miPartida.GetMapa().EsPosibleMover(x, y + incrY,
                 x + ancho, y + alto + incrY))
             y += incrY;
   }
   
-  // Para cuando deba moverse solo, p.ej. saltando, o en
-  // movimiento continuo, como el PacMan
+
+  // Para cuando deba moverse solo, p.ej. saltando
   public new void Mover()
   {
-      // TODO: Vacio por ahora
+      if (saltando)
+      {
+          // Calculo las siguientes posiciones y veo si son validas
+          short xProxMov = (short) (x + incrXSalto);
+          short yProxMov = (short) (y + pasosSaltoArriba[fotogramaMvto]);
+          bool subiendoSalto = (pasosSaltoArriba[fotogramaMvto] < 0);
+
+          // Si todavía se puede mover, avanzo
+          if (miPartida.GetMapa().EsPosibleMover(
+              xProxMov, yProxMov + alto - 4,
+              xProxMov + ancho, yProxMov + alto)
+              || subiendoSalto)
+          {
+              x = xProxMov;
+              y = yProxMov;
+          }
+          // Y si no, quizá esté cayendo
+          else
+              saltando = false;
+
+          fotogramaMvto++;
+          if (fotogramaMvto >= cantidadMovimientoSalto)
+              saltando = false;
+      }
+
+  }
+
+
+  // Comienza la secuencia de salto
+  public void Saltar()
+  {
+      if (saltando)
+          return;
+      saltando = true;
+      fotogramaMvto = 0;
+      incrXSalto = 0;
+  }
+
+
+  // Comienza la secuencia de salto hacia la derecha
+  public void SaltarDerecha() 
+  {
+    Saltar();
+    incrXSalto = incrX;
+  }
+
+
+  // Comienza la secuencia de salto hacia la izquierda
+  public void SaltarIzquierda() 
+  {
+    Saltar();
+    incrXSalto = -incrX;
   }
   
   

@@ -18,7 +18,12 @@
                       Crea, muestra y mueve un primer enemigo
    0.03  23-Dic-2010  Nacho Cabanes
                       Crea y muestra el mapa de un primer nivel de juego
-
+   0.05  25-Dic-2010  Nacho Cabanes
+                      Si se pulsa Espacio, el personaje salta en vertical;
+                        con espacio y un lado, salta hacia ese lado.
+                      Lo mismo ocurre si se dispara con el joystick y se
+                        mueve (o no) hacia algun lado.
+                      En "MoverElementos" se mueve también al personaje (salto)  
  ---------------------------------------------------- */
 
 
@@ -64,14 +69,26 @@ public class Partida
               miPersonaje.MoverAbajo();
 
           if (Hardware.TeclaPulsada(Hardware.TECLA_ESP))
-              miPersonaje.Disparar();
+          {
+              if (Hardware.TeclaPulsada(Hardware.TECLA_DER))
+                miPersonaje.SaltarDerecha();
+              else if (Hardware.TeclaPulsada(Hardware.TECLA_IZQ))
+                  miPersonaje.SaltarIzquierda();
+              else
+                  miPersonaje.Saltar();
+          }
 
           // Compruebo el Joystick
-          if (Hardware.JoystickPulsado(0))
-              miPersonaje.Disparar();
-
           int posXJoystick, posYJoystick;
-          if (Hardware.JoystickMovido(out posXJoystick, out posYJoystick))
+          bool JoystickUtilizado = Hardware.JoystickMovido(out posXJoystick, out posYJoystick);
+
+          if (Hardware.JoystickPulsado(0))
+          {
+              if (posXJoystick > 0) miPersonaje.SaltarDerecha();
+              else if (posXJoystick < 0) miPersonaje.SaltarIzquierda();
+              else miPersonaje.Saltar();
+          }
+          else if (JoystickUtilizado)
           {
               if (posXJoystick > 0) miPersonaje.MoverDerecha();
               else if (posXJoystick < 0) miPersonaje.MoverIzquierda();
@@ -97,6 +114,7 @@ public class Partida
      void moverElementos()
     {
        miEnemigo.Mover();
+       miPersonaje.Mover();
     }
     
         
