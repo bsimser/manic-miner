@@ -14,6 +14,11 @@
                       Personaje inicial, con una imagen, capaz de
                         moverse a la derecha,izquierda, arriba, abajo
                          y (vacio) Disparar o Mover de forma automatica
+   0.04  24-Dic-2010  Nacho Cabanes
+                      Antes de mover en una direccion, comprueba si el mapa
+                         lo permite.
+                      Indicados ancho y alto, para que las colisiones sean
+                         correctas.
  ---------------------------------------------------- */
 
 public class Personaje : ElemGrafico
@@ -29,7 +34,9 @@ public class Personaje : ElemGrafico
   {
     miPartida = p;   // Para enlazar con el resto de componentes
     x = 400;         // Resto de valores iniciales
-    y = 300;
+    y = 350;
+    SetAnchoAlto(30, 48);
+    SetVelocidad(4, 4);
     vidas = 3;
     CargarImagen("imagenes/personaje.png");
   }
@@ -38,22 +45,31 @@ public class Personaje : ElemGrafico
   // Métodos de movimiento
   public void MoverDerecha() 
   {
-      x += 4;
+      if (miPartida.GetMapa().EsPosibleMover(x + incrX, y, 
+                x + ancho + incrX, y + alto))
+            x += incrX;
+
   }
 
   public void MoverIzquierda()
   {
-      x -= 4;
+      if (miPartida.GetMapa().EsPosibleMover(x - incrX, y,
+                x + ancho - incrX, y + alto))
+            x -= incrX;
   }
 
   public void MoverArriba()
   {
-      y -= 4;
+      if (miPartida.GetMapa().EsPosibleMover(x,y-incrY,
+                x+ancho,y+alto-incrY))
+            y -= incrY;
   }
 
   public void MoverAbajo()
   {
-      y += 4;
+      if (miPartida.GetMapa().EsPosibleMover(x, y + incrY,
+                x + ancho, y + alto + incrY))
+            y += incrY;
   }
   
   // Para cuando deba moverse solo, p.ej. saltando, o en

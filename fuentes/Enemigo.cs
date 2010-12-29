@@ -42,4 +42,4 @@ public class Enemigo : ElemGrafico
         incrX = (short) (- incrX);
   }
 
-} /* fin de la clase Personaje */
+} /* fin de la clase Enemigo */

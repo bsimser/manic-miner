@@ -12,6 +12,10 @@
    ---------------------------------------------------
    0.03  23-Dic-2010  Nacho Cabanes
                       Mapa inicial, de la primera pantalla
+   0.04  24-Dic-2010  Nacho Cabanes
+                      Añadido "EsPosibleMover", que comprueba si un
+                        rectangulo se solapa con alguna casilla
+                        no pisable
  ---------------------------------------------------- */
 
 public class Mapa : ElemGrafico
@@ -62,15 +66,15 @@ public class Mapa : ElemGrafico
         techo = new ElemGrafico("imagenes/techo.png");
   }
 
-  public void DibujarOculta()
-  {
+   public void DibujarOculta()
+   {
       // Dibujo el fondo
-      for (int i = 0; i < altoMapa; i++)
-          for (int j = 0; j < anchoMapa; j++)
+      for (int fila = 0; fila < altoMapa; fila++)
+          for (int colum = 0; colum < anchoMapa; colum++)
           {
-              int posX = j * anchoTile + margenIzqdo;
-              int posY = i * altoTile + margenSuperior;
-              switch (datosNivel[i][j])
+              int posX = colum * anchoTile + margenIzqdo;
+              int posY = fila * altoTile + margenSuperior;
+              switch (datosNivel[fila][colum])
               {
                   case 'A': arbol.DibujarOculta(posX, posY); break;
                   case 'D': deslizante.DibujarOculta(posX, posY); break;
@@ -82,6 +86,29 @@ public class Mapa : ElemGrafico
                   case 'V': llave.DibujarOculta(posX, posY); break;
               }
           }
+   }
+
+   public bool EsPosibleMover(int x, int y, int xmax, int ymax)
+   {
+        
+       // Compruebo si choca con alguna casilla del fondo
+       for (int fila = 0; fila < altoMapa; fila++)
+              for (int colum = 0; colum < anchoMapa; colum++)
+              {
+                  int posX = colum * anchoTile + margenIzqdo;
+                  int posY = fila * altoTile + margenSuperior;
+                  // Si no es espacio blanco
+                  if ((datosNivel[fila][colum] != ' ')
+                      // Y se solapa con la posic a la que queremos mover
+                      && (posX+anchoTile > x) && (posY+altoTile > y)  
+                      && (xmax> posX) && (ymax > posY))
+                  {
+                      return false;
+                  }
+               }
+
+       return true;
+
   }
   
   

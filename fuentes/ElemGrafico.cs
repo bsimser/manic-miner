@@ -22,6 +22,8 @@
                         colisiones con él y viceversa
                       Añadidas varias direcciones más (esquinas, 
                         APARECIENDO, MOVIENDO)
+   0.06  25-Mar-2010  Nacho Cabanes
+                      Añadida colisión con ciertas coordenadas
 
  ---------------------------------------------------- */
 
@@ -181,7 +183,7 @@ public class ElemGrafico
     public bool ColisionCon(ElemGrafico otroElem)
     {
       // No se debe chocar con un elemento oculto      
-      if ((visible == false) || (otroElem.visible == false))
+      if ((chocable == false) || (otroElem.chocable == false))
         return false;
       // Ahora ya compruebo coordenadas
       if ((otroElem.x+otroElem.ancho > x)
@@ -192,6 +194,25 @@ public class ElemGrafico
       else
         return false;
     }
+
+
+    /// Comprueba si choca con un rectangulo
+    public bool ColisionCon(short nx, short ny,
+      short nxmax, short nymax)
+    {
+        // No se debe chocar con un elemento oculto      
+        if (chocable == false)
+            return false;
+        // Ahora ya compruebo coordenadas
+        if ((nxmax > x)
+            && (nymax > y)
+            && (x + ancho > nx)
+            && (y + alto > ny))
+            return true;
+        else
+            return false;
+    }
+ 
     
     /// Prepara el siguiente fotograma, para animar el movimiento de
     /// un personaje

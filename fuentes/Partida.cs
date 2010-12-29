@@ -124,7 +124,7 @@ public class Partida
     
         
     // --- Pausa tras cada fotograma de juego, para velocidad de 25 fps -----
-     void pausaFotograma() 
+    void pausaFotograma() 
     {
         Hardware.Pausa( 40 );
     }
@@ -142,6 +142,19 @@ public class Partida
             dibujarElementos();
             pausaFotograma();
         } while (! partidaTerminada);
+    }
+
+
+    // --- Para que mapa y enemigos puedan saber cosas del personaje
+    public Personaje GetPersonaje()
+    {
+        return miPersonaje;
+    }
+
+    // --- Para que personaje y enemigos puedan saber cosas del mapa
+    public Mapa GetMapa()
+    {
+        return miPantallaJuego;
     }
     
             
