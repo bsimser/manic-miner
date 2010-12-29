@@ -55,6 +55,9 @@
     <Compile Include="..\fuentes\Juego.cs">
       <Link>Juego.cs</Link>
     </Compile>
+    <Compile Include="..\fuentes\Mapa.cs">
+      <Link>Partida.cs</Link>
+    </Compile>
     <Compile Include="..\fuentes\Partida.cs">
       <Link>Partida.cs</Link>
     </Compile>

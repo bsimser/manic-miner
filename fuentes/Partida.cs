@@ -16,6 +16,9 @@
                         abajo y (vacio) Disparar
    0.02  21-Dic-2010  Nacho Cabanes
                       Crea, muestra y mueve un primer enemigo
+   0.03  23-Dic-2010  Nacho Cabanes
+                      Crea y muestra el mapa de un primer nivel de juego
+
  ---------------------------------------------------- */
 
 
@@ -26,6 +29,7 @@ public class Partida
     // Componentes del juego
     private Personaje miPersonaje;
     private Enemigo miEnemigo;
+    private Mapa miPantallaJuego;
     
     // Otros datos del juego
     int puntos;             // Puntuacion obtenida por el usuario
@@ -37,6 +41,7 @@ public class Partida
     {
         miPersonaje = new Personaje(this);        
         miEnemigo = new Enemigo(this);
+        miPantallaJuego = new Mapa(this);
         puntos = 0;
         partidaTerminada = false;        
     }
@@ -108,7 +113,8 @@ public class Partida
         // Borro pantalla      
         Hardware.BorrarPantallaOculta(0,0,0);
           
-        // Dibujo el personaje y el enemigo
+        // Dibujo todos los elementos
+        miPantallaJuego.DibujarOculta();
         miPersonaje.DibujarOculta();
         miEnemigo.DibujarOculta();
         

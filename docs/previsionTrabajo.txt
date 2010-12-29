@@ -1,16 +1,22 @@
-0.01 
-  - Entrar a modo gráfico
-  - Mostrar pantalla de presentación
-  - Mostrar personaje que se mueve
+Entregas ya realizadas:
 
-0.02
-  - Mostrar enemigo, que se mueve solo
-  - Mejorar pantalla de presentación
+01.- Esqueleto vacío de ejemplo
+02.- Añadir un enemigo que se mueva solo.
+03.- Añadir un fondo repetitivo, usando arrays.
 
-0.03
-  - Dibujar mapa de tiles para una pantalla
+Previsión para las siguientes entregas (el orden puede variar):
 
-0.04
-  - Comprobar colisiones con el fondo
-
+04.- Comprobar colisiones con el fondo (no cruzar paredes ni suelos).
+05.- Salto del personaje.
+06.- Pantalla de créditos con texto real y animación.
+07.- Comprobar colisiones con enemigo, perder vidas, reiniciar partida.
+08.- Recoger objetos del fondo (y obtener puntos).
+09.- Añadir dos niveles más.
+10.- Abrir la puerta que permite pasar de un nivel a otro.
+11.- Enemigos distintos en cada nivel.
+12.- Mejorar pantalla de presentación y de créditos.
+13.- Leer el mapa desde fichero.
+14.- Distinto movimiento para cada enemigo de cada nivel.
+15.- Fondos "cambiantes" 1: suelo que se hunde.
+16.- Fondos "cambiantes" 2: suelo que se mueve.
 ...
