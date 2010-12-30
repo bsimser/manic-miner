@@ -12,10 +12,12 @@
    ---------------------------------------------------
    0.01  17-Dic-2010  Nacho Cabanes
                       Version inicial: muestra el nombre del (supuesto) autor
-                      del remake, y del juego original
- ---------------------------------------------------- */ 
+                        del remake, y del juego original
+   0.06  26-Dic-2010  Nacho Cabanes
+                      Muestra nombre de los autores originales y del remake.
+ ---------------------------------------------------- */
 
- 
+
 public class Creditos
 {
     // Atributos
@@ -41,19 +43,19 @@ public class Creditos
           Hardware.BorrarPantallaOculta(0,0,0); // Borro en negro
           
           Hardware.EscribirTextoOculta(
-              "XXX (Remake) - Creditos", 110, 100,
+              "Manic Miner (Remake) - Créditos", 110, 100,
                 0x77, 0x77, color, fuenteSans18);
           
           Hardware.EscribirTextoOculta("Programa original:", 200, 240,
                 color, color, 0, fuenteSans18);
-          Hardware.EscribirTextoOculta("XXXX", 200, 270,
+          Hardware.EscribirTextoOculta("Matthew Smith", 200, 270,
                 color, color, 0, fuenteSans18);
-          Hardware.EscribirTextoOculta("(c) XXX 1984", 200, 300,
+          Hardware.EscribirTextoOculta("(c) Software Projects, 1984", 200, 300,
                 color, color, 0, fuenteSans18);
           
-          Hardware.EscribirTextoOculta("Remake:", 200, 360,
+          Hardware.EscribirTextoOculta("Remake (parcial):", 200, 360,
                 color, color, 0, fuenteSans18);
-          Hardware.EscribirTextoOculta("XXXX", 200, 390,
+          Hardware.EscribirTextoOculta("Nacho Cabanes, 2011", 200, 390,
                 color, color, 0, fuenteSans18);
                 
           Hardware.EscribirTextoOculta(
