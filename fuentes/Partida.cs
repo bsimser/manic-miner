@@ -24,6 +24,9 @@
                       Lo mismo ocurre si se dispara con el joystick y se
                         mueve (o no) hacia algun lado.
                       En "MoverElementos" se mueve también al personaje (salto)  
+    0.07  27-Dic-2010  Nacho Cabanes
+                      La posicion se fija con "MoverA", para que "Reiniciar"
+                        lo recoloque en su sitio.
  ---------------------------------------------------- */
 
 
@@ -34,6 +37,7 @@ public class Partida
     // Componentes del juego
     private Personaje miPersonaje;
     private Enemigo miEnemigo;
+    private Fuente fuenteSans18;
     private Mapa miPantallaJuego;
     
     // Otros datos del juego
@@ -48,7 +52,8 @@ public class Partida
         miEnemigo = new Enemigo(this);
         miPantallaJuego = new Mapa(this);
         puntos = 0;
-        partidaTerminada = false;        
+        partidaTerminada = false;
+        fuenteSans18 = new Fuente("FreeSansBold.ttf", 18);
     }
     
         
@@ -121,7 +126,15 @@ public class Partida
     // --- Comprobar colisiones de enemigo con personaje, etc ---
      void comprobarColisiones()
     {
-        // Nada por ahora
+        if (miPersonaje.ColisionCon(miEnemigo))
+        {
+            miPersonaje.Morir();
+            miPersonaje.Reiniciar();
+            miEnemigo.Reiniciar();
+        }
+
+         if (miPersonaje.GetVidas() == 0)
+             partidaTerminada = true;
     }
     
         
@@ -135,6 +148,10 @@ public class Partida
         miPantallaJuego.DibujarOculta();
         miPersonaje.DibujarOculta();
         miEnemigo.DibujarOculta();
+
+        // Muestro vidas (pronto será parte del marcador)
+        Hardware.EscribirTextoOculta("Vidas: "+miPersonaje.GetVidas(),
+            280, 550, 0xAA, 0xAA, 0xAA, fuenteSans18);
         
         // Finalmente, muestro en pantalla
         Hardware.VisualizarOculta();        
@@ -153,6 +170,9 @@ public class Partida
     {
       
         partidaTerminada = false;
+        miPersonaje.Reiniciar();
+        miPersonaje.SetVidas(3);
+        miEnemigo.Reiniciar();
         do {
             comprobarTeclas();
             moverElementos();

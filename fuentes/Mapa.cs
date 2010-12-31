@@ -18,7 +18,7 @@
                         no pisable
  ---------------------------------------------------- */
 
-public class Mapa : ElemGrafico
+public class Mapa
 {
 
     // Datos del mapa del nivel actual

@@ -20,7 +20,10 @@
                       Indicados ancho y alto, para que las colisiones sean
                          correctas.
    0.05  25-Dic-2010  Nacho Cabanes
-                      Permite saltar en vertical, o bien a ambos lados.s
+                      Permite saltar en vertical, o bien a ambos lados.
+   0.07  27-Dic-2010  Nacho Cabanes
+                      La posicion se fija con "MoverA", para que "Reiniciar"
+                        lo recoloque en su sitio.
  ---------------------------------------------------- */
 
 public class Personaje : ElemGrafico
@@ -42,8 +45,7 @@ public class Personaje : ElemGrafico
   public Personaje(Partida p)
   {
     miPartida = p;   // Para enlazar con el resto de componentes
-    x = 70;         // Resto de valores iniciales
-    y = 424;
+    MoverA(70,412);         // Resto de valores iniciales
     SetAnchoAlto(30, 48);
     SetVelocidad(4, 4);
     vidas = 3;
@@ -59,7 +61,7 @@ public class Personaje : ElemGrafico
   public void MoverDerecha() 
   {
       if (saltando) return; // No debe moverse mientras salta
-      if (miPartida.GetMapa().EsPosibleMover(x + incrX, y, 
+      if (miPartida.GetMapa().EsPosibleMover(x + incrX, y + alto - 4, 
                 x + ancho + incrX, y + alto))
             x += incrX;
 
@@ -68,7 +70,7 @@ public class Personaje : ElemGrafico
   public void MoverIzquierda()
   {
       if (saltando) return; // No debe moverse mientras salta
-      if (miPartida.GetMapa().EsPosibleMover(x - incrX, y,
+      if (miPartida.GetMapa().EsPosibleMover(x - incrX, y + alto - 4,
                 x + ancho - incrX, y + alto))
             x -= incrX;
   }

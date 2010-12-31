@@ -6,14 +6,15 @@ Entregas ya realizadas:
 04.- Comprobar colisiones con el fondo (no cruzar paredes ni suelos).
 05.- Salto del personaje (sin gravedad).
 06.- Presentación con animación.Pantalla de créditos con texto real. 
+07.- Comprobar colisiones con enemigo, perder vidas, reiniciar partida.
 
 Previsión para las siguientes entregas (el orden puede variar):
 
-  * Comprobar colisiones con enemigo, perder vidas, reiniciar partida.
   * Gravedad (caer al final de una plataforma)
   * (Quizá prueba intermedia que use XNA en vez de Tao.SDL)
   * Personaje y enemigo animados. Eliminar movimientos sobrantes (arriba, abajo)
   * Recoger objetos del fondo (y obtener puntos).
+  * Añadir marcador, que muestre vidas, puntos, aire
   * Añadir dos niveles más.
   * Abrir la puerta que permite pasar de un nivel a otro.
   * Enemigos distintos en cada nivel.

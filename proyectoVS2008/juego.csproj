@@ -61,6 +61,7 @@
     <Compile Include="..\fuentes\Imagen.cs" />
     <Compile Include="..\fuentes\Juego.cs" />
     <Compile Include="..\fuentes\Mapa.cs" />
+    <Compile Include="..\fuentes\Opciones.cs" />
     <Compile Include="..\fuentes\Partida.cs" />
     <Compile Include="..\fuentes\Personaje.cs" />
     <Compile Include="..\fuentes\Presentacion.cs" />

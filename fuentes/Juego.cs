@@ -4,7 +4,7 @@
  *   @see Hardware Partida
  *   @author 1-DAI IES San Vicente 2010/11
  */
- 
+
 /* --------------------------------------------------         
    Versiones hasta la fecha:
    
@@ -14,15 +14,18 @@
                       Version inicial, que entra a modo gráfico
                         y lanza la presentación y permite entrar
                         a la partida.
+   0.07  27-Dic-2010  Nacho Cabanes
+                      Permite entrar a la pantalla de opciones.
  ---------------------------------------------------- */
 
 
- 
+
 public class Juego
 {
     private Presentacion presentacion;
     private Partida partida;
     private Creditos creditos;
+    private Opciones opciones;
 
     
     // Inicialización al comenzar la sesión de juego
@@ -36,6 +39,7 @@ public class Juego
         presentacion = new Presentacion();
         partida = new Partida();
         creditos = new Creditos();
+        opciones = new Opciones();
     }
     
     
@@ -52,6 +56,9 @@ public class Juego
                         break;
                     case Presentacion.OPC_PARTIDA: 
                         partida.BuclePrincipal();
+                        break;
+                    case Presentacion.OPC_OPCIONES:
+                        opciones.Ejecutar();
                         break;
             }
         }

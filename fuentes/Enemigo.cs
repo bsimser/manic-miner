@@ -14,6 +14,10 @@
                       Enemigo inicial, con una imagen, capaz de
                         moverse a la derecha,izquierda, arriba, abajo
                          y (vacio) Disparar o Mover de forma automatica
+   0.07  27-Dic-2010  Nacho Cabanes
+                      La posicion se fija con "MoverA", y la velocidad
+                        con SetVelocidad, para que "Reiniciar" lo recoloque 
+                        en su sitio.
  ---------------------------------------------------- */
 
 public class Enemigo : ElemGrafico
@@ -25,16 +29,16 @@ public class Enemigo : ElemGrafico
   // Constructor
   public Enemigo(Partida p)
   {
-    miPartida = p;   // Para enlazar con el resto de componentes
-    x = 400;         // Resto de valores iniciales
-    y = 400;
-    incrX = 4;
+    miPartida = p;    // Para enlazar con el resto de componentes
+    MoverA(400,412);  // Resto de valores iniciales
+    SetAnchoAlto(36, 48);
+    SetVelocidad(4,0);
     CargarImagen("imagenes/enemigo.png");
   }
   
   
   // Métodos de movimiento
-  public void Mover() 
+  public new void Mover() 
   {
       x += incrX;
       

@@ -6,7 +6,7 @@
          */
 
 /* --------------------------------------------------         
-   Parte de Saboteur - Remake
+   Parte de ManicMiner Remake (y antes de Saboteur - Remake)
    Versiones hasta la fecha:
    
    Num.   Fecha       Por / Cambios
@@ -24,6 +24,8 @@
                         APARECIENDO, MOVIENDO)
    0.06  25-Mar-2010  Nacho Cabanes
                       Añadida colisión con ciertas coordenadas
+   0.07  27-Dic-2010  Nacho Cabanes
+                      Reiniciar también recuperar las velocidades
 
  ---------------------------------------------------- */
 
@@ -43,6 +45,8 @@ public class ElemGrafico
     
     protected short xOriginal;  // Para llevar a su posicion inicial
     protected short yOriginal;
+    protected short incrXOriginal;
+    protected short incrYOriginal;
 
     // La imagen que se mostrará en pantalla, si es estatica
     protected Imagen  miImagen;
@@ -112,6 +116,11 @@ public class ElemGrafico
     {
         incrX = (short) vX;
         incrY = (short) vY;
+        if ((incrXOriginal == 0) && (incrYOriginal == 0))
+        {
+            incrXOriginal = (short)vX;
+            incrYOriginal = (short)vY;
+        }
     }
 
 
@@ -157,6 +166,8 @@ public class ElemGrafico
     {
       x = xOriginal;
       y = yOriginal;
+      incrX = incrXOriginal;
+      incrY = incrYOriginal;
     } 
 
     

@@ -16,6 +16,9 @@
    0.06  26-Dic-2010  Nacho Cabanes
                       El "triángulo" se mueve en la pantalla, rebotando en 
                         los extremos.
+   0.07  27-Dic-2010  Nacho Cabanes
+                      Se entra al juego con J, no con Espacio.
+                      Añadido O para opciones.
  ---------------------------------------------------- */
 
 public class Presentacion
@@ -29,6 +32,7 @@ public class Presentacion
     public const byte OPC_PARTIDA = 0;
     public const byte OPC_SALIR = 1;
     public const byte OPC_CREDITOS = 2;
+    public const byte OPC_OPCIONES = 3;
 
 
     /// Constructor
@@ -53,11 +57,11 @@ public class Presentacion
             
             // Escribo avisos de las teclas utilizables
             Hardware.EscribirTextoOculta(
-                    "Pulsa Espacio para jugar",
-                    280, 550, 0xAA, 0xAA, 0xAA, fuenteSans18);
+                    "Pulsa J para jugar",
+                    310, 550, 0xAA, 0xAA, 0xAA, fuenteSans18);
             Hardware.EscribirTextoOculta(
-                    "S para salir, C para créditos",
-                    270, 575, 0xAA, 0xAA, 0xAA, fuenteSans18);
+                    "S para salir, C para créditos, O para opciones",
+                    170, 575, 0xAA, 0xAA, 0xAA, fuenteSans18);
 
             // Dibujo y desplazo el cartel móvil
             cartelMovil.DibujarOculta(x, y);
@@ -73,15 +77,18 @@ public class Presentacion
             // Finalmente, muestro en pantalla y espero
             Hardware.VisualizarOculta();  
             Hardware.Pausa(40);
-        } while ((! Hardware.TeclaPulsada(Hardware.TECLA_ESP) )
+        } while ((! Hardware.TeclaPulsada(Hardware.TECLA_J) )
                  && (! Hardware.TeclaPulsada(Hardware.TECLA_S))
-                 && (! Hardware.TeclaPulsada(Hardware.TECLA_C)));
+                 && (!Hardware.TeclaPulsada(Hardware.TECLA_C))
+                 && (!Hardware.TeclaPulsada(Hardware.TECLA_O)));
         
         opcionEscogida = OPC_PARTIDA;
         if (Hardware.TeclaPulsada(Hardware.TECLA_S))
             opcionEscogida = OPC_SALIR;
         if (Hardware.TeclaPulsada(Hardware.TECLA_C))
-            opcionEscogida = OPC_CREDITOS;        
+            opcionEscogida = OPC_CREDITOS;
+        if (Hardware.TeclaPulsada(Hardware.TECLA_O))
+            opcionEscogida = OPC_OPCIONES;        
     } 
     
       public int GetOpcionEscogida()
