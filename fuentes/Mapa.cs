@@ -16,6 +16,9 @@
                       Añadido "EsPosibleMover", que comprueba si un
                         rectangulo se solapa con alguna casilla
                         no pisable
+   0.08  28-Dic-2010  Nacho Cabanes
+                      Añadido un "hueco" en la fila superior, para poder bajar
+
  ---------------------------------------------------- */
 
 public class Mapa
@@ -38,7 +41,7 @@ public class Mapa
      "L                              L",
      "L                              L",
      "L                      VA  A   L", 
-     "LSSSSSSSSSSSSSFFFFSFFFFSSSSSSSSL", 
+     "LSSSSSSSSS  SSFFFFSFFFFSSSSSSSSL", 
      "L                             VL", 
      "LSSS                           L", 
      "L                LLL A         L", 

@@ -7,14 +7,14 @@ Entregas ya realizadas:
 05.- Salto del personaje (sin gravedad).
 06.- Presentación con animación.Pantalla de créditos con texto real. 
 07.- Comprobar colisiones con enemigo, perder vidas, reiniciar partida.
+08.- Gravedad (caer al final de una plataforma). Eliminar movimientos sobrantes (arriba, abajo). Mejoras gráficas.
 
 Previsión para las siguientes entregas (el orden puede variar):
 
-  * Gravedad (caer al final de una plataforma)
-  * (Quizá prueba intermedia que use XNA en vez de Tao.SDL)
-  * Personaje y enemigo animados. Eliminar movimientos sobrantes (arriba, abajo)
   * Recoger objetos del fondo (y obtener puntos).
   * Añadir marcador, que muestre vidas, puntos, aire
+  * (Quizá prueba intermedia que use XNA en vez de Tao.SDL)
+  * Personaje y enemigo animados  
   * Añadir dos niveles más.
   * Abrir la puerta que permite pasar de un nivel a otro.
   * Enemigos distintos en cada nivel.

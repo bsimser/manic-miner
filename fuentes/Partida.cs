@@ -27,6 +27,9 @@
     0.07  27-Dic-2010  Nacho Cabanes
                       La posicion se fija con "MoverA", para que "Reiniciar"
                         lo recoloque en su sitio.
+   0.08  28-Dic-2010  Nacho Cabanes
+                      Eliminados MoverArriba y MoverAbajo
+
  ---------------------------------------------------- */
 
 
@@ -67,12 +70,6 @@ public class Partida
           if (Hardware.TeclaPulsada(Hardware.TECLA_IZQ))
               miPersonaje.MoverIzquierda();
 
-          if (Hardware.TeclaPulsada(Hardware.TECLA_ARR))
-              miPersonaje.MoverArriba();
-
-          if (Hardware.TeclaPulsada(Hardware.TECLA_ABA))
-              miPersonaje.MoverAbajo();
-
           if (Hardware.TeclaPulsada(Hardware.TECLA_ESP))
           {
               if (Hardware.TeclaPulsada(Hardware.TECLA_DER))
@@ -97,8 +94,6 @@ public class Partida
           {
               if (posXJoystick > 0) miPersonaje.MoverDerecha();
               else if (posXJoystick < 0) miPersonaje.MoverIzquierda();
-              else if (posYJoystick > 0) miPersonaje.MoverAbajo();
-              else if (posYJoystick < 0) miPersonaje.MoverArriba();
           }
 
           // Compruebo el raton

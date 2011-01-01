@@ -24,6 +24,10 @@
    0.07  27-Dic-2010  Nacho Cabanes
                       La posicion se fija con "MoverA", para que "Reiniciar"
                         lo recoloque en su sitio.
+   0.08  28-Dic-2010  Nacho Cabanes
+                      Al final de un salto (en "Mover"), comprueba si debe caer.
+                      Al final de mover a Dcha o Izqda, comprueba si debe caer.
+                      Eliminados MoverArriba y MoverAbajo
  ---------------------------------------------------- */
 
 public class Personaje : ElemGrafico
@@ -33,7 +37,7 @@ public class Personaje : ElemGrafico
   Partida miPartida; // Para poder comunicar con la partida
                      // y preguntarle sobre enemigos, mapa, etc   
   short vidas;       // Vidas restantes
-  bool saltando;
+  bool saltando, cayendo;
   int incrXSalto;
   int fotogramaMvto;
   int cantidadMovimientoSalto;
@@ -60,35 +64,20 @@ public class Personaje : ElemGrafico
   // Métodos de movimiento
   public void MoverDerecha() 
   {
-      if (saltando) return; // No debe moverse mientras salta
+      if (saltando || cayendo) return; // No debe moverse mientras salta
       if (miPartida.GetMapa().EsPosibleMover(x + incrX, y + alto - 4, 
                 x + ancho + incrX, y + alto))
             x += incrX;
-
+      cayendo = true;
   }
 
   public void MoverIzquierda()
   {
-      if (saltando) return; // No debe moverse mientras salta
+      if (saltando || cayendo) return; // No debe moverse mientras salta
       if (miPartida.GetMapa().EsPosibleMover(x - incrX, y + alto - 4,
                 x + ancho - incrX, y + alto))
             x -= incrX;
-  }
-
-  public void MoverArriba()
-  {
-      if (saltando) return; // No debe moverse mientras salta
-      if (miPartida.GetMapa().EsPosibleMover(x,y-incrY,
-                x+ancho,y+alto-incrY))
-            y -= incrY;
-  }
-
-  public void MoverAbajo()
-  {
-      if (saltando) return; // No debe moverse mientras salta
-      if (miPartida.GetMapa().EsPosibleMover(x, y + incrY,
-                x + ancho, y + alto + incrY))
-            y += incrY;
+      cayendo = true;
   }
   
 
@@ -113,11 +102,28 @@ public class Personaje : ElemGrafico
           }
           // Y si no, quizá esté cayendo
           else
+          {
               saltando = false;
+              cayendo = true;
+          }
 
           fotogramaMvto++;
           if (fotogramaMvto >= cantidadMovimientoSalto)
+          {
               saltando = false;
+              cayendo = true;
+          }
+      }
+      else if (cayendo)
+      {
+          if (miPartida.GetMapa().EsPosibleMover(
+              x, y + incrY + alto - 4,
+             x + ancho, y + incrY + alto))
+          {
+              y += incrY;
+          }
+          else
+              cayendo = false;
       }
 
   }
@@ -126,7 +132,7 @@ public class Personaje : ElemGrafico
   // Comienza la secuencia de salto
   public void Saltar()
   {
-      if (saltando)
+      if (saltando || cayendo)
           return;
       saltando = true;
       fotogramaMvto = 0;
