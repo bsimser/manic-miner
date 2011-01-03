@@ -24,13 +24,17 @@
                       Lo mismo ocurre si se dispara con el joystick y se
                         mueve (o no) hacia algun lado.
                       En "MoverElementos" se mueve también al personaje (salto)  
-    0.07  27-Dic-2010  Nacho Cabanes
+   0.07  27-Dic-2010  Nacho Cabanes
                       La posicion se fija con "MoverA", para que "Reiniciar"
                         lo recoloque en su sitio.
    0.08  28-Dic-2010  Nacho Cabanes
                       Eliminados MoverArriba y MoverAbajo
-
- ---------------------------------------------------- */
+   0.09  29-Dic-2010  Nacho Cabanes
+                      Cambiado el orden de comprobac salto y movimiento, para que la
+                        respuesta al teclado sea más fiable
+                      ComprobarColisiones mira puntos y si se choca con algo mortal
+                      DibujarElementos muestra los puntos
+---------------------------------------------------- */
 
 
 
@@ -64,12 +68,6 @@ public class Partida
     void comprobarTeclas()
     {
           // Muevo si se pulsa alguna flecha del teclado
-          if (Hardware.TeclaPulsada(Hardware.TECLA_DER) )
-              miPersonaje.MoverDerecha();
-          
-          if (Hardware.TeclaPulsada(Hardware.TECLA_IZQ))
-              miPersonaje.MoverIzquierda();
-
           if (Hardware.TeclaPulsada(Hardware.TECLA_ESP))
           {
               if (Hardware.TeclaPulsada(Hardware.TECLA_DER))
@@ -79,6 +77,12 @@ public class Partida
               else
                   miPersonaje.Saltar();
           }
+          if (Hardware.TeclaPulsada(Hardware.TECLA_DER))
+              miPersonaje.MoverDerecha();
+
+          if (Hardware.TeclaPulsada(Hardware.TECLA_IZQ))
+              miPersonaje.MoverIzquierda();
+
 
           // Compruebo el Joystick
           int posXJoystick, posYJoystick;
@@ -121,7 +125,27 @@ public class Partida
     // --- Comprobar colisiones de enemigo con personaje, etc ---
      void comprobarColisiones()
     {
-        if (miPersonaje.ColisionCon(miEnemigo))
+        // Colisiones de personaje con fondo: obtener puntos o perder vida
+        int puntosMovimiento = miPantallaJuego.ObtenerPuntosPosicion(
+          miPersonaje.GetX(),
+          miPersonaje.GetY(),
+          miPersonaje.GetX() + miPersonaje.GetAncho(),
+          miPersonaje.GetY() + miPersonaje.GetAlto());
+
+        // Si realmente ha recogido un objeto, sumamos los puntos en el juego
+        if (puntosMovimiento > 0)
+        {
+            puntos += puntosMovimiento;
+
+            // Si ademas es una puerta, avanzamos de nivel
+            if (puntosMovimiento == 50)
+                //avanzarNivel()
+                    ;
+        }
+
+        // Y si es -1, ha chocaco con el fondo: igual caso que las
+        // colisiones de personaje con enemigo: recolocar y perder vida
+        if ((puntosMovimiento <0 ) || miPersonaje.ColisionCon(miEnemigo))
         {
             miPersonaje.Morir();
             miPersonaje.Reiniciar();
@@ -144,9 +168,12 @@ public class Partida
         miPersonaje.DibujarOculta();
         miEnemigo.DibujarOculta();
 
-        // Muestro vidas (pronto será parte del marcador)
+        // Muestro vidas y puntos (pronto será parte del marcador)
         Hardware.EscribirTextoOculta("Vidas: "+miPersonaje.GetVidas(),
             280, 550, 0xAA, 0xAA, 0xAA, fuenteSans18);
+
+        Hardware.EscribirTextoOculta("Puntos: " + puntos,
+            450, 550, 0xAA, 0xAA, 0xAA, fuenteSans18);
         
         // Finalmente, muestro en pantalla
         Hardware.VisualizarOculta();        
@@ -165,6 +192,8 @@ public class Partida
     {
       
         partidaTerminada = false;
+        puntos = 0;
+        miPantallaJuego.Reiniciar();
         miPersonaje.Reiniciar();
         miPersonaje.SetVidas(3);
         miEnemigo.Reiniciar();

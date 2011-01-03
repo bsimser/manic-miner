@@ -28,6 +28,10 @@
                       Al final de un salto (en "Mover"), comprueba si debe caer.
                       Al final de mover a Dcha o Izqda, comprueba si debe caer.
                       Eliminados MoverArriba y MoverAbajo
+   0.09  29-Dic-2010  Nacho Cabanes
+                      Cambiado el orden de salto y movimiento, para que la
+                        respuesta sea más fiable
+                      Cambiada la secuencia de salto: mas ancha y mas baja
  ---------------------------------------------------- */
 
 public class Personaje : ElemGrafico
@@ -41,8 +45,8 @@ public class Personaje : ElemGrafico
   int incrXSalto;
   int fotogramaMvto;
   int cantidadMovimientoSalto;
-  int[] pasosSaltoArriba = {-14, -14, -11, -8, -6, -4, -2, 0,
-                             0, 2, 4, 6, 8, 11, 14, 14 };
+  int[] pasosSaltoArriba = {-10, -10, -8, -8, -6, -6, -4, -2, -1, -1, 0,
+                             0, 1, 1, 2, 4, 6, 6, 8, 8, 10, 10 };
 
     
   // Constructor

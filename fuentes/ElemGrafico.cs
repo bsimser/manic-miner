@@ -26,7 +26,8 @@
                       Añadida colisión con ciertas coordenadas
    0.07  27-Dic-2010  Nacho Cabanes
                       Reiniciar también recuperar las velocidades
-
+   0.09  29-Dic-2010  Nacho Cabanes
+                      Añadidos GetAncho y GetAlto
  ---------------------------------------------------- */
 
 
@@ -258,7 +259,18 @@ public class ElemGrafico
       alto = al;
       ancho = an;
     }
-    
+
+    /// Devuelven ancho y alto
+    public short GetAncho()
+    {
+        return ancho;
+    }
+
+    public short GetAlto()
+    {
+        return alto;
+    }
+
     /// Devuelve si está visible
     public  bool GetActivo()
     {

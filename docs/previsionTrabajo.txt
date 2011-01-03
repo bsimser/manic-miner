@@ -8,11 +8,11 @@ Entregas ya realizadas:
 06.- Presentación con animación.Pantalla de créditos con texto real. 
 07.- Comprobar colisiones con enemigo, perder vidas, reiniciar partida.
 08.- Gravedad (caer al final de una plataforma). Eliminar movimientos sobrantes (arriba, abajo). Mejoras gráficas.
+09.- Recoger objetos del fondo (y obtener puntos).
 
 Previsión para las siguientes entregas (el orden puede variar):
 
-  * Recoger objetos del fondo (y obtener puntos).
-  * Añadir marcador, que muestre vidas, puntos, aire
+  * Añadir clase Marcador, que muestre vidas, puntos, aire
   * (Quizá prueba intermedia que use XNA en vez de Tao.SDL)
   * Personaje y enemigo animados  
   * Añadir dos niveles más.
