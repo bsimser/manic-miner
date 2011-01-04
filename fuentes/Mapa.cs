@@ -23,6 +23,8 @@
                       EsPosibleMover permite tocar llaves, puertas, arboles
                       Creado un array que se modifica, disinto del de definicion
                       Creado un "reiniciar", que devuelve el array a su estado inicial
+   0.10  31-Dic-2010  Nacho Cabanes
+                      Cambiado el margen superior de 100 a 40
  ---------------------------------------------------- */
 
 public class Mapa
@@ -33,7 +35,7 @@ public class Mapa
 
     private int altoMapa = 16, anchoMapa = 32;
     private int anchoTile = 24, altoTile = 24;
-    private int margenIzqdo = 20, margenSuperior = 100;
+    private int margenIzqdo = 20, margenSuperior = 40;
     private int llavesRestantes = 4;   // Valor arbitrario (no 0: final de partida)
 
     ElemGrafico arbol, deslizante, ladrillo, ladrilloX, llave, puerta, 

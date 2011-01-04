@@ -34,6 +34,8 @@
                         respuesta al teclado sea más fiable
                       ComprobarColisiones mira puntos y si se choca con algo mortal
                       DibujarElementos muestra los puntos
+   0.10  31-Dic-2010  Nacho Cabanes
+                      Usa la clase Marcador
 ---------------------------------------------------- */
 
 
@@ -46,6 +48,7 @@ public class Partida
     private Enemigo miEnemigo;
     private Fuente fuenteSans18;
     private Mapa miPantallaJuego;
+    private Marcador miMarcador;
     
     // Otros datos del juego
     int puntos;             // Puntuacion obtenida por el usuario
@@ -58,6 +61,7 @@ public class Partida
         miPersonaje = new Personaje(this);        
         miEnemigo = new Enemigo(this);
         miPantallaJuego = new Mapa(this);
+        miMarcador = new Marcador(this);
         puntos = 0;
         partidaTerminada = false;
         fuenteSans18 = new Fuente("FreeSansBold.ttf", 18);
@@ -168,13 +172,11 @@ public class Partida
         miPersonaje.DibujarOculta();
         miEnemigo.DibujarOculta();
 
-        // Muestro vidas y puntos (pronto será parte del marcador)
-        Hardware.EscribirTextoOculta("Vidas: "+miPersonaje.GetVidas(),
-            280, 550, 0xAA, 0xAA, 0xAA, fuenteSans18);
+        // Y el marcador
+        miMarcador.SetVidas(miPersonaje.GetVidas());
+        miMarcador.SetPuntuacion(puntos);
+        miMarcador.DibujarOculta();
 
-        Hardware.EscribirTextoOculta("Puntos: " + puntos,
-            450, 550, 0xAA, 0xAA, 0xAA, fuenteSans18);
-        
         // Finalmente, muestro en pantalla
         Hardware.VisualizarOculta();        
     }

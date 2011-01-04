@@ -55,11 +55,14 @@
     <Compile Include="..\fuentes\Juego.cs">
       <Link>Juego.cs</Link>
     </Compile>
+    <Compile Include="..\fuentes\Marcador.cs">
+      <Link>Marcador.cs</Link>
+    </Compile>
     <Compile Include="..\fuentes\Mapa.cs">
-      <Link>Partida.cs</Link>
+      <Link>Mapa.cs</Link>
     </Compile>
     <Compile Include="..\fuentes\Opciones.cs">
-      <Link>Partida.cs</Link>
+      <Link>Opciones.cs</Link>
     </Compile>
     <Compile Include="..\fuentes\Partida.cs">
       <Link>Partida.cs</Link>

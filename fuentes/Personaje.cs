@@ -32,6 +32,8 @@
                       Cambiado el orden de salto y movimiento, para que la
                         respuesta sea más fiable
                       Cambiada la secuencia de salto: mas ancha y mas baja
+   0.10  31-Dic-2010  Nacho Cabanes
+                      Cambiado la posición inicial, para adaptarse al margen superior
  ---------------------------------------------------- */
 
 public class Personaje : ElemGrafico
@@ -53,7 +55,7 @@ public class Personaje : ElemGrafico
   public Personaje(Partida p)
   {
     miPartida = p;   // Para enlazar con el resto de componentes
-    MoverA(70,412);         // Resto de valores iniciales
+    MoverA(70,352);         // Resto de valores iniciales
     SetAnchoAlto(30, 48);
     SetVelocidad(4, 4);
     vidas = 3;

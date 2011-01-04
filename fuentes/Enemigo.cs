@@ -18,6 +18,8 @@
                       La posicion se fija con "MoverA", y la velocidad
                         con SetVelocidad, para que "Reiniciar" lo recoloque 
                         en su sitio.
+   0.10  31-Dic-2010  Nacho Cabanes
+                      Cambiado la posición inicial, para adaptarse al margen superior
  ---------------------------------------------------- */
 
 public class Enemigo : ElemGrafico
@@ -30,7 +32,7 @@ public class Enemigo : ElemGrafico
   public Enemigo(Partida p)
   {
     miPartida = p;    // Para enlazar con el resto de componentes
-    MoverA(400,412);  // Resto de valores iniciales
+    MoverA(400,352);  // Resto de valores iniciales
     SetAnchoAlto(36, 48);
     SetVelocidad(4,0);
     CargarImagen("imagenes/enemigo.png");
