@@ -19,7 +19,10 @@
                         con SetVelocidad, para que "Reiniciar" lo recoloque 
                         en su sitio.
    0.10  31-Dic-2010  Nacho Cabanes
-                      Cambiado la posición inicial, para adaptarse al margen superior
+                      Cambiada la posición inicial, para adaptarse al margen superior
+   0.12  07-Ene-2011  Nacho Cabanes
+                      El enemigo no muestra una imagen fija, sino una secuencia de 
+                        8 imagenes para cada lado
  ---------------------------------------------------- */
 
 public class Enemigo : ElemGrafico
@@ -33,9 +36,27 @@ public class Enemigo : ElemGrafico
   {
     miPartida = p;    // Para enlazar con el resto de componentes
     MoverA(400,352);  // Resto de valores iniciales
-    SetAnchoAlto(36, 48);
     SetVelocidad(4,0);
-    CargarImagen("imagenes/enemigo.png");
+    CargarSecuencia(DERECHA,
+                new string[] {"imagenes/enemigoN01D01.png", 
+                          "imagenes/enemigoN01D02.png", 
+                          "imagenes/enemigoN01D03.png", 
+                          "imagenes/enemigoN01D04.png", 
+                          "imagenes/enemigoN01D05.png", 
+                          "imagenes/enemigoN01D06.png", 
+                          "imagenes/enemigoN01D07.png", 
+                          "imagenes/enemigoN01D08.png"});
+    CargarSecuencia(IZQUIERDA,
+                new string[] {"imagenes/enemigoN01I01.png", 
+                          "imagenes/enemigoN01I02.png", 
+                          "imagenes/enemigoN01I03.png", 
+                          "imagenes/enemigoN01I04.png", 
+                          "imagenes/enemigoN01I05.png", 
+                          "imagenes/enemigoN01I06.png", 
+                          "imagenes/enemigoN01I07.png", 
+                          "imagenes/enemigoN01I08.png"});
+    direccion = DERECHA;
+    SetAnchoAlto(36, 48);
   }
   
   
@@ -43,9 +64,16 @@ public class Enemigo : ElemGrafico
   public new void Mover() 
   {
       x += incrX;
-      
+      SiguienteFotograma();
+
       if ((x < 100) || (x > 700))
-        incrX = (short) (- incrX);
+      {
+          incrX = (short)(-incrX);
+          if (incrX < 0)
+              CambiarDireccion(IZQUIERDA);
+          else
+              CambiarDireccion(DERECHA);
+      }
   }
 
 } /* fin de la clase Enemigo */

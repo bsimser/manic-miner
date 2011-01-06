@@ -11,17 +11,19 @@ Entregas ya realizadas:
 09.- Recoger objetos del fondo (y obtener puntos).
 10.- Añadir clase Marcador, que muestre vidas, puntos, aire
 11.- Añadir dos niveles más. Abrir la puerta que permite pasar de un nivel a otro cuando se recogen todas las llaves. También se puede pasar de un nivel a otro pulsando T+N (truco).
+12.- Personaje y enemigo animados
 
 Previsión para las siguientes entregas (el orden puede variar):
 
+  * Incluir los 20 niveles del juego original
   * (Quizá prueba intermedia que use XNA en vez de Tao.SDL)
-  * Personaje y enemigo animados  
   * Enemigos distintos en cada nivel.
   * Distinto movimiento para cada enemigo de cada nivel.
   * Animación al morir.
   * Fondos "cambiantes" 1: suelo que se hunde.
   * Fondos "cambiantes" 2: suelo que se mueve.
   * Morir al caer desde las alturas
-  * Dos juegos de imágenes (retro / calidad mejorada)
+  * Corrección de pequeños errores: choque en el salto con las paredes laterales, altura incorrecta en el salto, colisiones "demasiado exigentes"
+  * Dos juegos de imágenes (retro / calidad mejorada), seleccionables desde Opciones
   * Leer mapas de niveles adicionales desde fichero.
   * ...

@@ -33,7 +33,10 @@
                         respuesta sea más fiable
                       Cambiada la secuencia de salto: mas ancha y mas baja
    0.10  31-Dic-2010  Nacho Cabanes
-                      Cambiado la posición inicial, para adaptarse al margen superior
+                      Cambiada la posición inicial, para adaptarse al margen superior
+   0.12  07-Ene-2011  Nacho Cabanes
+                      El personaje no muestra una imagen fija, sino una secuencia de 
+                        8 imagenes para cada lado
  ---------------------------------------------------- */
 
 public class Personaje : ElemGrafico
@@ -56,14 +59,33 @@ public class Personaje : ElemGrafico
   {
     miPartida = p;   // Para enlazar con el resto de componentes
     MoverA(70,352);         // Resto de valores iniciales
-    SetAnchoAlto(30, 48);
+    
     SetVelocidad(4, 4);
     vidas = 3;
     saltando = false;
     incrXSalto = 0;
     cantidadMovimientoSalto = pasosSaltoArriba.Length;
-    
-    CargarImagen("imagenes/personaje.png");
+
+    CargarSecuencia(DERECHA,
+            new string[] {"imagenes/personajeD01.png", "imagenes/personajeD01.png", 
+                          "imagenes/personajeD02.png", "imagenes/personajeD02.png", 
+                          "imagenes/personajeD03.png", "imagenes/personajeD03.png", 
+                          "imagenes/personajeD04.png", "imagenes/personajeD04.png", 
+                          "imagenes/personajeD05.png", "imagenes/personajeD05.png", 
+                          "imagenes/personajeD06.png", "imagenes/personajeD06.png", 
+                          "imagenes/personajeD07.png", "imagenes/personajeD07.png", 
+                          "imagenes/personajeD08.png", "imagenes/personajeD08.png"});
+    CargarSecuencia(IZQUIERDA,
+            new string[] {"imagenes/personajeI01.png", "imagenes/personajeI01.png", 
+                          "imagenes/personajeI02.png", "imagenes/personajeI02.png", 
+                          "imagenes/personajeI03.png", "imagenes/personajeI03.png", 
+                          "imagenes/personajeI04.png", "imagenes/personajeI04.png", 
+                          "imagenes/personajeI05.png", "imagenes/personajeI05.png", 
+                          "imagenes/personajeI06.png", "imagenes/personajeI06.png", 
+                          "imagenes/personajeI07.png", "imagenes/personajeI07.png", 
+                          "imagenes/personajeI08.png", "imagenes/personajeI08.png"});
+    direccion = DERECHA;
+    SetAnchoAlto(30, 48); // Si se carga secuencia, ancho y alto deben ir detras
   }
   
   
@@ -71,18 +93,28 @@ public class Personaje : ElemGrafico
   public void MoverDerecha() 
   {
       if (saltando || cayendo) return; // No debe moverse mientras salta
-      if (miPartida.GetMapa().EsPosibleMover(x + incrX, y + alto - 4, 
+
+      CambiarDireccion(DERECHA);
+      if (miPartida.GetMapa().EsPosibleMover(x + incrX, y + alto - 4,
                 x + ancho + incrX, y + alto))
-            x += incrX;
+      {
+          x += incrX;
+          SiguienteFotograma();
+      }
       cayendo = true;
   }
 
   public void MoverIzquierda()
   {
       if (saltando || cayendo) return; // No debe moverse mientras salta
+
+      CambiarDireccion(IZQUIERDA);
       if (miPartida.GetMapa().EsPosibleMover(x - incrX, y + alto - 4,
                 x + ancho - incrX, y + alto))
-            x -= incrX;
+      {
+          x -= incrX;
+          SiguienteFotograma();
+      }
       cayendo = true;
   }
   
@@ -105,6 +137,7 @@ public class Personaje : ElemGrafico
           {
               x = xProxMov;
               y = yProxMov;
+              SiguienteFotograma();
           }
           // Y si no, quizá esté cayendo
           else
