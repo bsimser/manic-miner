@@ -62,6 +62,10 @@
     <Compile Include="..\fuentes\Juego.cs" />
     <Compile Include="..\fuentes\Mapa.cs" />
     <Compile Include="..\fuentes\Marcador.cs" />
+    <Compile Include="..\fuentes\Nivel.cs" />
+    <Compile Include="..\fuentes\Nivel01.cs" />
+    <Compile Include="..\fuentes\Nivel02.cs" />
+    <Compile Include="..\fuentes\Nivel03.cs" />
     <Compile Include="..\fuentes\Opciones.cs" />
     <Compile Include="..\fuentes\Partida.cs" />
     <Compile Include="..\fuentes\Personaje.cs" />

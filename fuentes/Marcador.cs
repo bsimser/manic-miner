@@ -12,8 +12,10 @@
    ---------------------------------------------------
    0.10  31-Dic-2010  Nacho Cabanes
                       Primera versión de la clase Marcador
+   0.11  02-Ene-2011  Nacho Cabanes
+                      Incluido el campo "Nombre", que muestra nombre de nivel
  ---------------------------------------------------- */
- 
+
 public class Marcador
 {
     private ElemGrafico imgVidas, imgEnergia;
@@ -23,6 +25,7 @@ public class Marcador
     private int puntuacion;
     private int mejorPunt;
     private int vidas;
+    private string nombreNivel;
     
     private Partida miPartida;
     Fuente tipoDeLetra;
@@ -61,7 +64,6 @@ public class Marcador
     public  void SetAire(int valor)
     {
       aire = valor;
-      
     }
 
     /// Incrementa el valor del aire
@@ -82,6 +84,13 @@ public class Marcador
     public  void SetMejorPuntuacion(int valor)
     {
       mejorPunt = valor;
+    }
+
+
+    /// Cambia el valor del nombre del nivel
+    public void SetNombre(string valor)
+    {
+        nombreNivel = valor;
     }
     
     
@@ -114,7 +123,7 @@ public class Marcador
      // Borde superior e inferior y nombre de nivel (prefijado por ahora)
      imgFondoMetal.DibujarOculta(0, 0);
      imgFondoMetal.DibujarOculta(0, 420);
-     Hardware.EscribirTextoOculta("Central Cavern",
+     Hardware.EscribirTextoOculta(nombreNivel,
          350, 430, 0,0,0, tipoDeLetra);
 
      // Medidor de aire

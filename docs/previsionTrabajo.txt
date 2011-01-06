@@ -10,17 +10,18 @@ Entregas ya realizadas:
 08.- Gravedad (caer al final de una plataforma). Eliminar movimientos sobrantes (arriba, abajo). Mejoras gráficas.
 09.- Recoger objetos del fondo (y obtener puntos).
 10.- Añadir clase Marcador, que muestre vidas, puntos, aire
+11.- Añadir dos niveles más. Abrir la puerta que permite pasar de un nivel a otro cuando se recogen todas las llaves. También se puede pasar de un nivel a otro pulsando T+N (truco).
 
 Previsión para las siguientes entregas (el orden puede variar):
 
   * (Quizá prueba intermedia que use XNA en vez de Tao.SDL)
   * Personaje y enemigo animados  
-  * Añadir dos niveles más.
-  * Abrir la puerta que permite pasar de un nivel a otro.
   * Enemigos distintos en cada nivel.
   * Distinto movimiento para cada enemigo de cada nivel.
+  * Animación al morir.
   * Fondos "cambiantes" 1: suelo que se hunde.
   * Fondos "cambiantes" 2: suelo que se mueve.
-  * Leer el mapa desde fichero.
+  * Morir al caer desde las alturas
   * Dos juegos de imágenes (retro / calidad mejorada)
+  * Leer mapas de niveles adicionales desde fichero.
   * ...

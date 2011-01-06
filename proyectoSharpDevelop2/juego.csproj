@@ -61,6 +61,18 @@
     <Compile Include="..\fuentes\Mapa.cs">
       <Link>Mapa.cs</Link>
     </Compile>
+        <Compile Include="..\fuentes\Nivel.cs">
+      <Link>Nivel.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel01.cs">
+      <Link>Nivel01.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel02.cs">
+      <Link>Nivel02.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel03.cs">
+      <Link>Nivel03.cs</Link>
+    </Compile>    
     <Compile Include="..\fuentes\Opciones.cs">
       <Link>Opciones.cs</Link>
     </Compile>

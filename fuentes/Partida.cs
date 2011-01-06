@@ -36,6 +36,9 @@
                       DibujarElementos muestra los puntos
    0.10  31-Dic-2010  Nacho Cabanes
                       Usa la clase Marcador
+   0.11  02-Ene-2011  Nacho Cabanes
+                      Al recoger todas las llaves y tocar la puerta, se avanza de nivel.
+                      Truco: se avanza también pulsando T+N (para hacer pruebas)
 ---------------------------------------------------- */
 
 
@@ -86,6 +89,10 @@ public class Partida
 
           if (Hardware.TeclaPulsada(Hardware.TECLA_IZQ))
               miPersonaje.MoverIzquierda();
+
+          if ( (Hardware.TeclaPulsada(Hardware.TECLA_T)) &&
+              (Hardware.TeclaPulsada(Hardware.TECLA_N)) )
+            miPantallaJuego.Avanzar();
 
 
           // Compruebo el Joystick
@@ -144,7 +151,7 @@ public class Partida
             // Si ademas es una puerta, avanzamos de nivel
             if (puntosMovimiento == 50)
                 //avanzarNivel()
-                    ;
+                    miPantallaJuego.Avanzar();
         }
 
         // Y si es -1, ha chocaco con el fondo: igual caso que las
@@ -175,6 +182,7 @@ public class Partida
         // Y el marcador
         miMarcador.SetVidas(miPersonaje.GetVidas());
         miMarcador.SetPuntuacion(puntos);
+        miMarcador.SetNombre(miPantallaJuego.GetNombre());
         miMarcador.DibujarOculta();
 
         // Finalmente, muestro en pantalla

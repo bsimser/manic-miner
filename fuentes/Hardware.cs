@@ -37,6 +37,10 @@ using Tao.Sdl;
    En AstroAttack:
    0.05 25-Mar-2010  Nacho Cabanes
                       Añadido soporte de Joystick
+
+   En ManicMiner:
+   0.11 02-Ene-2011  Nacho Cabanes
+                      EscribirTextoOculta no falla si recibe un texto vacío
  
  ---------------------------------------------------- */
 
@@ -144,13 +148,14 @@ public class Hardware
 
     public static void EscribirTextoOculta(string texto,
       short x, short y, byte r, byte g, byte b, Fuente f)
-    { 
-      EscribirTextoOculta(texto, x, y, r, g, b, f.LeerPuntero());
+    {
+        EscribirTextoOculta(texto, x, y, r, g, b, f.LeerPuntero());
     }
 
     public static void EscribirTextoOculta(string texto,
       short x, short y, byte r, byte g, byte b, IntPtr fuente)
-    {      
+    {
+      if ((texto == "") || (texto == null)) return;
       Sdl.SDL_Color color = new Sdl.SDL_Color(r, g, b);
       IntPtr textoComoImagen = SdlTtf.TTF_RenderText_Solid(
         fuente, texto, color);
