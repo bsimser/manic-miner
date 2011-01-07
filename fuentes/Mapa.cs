@@ -28,13 +28,15 @@
    0.11  02-Ene-2011  Nacho Cabanes
                       Pasadas casi todas sus funcionalidades a "Nivel"
                       Ahora contiene un array de niveles y permite avanzar al siguiente.
+   0.13  07-Ene-2011  Nacho Cabanes
+                      Al reiniciar (comenzar nueva partida), se vuelve al primer nivel.
  ---------------------------------------------------- */
 
 public class Mapa
 {
     Nivel nivelActual;
     Nivel[] listaNiveles;
-    const int MAX_NIVELES = 3;
+    const int MAX_NIVELES = 20;
     int numeroNivelActual = 0;
     Fuente fuente18;   // Tipo de letra para mensajes
   
@@ -45,6 +47,24 @@ public class Mapa
         listaNiveles[0] = new Nivel01();
         listaNiveles[1] = new Nivel02();
         listaNiveles[2] = new Nivel03();
+        listaNiveles[3] = new Nivel04();
+        listaNiveles[4] = new Nivel05();
+        listaNiveles[5] = new Nivel06();
+        listaNiveles[6] = new Nivel07();
+        listaNiveles[7] = new Nivel08();
+        listaNiveles[8] = new Nivel09();
+        listaNiveles[9] = new Nivel10();
+        listaNiveles[10] = new Nivel11();
+        listaNiveles[11] = new Nivel12();
+        listaNiveles[12] = new Nivel13();
+        listaNiveles[13] = new Nivel14();
+        listaNiveles[14] = new Nivel15();
+        listaNiveles[15] = new Nivel16();
+        listaNiveles[16] = new Nivel17();
+        listaNiveles[17] = new Nivel18();
+        listaNiveles[18] = new Nivel19();
+        listaNiveles[19] = new Nivel20();
+
 
         nivelActual = listaNiveles[ numeroNivelActual ];
         fuente18 = new Fuente("FreeSansBold.ttf", 18);
@@ -52,6 +72,8 @@ public class Mapa
 
    public void Reiniciar()
    {
+       numeroNivelActual = 0;  
+       nivelActual = listaNiveles[ numeroNivelActual ];
        nivelActual.Reiniciar();
    }
 

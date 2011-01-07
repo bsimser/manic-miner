@@ -61,7 +61,7 @@
     <Compile Include="..\fuentes\Mapa.cs">
       <Link>Mapa.cs</Link>
     </Compile>
-        <Compile Include="..\fuentes\Nivel.cs">
+    <Compile Include="..\fuentes\Nivel.cs">
       <Link>Nivel.cs</Link>
     </Compile>
     <Compile Include="..\fuentes\Nivel01.cs">
@@ -73,6 +73,57 @@
     <Compile Include="..\fuentes\Nivel03.cs">
       <Link>Nivel03.cs</Link>
     </Compile>    
+    <Compile Include="..\fuentes\Nivel04.cs">
+      <Link>Nivel04.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel05.cs">
+      <Link>Nivel05.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel06.cs">
+      <Link>Nivel06.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel07.cs">
+      <Link>Nivel07.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel08.cs">
+      <Link>Nivel08.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel09.cs">
+      <Link>Nivel09.cs</Link>
+    </Compile>    
+    <Compile Include="..\fuentes\Nivel10.cs">
+      <Link>Nivel10.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel11.cs">
+      <Link>Nivel11.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel12.cs">
+      <Link>Nivel12.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel13.cs">
+      <Link>Nivel13.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel14.cs">
+      <Link>Nivel14.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel15.cs">
+      <Link>Nivel15.cs</Link>
+    </Compile>    
+    <Compile Include="..\fuentes\Nivel16.cs">
+      <Link>Nivel16.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel17.cs">
+      <Link>Nivel17.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel18.cs">
+      <Link>Nivel18.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel19.cs">
+      <Link>Nivel19.cs</Link>
+    </Compile>
+    <Compile Include="..\fuentes\Nivel20.cs">
+      <Link>Nivel20.cs</Link>
+    </Compile>
     <Compile Include="..\fuentes\Opciones.cs">
       <Link>Opciones.cs</Link>
     </Compile>

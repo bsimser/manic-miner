@@ -101,6 +101,8 @@ public class Nivel
                   case 'P': puerta.DibujarOculta(posX, posY); break;
                   case 'S': sueloFino.DibujarOculta(posX, posY); break;
                   case 'T': techo.DibujarOculta(posX, posY); break;
+                  case '[': sueloFino.DibujarOculta(posX, posY); break;
+                  case ']': sueloFino.DibujarOculta(posX, posY); break;
                   case 'V': llave.DibujarOculta(posX, posY); 
                             llavesRestantes++;  break;
               }
