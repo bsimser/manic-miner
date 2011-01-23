@@ -14,20 +14,27 @@
                       Creada la clase Nivel, desglosando sus funcionalidades
                         a partir de "Mapa".
                       Permite más tipos de casillas.
+   0.14  23-Ene-2011  Nacho Cabanes
+                      Incluye un array de enemigos y los Get para leer cantidad
+                        y un enemigo concreto
+
  ---------------------------------------------------- */
 
 public class Nivel
 {
 
     // Datos del mapa del nivel actual
-    Partida miPartida;
+    protected Partida miPartida;
 
     private int altoMapa = 16, anchoMapa = 32;
     private int anchoTile = 24, altoTile = 24;
     private int margenIzqdo = 20, margenSuperior = 40;
     private int llavesRestantes = 4;   // Valor arbitrario (no 0: final de partida)
 
-    ElemGrafico arbol, deslizante, ladrillo, ladrilloX, llave, puerta, 
+    protected int numEnemigos;
+    protected Enemigo[] listaEnemigos;
+
+    private ElemGrafico arbol, deslizante, ladrillo, ladrilloX, llave, puerta, 
         sueloFino, sueloFragil, sueloFragil2, sueloGrueso, techo;
 
 
@@ -71,6 +78,8 @@ public class Nivel
         techo = new ElemGrafico("imagenes/techo.png");
 
         datosNivel = new string[altoMapa];
+
+        numEnemigos = 0;
         Reiniciar();
   }
 
@@ -181,6 +190,19 @@ public class Nivel
    public string LeerNombre()
    {
        return nombre;
+   }
+
+   public int GetNumEnemigos()
+   {
+       return numEnemigos;
+   }
+
+   public Enemigo GetEnemigo(int i)
+   {
+       if (numEnemigos > i)
+           return listaEnemigos[i];
+       
+       return null;
    }
   
 } /* fin de la clase Mapa */

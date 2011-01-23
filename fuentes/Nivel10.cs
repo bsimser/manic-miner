@@ -20,7 +20,7 @@ public class Nivel10 : Nivel
 
     public Nivel10()
     {
-        nombre = "The Endorian Forest"
+        nombre = "The Endorian Forest";
         datosNivelIniciales[ 0] = "M             LLLM   LLLLLLLLLLM";
         datosNivelIniciales[ 1] = "M              V M             M";
         datosNivelIniciales[ 2] = "MLLLLLL          M   V     LLLLM";

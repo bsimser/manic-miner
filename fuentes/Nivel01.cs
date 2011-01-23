@@ -12,6 +12,10 @@
    ---------------------------------------------------
    0.11  02-Ene-2011  Nacho Cabanes
                       Creada la clase Nivel01
+   0.14  23-Ene-2011  Nacho Cabanes
+                      Incluidos dos enemigos: uno con movimiento horizontal
+                        y otro vertical
+
  ---------------------------------------------------- */
 
 public class Nivel01 : Nivel
@@ -36,6 +40,23 @@ public class Nivel01 : Nivel
         datosNivelIniciales[13] = "L    SSSSSSSSSSSSSSS         PPL";
         datosNivelIniciales[14] = "L                            PPL";
         datosNivelIniciales[15] = "LSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSL";
+
+        numEnemigos = 2;
+        listaEnemigos = new Enemigo[numEnemigos];
+
+        listaEnemigos[0] = new Enemigo(miPartida);
+        listaEnemigos[0].MoverA(400, 352);
+        listaEnemigos[0].SetVelocidad(4, 0);
+        listaEnemigos[0].setMinMaxX(100, 700);
+        listaEnemigos[0].SetAnchoAlto(36, 48);
+        listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
+
+        listaEnemigos[1] = new Enemigo(miPartida);
+        listaEnemigos[1].MoverA(200, 150);
+        listaEnemigos[1].SetVelocidad(0, 4);
+        listaEnemigos[1].setMinMaxY(100, 300);
+        listaEnemigos[0].SetAnchoAlto(36, 48);
+        listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);
 
         Reiniciar();
     }

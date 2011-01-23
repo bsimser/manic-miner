@@ -28,16 +28,17 @@
                       Reiniciar también recuperar las velocidades
    0.09  29-Dic-2010  Nacho Cabanes
                       Añadidos GetAncho y GetAlto
+   0.14  23-Ene-2011  Nacho Cabanes
+                      Añadidos minX, maxX, minY, maxY y sus Set correspondientes
  ---------------------------------------------------- */
 
 
 public class ElemGrafico
 {
     // ----- Atributos -----
-    protected short x;
-    protected short y;
-    protected short incrX;
-    protected short incrY;
+    protected short x, y;
+    protected short incrX, incrY;
+    protected short minX, maxX, minY, maxY;
     protected short alto;
     protected short ancho;
     //protected bool activo;
@@ -56,6 +57,8 @@ public class ElemGrafico
     protected Imagen[][] secuencia;
     protected byte fotogramaActual;
     protected byte tamanyoSecuencia;
+
+    protected byte numDirecciones = 10;
     protected byte direccion;
     public const byte ABAJO = 0;
     public const byte ARRIBA = 1;
@@ -83,7 +86,9 @@ public class ElemGrafico
       chocable = true;
       direccion = ABAJO;
       fotogramaActual = 0;
-      secuencia = new Imagen[10][];
+      secuencia = new Imagen[numDirecciones][];
+      maxX = 800;
+      maxY = 600;
     }
     
     /// Constructor: Carga la imagen que representara a este elemento grafico
@@ -311,6 +316,17 @@ public class ElemGrafico
             centro2x-centro1x) * (180 / System.Math.PI));
     }
 
-    
-    
+    public void setMinMaxX(short minimo, short maximo)
+    {
+        minX = minimo;
+        maxX = maximo;
+    }
+
+    public void setMinMaxY(short minimo, short maximo)
+    {
+        minY = minimo;
+        maxY = maximo;
+    }
+
+        
 } /* end class ElemGrafico */

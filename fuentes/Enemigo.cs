@@ -23,6 +23,12 @@
    0.12  07-Ene-2011  Nacho Cabanes
                       El enemigo no muestra una imagen fija, sino una secuencia de 
                         8 imagenes para cada lado
+   0.14  23-Ene-2011  Nacho Cabanes
+                      Eliminados los valores iniciales para posición y velocidad.
+                      Mover se fija en MinX y MaxX para permitir movimiento limitado
+                        en horizontal y en vertical
+                      Añadidas secuencia arriba y Abajo, para un segundo enemigo de prueba
+
  ---------------------------------------------------- */
 
 public class Enemigo : ElemGrafico
@@ -35,8 +41,7 @@ public class Enemigo : ElemGrafico
   public Enemigo(Partida p)
   {
     miPartida = p;    // Para enlazar con el resto de componentes
-    MoverA(400,352);  // Resto de valores iniciales
-    SetVelocidad(4,0);
+
     CargarSecuencia(DERECHA,
                 new string[] {"imagenes/enemigoN01D01.png", 
                           "imagenes/enemigoN01D02.png", 
@@ -55,24 +60,59 @@ public class Enemigo : ElemGrafico
                           "imagenes/enemigoN01I06.png", 
                           "imagenes/enemigoN01I07.png", 
                           "imagenes/enemigoN01I08.png"});
-    direccion = DERECHA;
-    SetAnchoAlto(36, 48);
+    CargarSecuencia(ARRIBA,
+                new string[] {"imagenes/enemigoN01D01.png", 
+                          "imagenes/enemigoN01D02.png", 
+                          "imagenes/enemigoN01D03.png", 
+                          "imagenes/enemigoN01D04.png", 
+                          "imagenes/enemigoN01D05.png", 
+                          "imagenes/enemigoN01D06.png", 
+                          "imagenes/enemigoN01D07.png", 
+                          "imagenes/enemigoN01D08.png"});
+    CargarSecuencia(ABAJO,
+                new string[] {"imagenes/enemigoN01I01.png", 
+                          "imagenes/enemigoN01I02.png", 
+                          "imagenes/enemigoN01I03.png", 
+                          "imagenes/enemigoN01I04.png", 
+                          "imagenes/enemigoN01I05.png", 
+                          "imagenes/enemigoN01I06.png", 
+                          "imagenes/enemigoN01I07.png", 
+                          "imagenes/enemigoN01I08.png"});
+
+    CambiarDireccion(DERECHA);
   }
   
   
   // Métodos de movimiento
   public new void Mover() 
   {
-      x += incrX;
-      SiguienteFotograma();
-
-      if ((x < 100) || (x > 700))
+      if (incrX != 0)
       {
-          incrX = (short)(-incrX);
-          if (incrX < 0)
-              CambiarDireccion(IZQUIERDA);
-          else
-              CambiarDireccion(DERECHA);
+          x += incrX;
+          SiguienteFotograma();
+
+          if ((x < minX) || (x > maxX))
+          {
+              incrX = (short)(-incrX);
+              if (incrX < 0)
+                  CambiarDireccion(IZQUIERDA);
+              else
+                  CambiarDireccion(DERECHA);
+          }
+      }
+      if (incrY != 0)
+      {
+          y += incrY;
+          SiguienteFotograma();
+
+          if ((y < minY) || (y > maxY))
+          {
+              incrY = (short)(-incrY);
+              if (incrY < 0)
+                  CambiarDireccion(ARRIBA);
+              else
+                  CambiarDireccion(ABAJO);
+          }
       }
   }
 

@@ -39,6 +39,9 @@
    0.11  02-Ene-2011  Nacho Cabanes
                       Al recoger todas las llaves y tocar la puerta, se avanza de nivel.
                       Truco: se avanza también pulsando T+N (para hacer pruebas)
+   0.14  23-Ene-2011  Nacho Cabanes
+                      Ya no contiene un Enemigo, sino que se delega en la clase Mapa
+
 ---------------------------------------------------- */
 
 
@@ -48,7 +51,6 @@ public class Partida
 
     // Componentes del juego
     private Personaje miPersonaje;
-    private Enemigo miEnemigo;
     private Fuente fuenteSans18;
     private Mapa miPantallaJuego;
     private Marcador miMarcador;
@@ -62,7 +64,6 @@ public class Partida
     public Partida()
     {
         miPersonaje = new Personaje(this);        
-        miEnemigo = new Enemigo(this);
         miPantallaJuego = new Mapa(this);
         miMarcador = new Marcador(this);
         puntos = 0;
@@ -128,7 +129,8 @@ public class Partida
     // --- Animación de los enemigos y demás objetos "que se muevan solos" -----
      void moverElementos()
     {
-       miEnemigo.Mover();
+       for (int i=0; i < miPantallaJuego.GetNumEnemigos(); i++)
+           miPantallaJuego.GetEnemigo(i).Mover();
        miPersonaje.Mover();
     }
     
@@ -150,18 +152,29 @@ public class Partida
 
             // Si ademas es una puerta, avanzamos de nivel
             if (puntosMovimiento == 50)
-                //avanzarNivel()
-                    miPantallaJuego.Avanzar();
+                miPantallaJuego.Avanzar();
         }
 
-        // Y si es -1, ha chocaco con el fondo: igual caso que las
-        // colisiones de personaje con enemigo: recolocar y perder vida
-        if ((puntosMovimiento <0 ) || miPersonaje.ColisionCon(miEnemigo))
+        // Y si la puntuacion es -1, ha chocado con el fondo:
+        // recolocar y perder vida
+        if (puntosMovimiento <0 ) 
         {
             miPersonaje.Morir();
             miPersonaje.Reiniciar();
-            miEnemigo.Reiniciar();
+            for (int i = 0; i < miPantallaJuego.GetNumEnemigos(); i++)
+                miPantallaJuego.GetEnemigo(i).Reiniciar();
         }
+
+        // Igual caso para las colisiones de personaje con enemigo
+        for (int i = 0; i < miPantallaJuego.GetNumEnemigos(); i++)
+            if (miPersonaje.ColisionCon(miPantallaJuego.GetEnemigo(i)))
+            {
+                miPersonaje.Morir();
+                miPersonaje.Reiniciar();
+                for (int j = 0; j < miPantallaJuego.GetNumEnemigos(); j++)
+                    miPantallaJuego.GetEnemigo(i).Reiniciar();
+                break;
+            }
 
          if (miPersonaje.GetVidas() == 0)
              partidaTerminada = true;
@@ -177,7 +190,8 @@ public class Partida
         // Dibujo todos los elementos
         miPantallaJuego.DibujarOculta();
         miPersonaje.DibujarOculta();
-        miEnemigo.DibujarOculta();
+        for (int i = 0; i < miPantallaJuego.GetNumEnemigos(); i++)
+            miPantallaJuego.GetEnemigo(i).DibujarOculta();
 
         // Y el marcador
         miMarcador.SetVidas(miPersonaje.GetVidas());
@@ -203,10 +217,12 @@ public class Partida
       
         partidaTerminada = false;
         puntos = 0;
-        miPantallaJuego.Reiniciar();
         miPersonaje.Reiniciar();
         miPersonaje.SetVidas(3);
-        miEnemigo.Reiniciar();
+        for (int i = 0; i < miPantallaJuego.GetNumEnemigos(); i++)
+            miPantallaJuego.GetEnemigo(i).Reiniciar();
+        miPantallaJuego.Reiniciar();
+
         do {
             comprobarTeclas();
             moverElementos();

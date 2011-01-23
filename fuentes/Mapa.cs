@@ -30,6 +30,9 @@
                       Ahora contiene un array de niveles y permite avanzar al siguiente.
    0.13  07-Ene-2011  Nacho Cabanes
                       Al reiniciar (comenzar nueva partida), se vuelve al primer nivel.
+   0.14  23-Ene-2011  Nacho Cabanes
+                      Añadidos GetNumEnmigos y GetEnemigo(i), que delegan en Nivel
+
  ---------------------------------------------------- */
 
 public class Mapa
@@ -119,6 +122,16 @@ public class Mapa
    public string GetNombre()
    {
        return nivelActual.LeerNombre();
+   }
+
+   public int GetNumEnemigos()
+   {
+       return nivelActual.GetNumEnemigos();
+   }
+
+   public Enemigo GetEnemigo(int i)
+   {
+       return nivelActual.GetEnemigo(i);
    }
   
 } /* fin de la clase Mapa */
