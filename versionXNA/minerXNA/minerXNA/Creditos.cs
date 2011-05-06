@@ -1,23 +1,21 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
 
 namespace minerXNA
 {
     class Creditos
     {
+            // Los dos elementos necesarios para coordinar con el resto del juego
             GraphicsDeviceManager graphics;
             ContentManager contenido;
-            Texture2D imagenFondo;
-            SpriteFont fuente18;
+
+            // Imágenes y tipos de letra    
+            ElemGrafico imagenFondo;
+            Fuente fuente18;
+
+            // Posicion y velocidad de un texto que se movera solo    
             int xTexto = 320, yTexto = 500;
             int incrX = 1, incrY = 1;
 
@@ -30,14 +28,14 @@ namespace minerXNA
                 contenido = c;
             }
 
-            public void LoadContent()
+            public void CargarContenido()
             {
-                imagenFondo = contenido.Load<Texture2D>("creditos");
-                fuente18 = contenido.Load<SpriteFont>("Lucida Console");
+                imagenFondo = new ElemGrafico("creditos", contenido);
+                fuente18 = new Fuente("Lucida Console", contenido);
             }
 
-            
-            public void Update()
+
+            public void MoverElementos()
             {
                 // Mover elementos (texto)
                 xTexto += incrX;
@@ -45,20 +43,30 @@ namespace minerXNA
 
                 if ((xTexto < 100) || (xTexto > 520)) incrX = -incrX;
                 if ((yTexto < 500) || (yTexto > 560)) incrY = -incrY;
+            }
 
-                // Colisiones: nada por ahora
 
+            public void ComprobarTeclas()
+            {
                 // Comprobacion de teclas para salir
                 if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                     terminada = true;
             }
 
 
+            public void ComprobarColisiones()
+            {
+                // Nada por ahora
+            }
+
+
+
             public void DibujarElementos(SpriteBatch spriteBatch)
             {
-                spriteBatch.Draw(imagenFondo, new Vector2(0, 0), Color.White);
-                spriteBatch.DrawString(fuente18, "Remake 2011 por Nacho",
-                       new Vector2(xTexto, yTexto), Color.WhiteSmoke);
+                imagenFondo.DibujarOculta(0, 0, spriteBatch);
+                fuente18.EscribirTextoOculta("Remake 2011 por Nacho",
+                       /* Coordenadas*/ xTexto, yTexto, /* Color RGB */ 200, 200, 200, 
+                       spriteBatch);
             }
 
 

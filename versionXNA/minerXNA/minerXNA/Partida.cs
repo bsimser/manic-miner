@@ -1,14 +1,9 @@
-using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Linq;
+// Partida: lógica real de una sesión de juego
+
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
 
 namespace minerXNA
 {
@@ -17,11 +12,8 @@ namespace minerXNA
     /// </summary>
     public class Partida 
     {
+        // Los dos elementos necesarios para coordinar con el resto del juego
         GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
-        SpriteFont fuente18;
-        Presentacion miPresentacion;
-        Creditos pantallaCreditos;
         ContentManager contenido;
 
         Personaje miPersonaje;
@@ -37,15 +29,9 @@ namespace minerXNA
         }
 
 
-        public void LoadContent()
+        public void CargarContenido()
         {
-            fuente18 = contenido.Load<SpriteFont>("Lucida Console");
-            miPersonaje = new Personaje(contenido);
-            miPersonaje.MoverA(400, 300);
-
-            miEnemigo = new Enemigo(contenido);
-            miMapa = new Mapa(contenido);
-
+            Reiniciar();
         }
 
 
@@ -86,8 +72,6 @@ namespace minerXNA
             miMapa.DibujarOculta(spriteBatch);
             miPersonaje.DibujarOculta(spriteBatch);
             miEnemigo.DibujarOculta(spriteBatch);
-            spriteBatch.DrawString(fuente18, "Texto de ejemplo",
-                       new Vector2(300, 50), Color.LightGreen);
         }
 
 
@@ -100,6 +84,11 @@ namespace minerXNA
         public void Reiniciar()
         {
             terminada = false;
+            miPersonaje = new Personaje(contenido);
+            miPersonaje.MoverA(400, 300);
+            miEnemigo = new Enemigo(contenido);
+            miMapa = new Mapa(contenido);
+
         }
     }
 }

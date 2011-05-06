@@ -110,6 +110,7 @@
     <Compile Include="Creditos.cs" />
     <Compile Include="ElemGrafico.cs" />
     <Compile Include="Enemigo.cs" />
+    <Compile Include="Fuente.cs" />
     <Compile Include="GestorPantallas.cs" />
     <Compile Include="Mapa.cs" />
     <Compile Include="Personaje.cs" />

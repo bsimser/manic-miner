@@ -1,14 +1,9 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Linq;
+﻿// Gestor de pantallas: muestra la presentación, la pantalla de créditos
+// o la partida, según corresponda
+
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
 
 
 namespace minerXNA
@@ -20,15 +15,10 @@ namespace minerXNA
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        SpriteFont fuente18;
 
         Presentacion miPresentacion;
         Creditos pantallaCreditos;
         Partida miPartida;
-
-        Personaje miPersonaje;
-        Enemigo miEnemigo;
-        Mapa miMapa;
 
         const byte MODO_PRESENT = 0;
         const byte MODO_JUEGO = 1;
@@ -48,6 +38,7 @@ namespace minerXNA
             miPartida = new Partida(graphics, Content);
             modo = MODO_PRESENT;
         }
+
 
         /// <summary>
         /// Allows the game to perform any initialization it needs to before starting to run.
@@ -71,9 +62,9 @@ namespace minerXNA
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            miPresentacion.LoadContent();
-            pantallaCreditos.LoadContent();
-            miPartida.LoadContent();
+            miPresentacion.CargarContenido();
+            pantallaCreditos.CargarContenido();
+            miPartida.CargarContenido();
         }
 
         /// <summary>
@@ -99,7 +90,9 @@ namespace minerXNA
             // Si estamos en modo de presentación
             if (modo == MODO_PRESENT)
             {
-                miPresentacion.Update();
+                miPresentacion.MoverElementos();
+                miPresentacion.ComprobarTeclas();
+                miPresentacion.ComprobarColisiones();
                 if (miPresentacion.GetTerminada())
                 {
                     switch (miPresentacion.GetOpcionEscogida())
@@ -115,7 +108,9 @@ namespace minerXNA
             // Si estamos en modo de presentación
             if (modo == MODO_CREDITOS)
             {
-                pantallaCreditos.Update();
+                pantallaCreditos.MoverElementos();
+                pantallaCreditos.ComprobarTeclas();
+                pantallaCreditos.ComprobarColisiones();
                 if (pantallaCreditos.GetTerminada())
                 {
                     modo = MODO_PRESENT;

@@ -1,3 +1,5 @@
+// Cuerpo del programa: lanza el gestor de pantallas
+
 using System;
 
 namespace minerXNA

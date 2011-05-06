@@ -5,12 +5,15 @@ using Microsoft.Xna.Framework.Input;
 
 namespace minerXNA
 {
-    class Presentacion //: Microsoft.Xna.Framework.Game
+    class Presentacion 
     {
+            // Los dos elementos necesarios para coordinar con el resto del juego
             GraphicsDeviceManager graphics;
             ContentManager contenido;
-            Texture2D imagenFondo;
-            SpriteFont fuente18;
+
+            // Imágenes y tipos de letra    
+            ElemGrafico imagenFondo;
+            Fuente fuente18;
 
             // Opciones posibles
             public const byte OPC_NINGUNA = 0;
@@ -28,18 +31,21 @@ namespace minerXNA
                 contenido = c;
             }
 
-            public void LoadContent()
+            public void CargarContenido()
             {
-                imagenFondo = contenido.Load<Texture2D>("present");
-                fuente18 = contenido.Load<SpriteFont>("Lucida Console");
+                imagenFondo = new ElemGrafico("present", contenido);
+                fuente18 = new Fuente("Lucida Console", contenido);
             }
 
-            
-            public void Update()
-            {
-                // Mover elementos: nada por ahora
 
-                // Colisiones: nada por ahora
+            public void MoverElementos()
+            {
+                // Nada por ahora
+            }
+
+
+            public void ComprobarTeclas()
+            {
 
                 // Comprobacion de teclas para salir
                 if (Keyboard.GetState().IsKeyDown(Keys.J))  // J = Jugar
@@ -59,17 +65,22 @@ namespace minerXNA
                     opcionEscogida = OPC_SALIR;
                     terminada = true;
                 }
+            }
 
+
+            public void ComprobarColisiones()
+            {
+                // Nada por ahora
             }
 
 
             public void DibujarElementos(SpriteBatch spriteBatch)
             {
-                spriteBatch.Draw(imagenFondo, new Vector2(0,0), Color.White);
-                spriteBatch.DrawString(fuente18, "Pulsa J para Jugar",
-                       new Vector2(320, 520), Color.White);
-                spriteBatch.DrawString(fuente18, "C para Creditos o S para Salir",
-                       new Vector2(260, 550), Color.WhiteSmoke);
+                imagenFondo.DibujarOculta(0, 0, spriteBatch);
+                fuente18.EscribirTextoOculta("Pulsa J para Jugar",
+                       320, 520, Color.White, spriteBatch);
+                fuente18.EscribirTextoOculta("C para Creditos o S para Salir",
+                       260, 550, Color.WhiteSmoke, spriteBatch);
             }
 
 
