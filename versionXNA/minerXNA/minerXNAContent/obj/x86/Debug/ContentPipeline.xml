@@ -154,6 +154,51 @@
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\creditos.xnb</Output>
       <Time>2011-02-12T11:55:54+01:00</Time>
     </Item>
+    <Item>
+      <Source>metal.png</Source>
+      <Name>metal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\metal.xnb</Output>
+      <Time>2010-12-31T20:07:28+01:00</Time>
+    </Item>
+    <Item>
+      <Source>aireRojo.png</Source>
+      <Name>aireRojo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\aireRojo.xnb</Output>
+      <Time>2010-12-25T19:14:48+01:00</Time>
+    </Item>
+    <Item>
+      <Source>aireRojoV.png</Source>
+      <Name>aireRojoV</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\aireRojoV.xnb</Output>
+      <Time>2010-12-25T19:14:48+01:00</Time>
+    </Item>
+    <Item>
+      <Source>aireVerde.png</Source>
+      <Name>aireVerde</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\aireVerde.xnb</Output>
+      <Time>2010-12-25T19:14:48+01:00</Time>
+    </Item>
+    <Item>
+      <Source>aireVerdeV.png</Source>
+      <Name>aireVerdeV</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\aireVerdeV.xnb</Output>
+      <Time>2010-12-25T19:14:48+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

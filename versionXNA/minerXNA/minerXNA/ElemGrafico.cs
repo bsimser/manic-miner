@@ -10,6 +10,7 @@ namespace minerXNA
         protected Texture2D miImagen;
         protected int x, y;
         protected int incrX, incrY;
+        protected int minX, maxX, minY, maxY;
         protected int ancho, alto;
         protected ContentManager miGestorContenido;
         protected bool contieneImagen = false;
@@ -212,6 +213,17 @@ namespace minerXNA
             velocidadFotograma = v;
         }
 
+        public void setMinMaxX(short minimo, short maximo)
+        {
+            minX = minimo;
+            maxX = maximo;
+        }
+
+        public void setMinMaxY(short minimo, short maximo)
+        {
+            minY = minimo;
+            maxY = maximo;
+        }
 
 
     }

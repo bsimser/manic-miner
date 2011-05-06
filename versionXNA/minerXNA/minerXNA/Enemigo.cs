@@ -2,7 +2,7 @@
 
 namespace minerXNA
 {
-    class Enemigo : ElemGrafico
+    public class Enemigo : ElemGrafico
     {
 
         // Constructor

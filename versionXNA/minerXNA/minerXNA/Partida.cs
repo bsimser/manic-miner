@@ -19,6 +19,7 @@ namespace minerXNA
         Personaje miPersonaje;
         Enemigo miEnemigo;
         Mapa miMapa;
+        Marcador miMarcador;
 
         private bool terminada = false;
 
@@ -38,6 +39,7 @@ namespace minerXNA
         public void MoverElementos()
         {
             miEnemigo.Mover();
+            miPersonaje.Mover();
         }
 
 
@@ -48,6 +50,17 @@ namespace minerXNA
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 terminada = true;
 
+            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            {
+                if (Keyboard.GetState().IsKeyDown(Keys.Left))
+                    miPersonaje.SaltarIzquierda();
+                if (Keyboard.GetState().IsKeyDown(Keys.Right))
+                    miPersonaje.SaltarDerecha();
+                else
+                miPersonaje.Saltar();
+                return; // No miro más teclas si comienza el salto
+            }
+
             if (Keyboard.GetState().IsKeyDown(Keys.Left))
                 miPersonaje.MoverIzquierda();
             if (Keyboard.GetState().IsKeyDown(Keys.Right))
@@ -56,6 +69,28 @@ namespace minerXNA
                 miPersonaje.MoverArriba();
             if (Keyboard.GetState().IsKeyDown(Keys.Down))
                 miPersonaje.MoverAbajo();
+            if (Keyboard.GetState().IsKeyDown(Keys.Down))
+                miPersonaje.MoverAbajo();
+
+            if (Keyboard.GetState().IsKeyDown(Keys.T) &&
+                  (Keyboard.GetState().IsKeyDown(Keys.N)))
+                miMapa.Avanzar();
+
+            // Gamepad de Xbox 360
+
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
+                terminada = true;
+
+            if (GamePad.GetState(PlayerIndex.One).DPad.Right ==  ButtonState.Pressed)
+                miPersonaje.MoverDerecha();
+            if (GamePad.GetState(PlayerIndex.One).DPad.Left == ButtonState.Pressed)
+                miPersonaje.MoverIzquierda();
+            if (GamePad.GetState(PlayerIndex.One).DPad.Up == ButtonState.Pressed)
+                miPersonaje.MoverArriba();
+            if (GamePad.GetState(PlayerIndex.One).DPad.Down == ButtonState.Pressed)
+                miPersonaje.MoverAbajo();
+            if (GamePad.GetState(PlayerIndex.One).Buttons.A == ButtonState.Pressed)
+                miPersonaje.Saltar();
         }
 
         
@@ -70,6 +105,7 @@ namespace minerXNA
         public void DibujarElementos(SpriteBatch spriteBatch)
         {
             miMapa.DibujarOculta(spriteBatch);
+            miMarcador.DibujarOculta(spriteBatch);
             miPersonaje.DibujarOculta(spriteBatch);
             miEnemigo.DibujarOculta(spriteBatch);
         }
@@ -88,7 +124,7 @@ namespace minerXNA
             miPersonaje.MoverA(400, 300);
             miEnemigo = new Enemigo(contenido);
             miMapa = new Mapa(contenido);
-
+            miMarcador = new Marcador(contenido);
         }
     }
 }
