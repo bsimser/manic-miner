@@ -43,8 +43,9 @@ namespace minerXNA
         /// Carga la imagen que representara a este elemento grafico
         public void CargarImagen(string nombre)
         {
-            miImagen = Texture2D.FromStream(miPartida.GetGraphics(), 
-                new FileStream ( nombre ,FileMode.Open ) );
+            //miImagen = Texture2D.FromStream(miPartida.GetGraphics(), 
+            //    new FileStream ( nombre ,FileMode.Open ) );
+            miImagen = miPartida.Content.Load<Texture2D>( nombre );
             
             contieneImagen = true;
             contieneSecuencia = false;
@@ -54,6 +55,14 @@ namespace minerXNA
         /// Dibuja en pantalla oculta, como parte de un "SpriteBatch"
         public void DibujarOculta(SpriteBatch listaSprites)
         {
+            listaSprites.Draw(miImagen, new Vector2(x, y), Color.White);
+        }
+
+
+        /// Dibuja en pantalla oculta en ciertas coordenadas
+        public void DibujarOculta(int nuevaX, int nuevaY, SpriteBatch listaSprites)
+        {
+            MoverA(nuevaX, nuevaY);
             listaSprites.Draw(miImagen, new Vector2(x, y), Color.White);
         }
     }

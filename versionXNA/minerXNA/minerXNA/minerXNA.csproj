@@ -107,9 +107,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creditos.cs" />
     <Compile Include="ElemGrafico.cs" />
     <Compile Include="Enemigo.cs" />
+    <Compile Include="Mapa.cs" />
     <Compile Include="Personaje.cs" />
+    <Compile Include="Presentacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Partida.cs" />

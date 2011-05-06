@@ -4,3 +4,19 @@ C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\
 C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\minerXNA.pdb
 C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\obj\x86\Debug\minerXNA.exe
 C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\obj\x86\Debug\minerXNA.pdb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\Lucida Console.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\present.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\personaje.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemigo.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\arbol.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\deslizante.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\fondoVacio.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\ladrillo.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\ladrillo2.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\llave.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\puerta.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\suelo.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\suelo2.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloFragil.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloFragil2.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\techo.xnb

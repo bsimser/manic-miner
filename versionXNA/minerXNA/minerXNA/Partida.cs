@@ -19,9 +19,11 @@ namespace minerXNA
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        SpriteFont fuente18;
 
         Personaje miPersonaje;
         Enemigo miEnemigo;
+        Mapa miMapa;
 
         public Partida()
         {
@@ -53,8 +55,10 @@ namespace minerXNA
 
             miPersonaje = new Personaje( this );
             miPersonaje.MoverA(400, 300);
+            fuente18 = Content.Load<SpriteFont>("Lucida Console");
 
             miEnemigo = new Enemigo(this);
+            miMapa = new Mapa(this);
         }
 
         /// <summary>
@@ -88,8 +92,11 @@ namespace minerXNA
             GraphicsDevice.Clear(Color.Black);
 
             spriteBatch.Begin();
+            miMapa.DibujarOculta(spriteBatch);
             miPersonaje.DibujarOculta(spriteBatch);
             miEnemigo.DibujarOculta(spriteBatch);
+            spriteBatch.DrawString(fuente18, "Texto de ejemplo",
+                       new Vector2(300, 50), Color.LightGreen);
             spriteBatch.End();
 
             base.Draw(gameTime);

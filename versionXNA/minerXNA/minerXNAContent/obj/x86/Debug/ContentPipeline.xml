@@ -1,6 +1,150 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Lucida Console.spritefont</Source>
+      <Name>Lucida Console</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\Lucida Console.xnb</Output>
+      <Time>2011-02-08T01:26:12.9622839+01:00</Time>
+    </Item>
+    <Item>
+      <Source>present.png</Source>
+      <Name>present</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\present.xnb</Output>
+      <Time>2011-02-10T14:26:26.8349071+01:00</Time>
+    </Item>
+    <Item>
+      <Source>personaje.png</Source>
+      <Name>personaje</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\personaje.xnb</Output>
+      <Time>2011-02-10T14:34:08.4190901+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemigo.png</Source>
+      <Name>enemigo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemigo.xnb</Output>
+      <Time>2011-02-10T14:34:19.7131153+01:00</Time>
+    </Item>
+    <Item>
+      <Source>arbol.png</Source>
+      <Name>arbol</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\arbol.xnb</Output>
+      <Time>2011-02-10T14:36:14.4949929+01:00</Time>
+    </Item>
+    <Item>
+      <Source>deslizante.png</Source>
+      <Name>deslizante</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\deslizante.xnb</Output>
+      <Time>2011-02-10T14:36:14.5159941+01:00</Time>
+    </Item>
+    <Item>
+      <Source>fondoVacio.png</Source>
+      <Name>fondoVacio</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\fondoVacio.xnb</Output>
+      <Time>2011-02-10T14:36:14.5209944+01:00</Time>
+    </Item>
+    <Item>
+      <Source>ladrillo.png</Source>
+      <Name>ladrillo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\ladrillo.xnb</Output>
+      <Time>2011-02-10T14:36:14.5249946+01:00</Time>
+    </Item>
+    <Item>
+      <Source>ladrillo2.png</Source>
+      <Name>ladrillo2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\ladrillo2.xnb</Output>
+      <Time>2011-02-10T14:36:14.5279948+01:00</Time>
+    </Item>
+    <Item>
+      <Source>llave.png</Source>
+      <Name>llave</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\llave.xnb</Output>
+      <Time>2011-02-10T14:36:14.531995+01:00</Time>
+    </Item>
+    <Item>
+      <Source>puerta.png</Source>
+      <Name>puerta</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\puerta.xnb</Output>
+      <Time>2011-02-10T14:36:14.5349952+01:00</Time>
+    </Item>
+    <Item>
+      <Source>suelo.png</Source>
+      <Name>suelo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\suelo.xnb</Output>
+      <Time>2011-02-10T14:36:14.5409955+01:00</Time>
+    </Item>
+    <Item>
+      <Source>suelo2.png</Source>
+      <Name>suelo2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\suelo2.xnb</Output>
+      <Time>2011-02-10T14:36:14.5459958+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloFragil.png</Source>
+      <Name>sueloFragil</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloFragil.xnb</Output>
+      <Time>2011-02-10T14:36:14.5509961+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloFragil2.png</Source>
+      <Name>sueloFragil2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloFragil2.xnb</Output>
+      <Time>2011-02-10T14:36:14.5569964+01:00</Time>
+    </Item>
+    <Item>
+      <Source>techo.png</Source>
+      <Name>techo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\techo.xnb</Output>
+      <Time>2011-02-10T14:36:14.5609967+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
@@ -13,6 +157,30 @@
       <OutputDirectory>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
         <Value>2011-02-06T11:29:51.4587765+01:00</Value>

@@ -1,0 +1,16 @@
+Content\Lucida Console.xnb
+Content\present.xnb
+Content\personaje.xnb
+Content\enemigo.xnb
+Content\arbol.xnb
+Content\deslizante.xnb
+Content\fondoVacio.xnb
+Content\ladrillo.xnb
+Content\ladrillo2.xnb
+Content\llave.xnb
+Content\puerta.xnb
+Content\suelo.xnb
+Content\suelo2.xnb
+Content\sueloFragil.xnb
+Content\sueloFragil2.xnb
+Content\techo.xnb

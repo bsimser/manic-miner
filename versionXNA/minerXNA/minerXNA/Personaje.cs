@@ -8,7 +8,7 @@ namespace minerXNA
     class Personaje : ElemGrafico
     {
         public Personaje(Partida p)
-            : base("imagenes/personaje.png", p)
+            : base("personaje", p)
         {
 
         }
@@ -37,9 +37,5 @@ namespace minerXNA
 
     }
 
-    
-      
-
-  
 
 }

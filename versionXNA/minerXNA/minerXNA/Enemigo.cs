@@ -10,7 +10,7 @@ namespace minerXNA
 
         // Constructor
         public Enemigo(Partida p)
-            : base("imagenes/enemigo.png", p)
+            : base("enemigo", p)
         {
             miPartida = p;   // Para enlazar con el resto de componentes
             x = 400;         // Resto de valores iniciales
