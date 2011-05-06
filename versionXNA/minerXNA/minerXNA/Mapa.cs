@@ -16,7 +16,7 @@ namespace minerXNA
     class Mapa
     {
 
-        Partida miPartida;
+        Partida c;
 
         private int altoMapa = 16, anchoMapa = 32;
         private int anchoTile = 24, altoTile = 24;
@@ -45,19 +45,17 @@ namespace minerXNA
      "LSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSL"};
 
         // Constructor
-        public Mapa(Partida p)
+        public Mapa(ContentManager c)
         {
-            miPartida = p;   // Para enlazar con el resto de componentes
-
-            arbol = new ElemGrafico("arbol", miPartida);
-            deslizante = new ElemGrafico("deslizante", miPartida);
-            ladrillo = new ElemGrafico("ladrillo", miPartida);
-            ladrilloX = new ElemGrafico("ladrillo2", miPartida);
-            llave = new ElemGrafico("llave", miPartida);
-            puerta = new ElemGrafico("puerta", miPartida);
-            sueloFino = new ElemGrafico("suelo", miPartida);
-            sueloFragil = new ElemGrafico("sueloFragil", miPartida);
-            techo = new ElemGrafico("techo", miPartida);
+            arbol = new ElemGrafico("arbol", c);
+            deslizante = new ElemGrafico("deslizante", c);
+            ladrillo = new ElemGrafico("ladrillo", c);
+            ladrilloX = new ElemGrafico("ladrillo2", c);
+            llave = new ElemGrafico("llave", c);
+            puerta = new ElemGrafico("puerta", c);
+            sueloFino = new ElemGrafico("suelo", c);
+            sueloFragil = new ElemGrafico("sueloFragil", c);
+            techo = new ElemGrafico("techo", c);
         }
 
         public void DibujarOculta(SpriteBatch listaSprites)

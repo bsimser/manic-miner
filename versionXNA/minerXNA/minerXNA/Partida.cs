@@ -15,96 +15,37 @@ namespace minerXNA
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class Partida : Microsoft.Xna.Framework.Game
+    public class Partida 
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         SpriteFont fuente18;
+        Presentacion miPresentacion;
+        Creditos pantallaCreditos;
+        ContentManager contenido;
 
         Personaje miPersonaje;
         Enemigo miEnemigo;
         Mapa miMapa;
 
-        public Partida()
+        private bool terminada = false;
+
+        public Partida(GraphicsDeviceManager dispositivo, ContentManager c)
         {
-            graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content";
+            graphics = dispositivo;
+            contenido = c;
         }
 
-        /// <summary>
-        /// Allows the game to perform any initialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
-        /// </summary>
-        protected override void Initialize()
+
+        public void LoadContent()
         {
-            // TODO: Add your initialization logic here
-
-            base.Initialize();
-        }
-
-        /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
-        /// </summary>
-        protected override void LoadContent()
-        {
-            // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            miPersonaje = new Personaje( this );
+            fuente18 = contenido.Load<SpriteFont>("Lucida Console");
+            miPersonaje = new Personaje(contenido);
             miPersonaje.MoverA(400, 300);
-            fuente18 = Content.Load<SpriteFont>("Lucida Console");
 
-            miEnemigo = new Enemigo(this);
-            miMapa = new Mapa(this);
-        }
+            miEnemigo = new Enemigo(contenido);
+            miMapa = new Mapa(contenido);
 
-        /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// all content.
-        /// </summary>
-        protected override void UnloadContent()
-        {
-            // TODO: Unload any non ContentManager content here
-        }
-
-        /// <summary>
-        /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
-        protected override void Update(GameTime gameTime)
-        {
-            MoverElementos();
-            ComprobarTeclas();
-
-            base.Update(gameTime);
-        }
-
-        /// <summary>
-        /// This is called when the game should draw itself.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
-        protected override void Draw(GameTime gameTime)
-        {
-            GraphicsDevice.Clear(Color.Black);
-
-            spriteBatch.Begin();
-            miMapa.DibujarOculta(spriteBatch);
-            miPersonaje.DibujarOculta(spriteBatch);
-            miEnemigo.DibujarOculta(spriteBatch);
-            spriteBatch.DrawString(fuente18, "Texto de ejemplo",
-                       new Vector2(300, 50), Color.LightGreen);
-            spriteBatch.End();
-
-            base.Draw(gameTime);
-        }
-
-        public GraphicsDevice GetGraphics()
-        {
-            return graphics.GraphicsDevice;
         }
 
 
@@ -117,11 +58,9 @@ namespace minerXNA
         // --- Comprobación de teclas, ratón y joystick -----
         public void ComprobarTeclas()
         {
-            // Permite interrumpir el juego
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                this.Exit();
+            
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
-                this.Exit();
+                terminada = true;
 
             if (Keyboard.GetState().IsKeyDown(Keys.Left))
                 miPersonaje.MoverIzquierda();
@@ -133,11 +72,34 @@ namespace minerXNA
                 miPersonaje.MoverAbajo();
         }
 
-
+        
         // --- Comprobar colisiones de enemigo con personaje, etc ---
-        void comprobarColisiones()
+        public void ComprobarColisiones()
         {
             // Nada por ahora
+        }
+
+
+        // --- Dibujar todos los elementos en pantalla
+        public void DibujarElementos(SpriteBatch spriteBatch)
+        {
+            miMapa.DibujarOculta(spriteBatch);
+            miPersonaje.DibujarOculta(spriteBatch);
+            miEnemigo.DibujarOculta(spriteBatch);
+            spriteBatch.DrawString(fuente18, "Texto de ejemplo",
+                       new Vector2(300, 50), Color.LightGreen);
+        }
+
+
+        public bool GetTerminada()
+        {
+            return terminada;
+        }
+
+
+        public void Reiniciar()
+        {
+            terminada = false;
         }
     }
 }

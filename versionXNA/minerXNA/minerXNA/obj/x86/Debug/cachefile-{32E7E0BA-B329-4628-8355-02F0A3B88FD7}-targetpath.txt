@@ -14,3 +14,4 @@ Content\suelo2.xnb
 Content\sueloFragil.xnb
 Content\sueloFragil2.xnb
 Content\techo.xnb
+Content\creditos.xnb

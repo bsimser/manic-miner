@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Microsoft.Xna.Framework.Content;
 
 namespace minerXNA
 {
@@ -9,10 +6,10 @@ namespace minerXNA
     {
 
         // Constructor
-        public Enemigo(Partida p)
-            : base("enemigo", p)
+        public Enemigo(ContentManager c)
+            : base("enemigo", c)
         {
-            miPartida = p;   // Para enlazar con el resto de componentes
+            //miPartida = p;   // Para enlazar con el resto de componentes
             x = 400;         // Resto de valores iniciales
             y = 400;
             incrX = 2;

@@ -8,7 +8,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\Lucida Console.xnb</Output>
-      <Time>2011-02-08T01:26:12.9622839+01:00</Time>
+      <Time>2011-02-08T01:26:12+01:00</Time>
     </Item>
     <Item>
       <Source>present.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\present.xnb</Output>
-      <Time>2011-02-10T14:26:26.8349071+01:00</Time>
+      <Time>2011-02-10T14:26:26+01:00</Time>
     </Item>
     <Item>
       <Source>personaje.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\personaje.xnb</Output>
-      <Time>2011-02-10T14:34:08.4190901+01:00</Time>
+      <Time>2011-02-10T14:34:08+01:00</Time>
     </Item>
     <Item>
       <Source>enemigo.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemigo.xnb</Output>
-      <Time>2011-02-10T14:34:19.7131153+01:00</Time>
+      <Time>2011-02-10T14:34:18+01:00</Time>
     </Item>
     <Item>
       <Source>arbol.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\arbol.xnb</Output>
-      <Time>2011-02-10T14:36:14.4949929+01:00</Time>
+      <Time>2011-02-10T14:36:14+01:00</Time>
     </Item>
     <Item>
       <Source>deslizante.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\deslizante.xnb</Output>
-      <Time>2011-02-10T14:36:14.5159941+01:00</Time>
+      <Time>2011-02-10T14:36:14+01:00</Time>
     </Item>
     <Item>
       <Source>fondoVacio.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\fondoVacio.xnb</Output>
-      <Time>2011-02-10T14:36:14.5209944+01:00</Time>
+      <Time>2011-02-10T14:36:14+01:00</Time>
     </Item>
     <Item>
       <Source>ladrillo.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\ladrillo.xnb</Output>
-      <Time>2011-02-10T14:36:14.5249946+01:00</Time>
+      <Time>2011-02-10T14:36:14+01:00</Time>
     </Item>
     <Item>
       <Source>ladrillo2.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\ladrillo2.xnb</Output>
-      <Time>2011-02-10T14:36:14.5279948+01:00</Time>
+      <Time>2011-02-10T14:36:14+01:00</Time>
     </Item>
     <Item>
       <Source>llave.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\llave.xnb</Output>
-      <Time>2011-02-10T14:36:14.531995+01:00</Time>
+      <Time>2011-02-10T14:36:14+01:00</Time>
     </Item>
     <Item>
       <Source>puerta.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\puerta.xnb</Output>
-      <Time>2011-02-10T14:36:14.5349952+01:00</Time>
+      <Time>2011-02-10T14:36:14+01:00</Time>
     </Item>
     <Item>
       <Source>suelo.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\suelo.xnb</Output>
-      <Time>2011-02-10T14:36:14.5409955+01:00</Time>
+      <Time>2011-02-10T14:36:14+01:00</Time>
     </Item>
     <Item>
       <Source>suelo2.png</Source>
@@ -116,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\suelo2.xnb</Output>
-      <Time>2011-02-10T14:36:14.5459958+01:00</Time>
+      <Time>2011-02-10T14:36:14+01:00</Time>
     </Item>
     <Item>
       <Source>sueloFragil.png</Source>
@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloFragil.xnb</Output>
-      <Time>2011-02-10T14:36:14.5509961+01:00</Time>
+      <Time>2011-02-10T14:36:14+01:00</Time>
     </Item>
     <Item>
       <Source>sueloFragil2.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloFragil2.xnb</Output>
-      <Time>2011-02-10T14:36:14.5569964+01:00</Time>
+      <Time>2011-02-10T14:36:14+01:00</Time>
     </Item>
     <Item>
       <Source>techo.png</Source>
@@ -143,7 +143,16 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\techo.xnb</Output>
-      <Time>2011-02-10T14:36:14.5609967+01:00</Time>
+      <Time>2011-02-10T14:36:14+01:00</Time>
+    </Item>
+    <Item>
+      <Source>creditos.png</Source>
+      <Name>creditos</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\creditos.xnb</Output>
+      <Time>2011-02-12T11:55:54+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

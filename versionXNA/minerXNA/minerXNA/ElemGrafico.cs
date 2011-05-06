@@ -18,19 +18,18 @@ namespace minerXNA
         protected Texture2D miImagen;
         protected int x, y;
         protected int incrX, incrY;
-        protected Partida miPartida;
+        protected ContentManager miGestorContenido;
         protected bool contieneImagen = false;
         protected bool contieneSecuencia = false;
 
         
 
 
-        public ElemGrafico(string nombreFichero, Partida p)
+        public ElemGrafico(string nombreFichero, ContentManager c)
         {
             x = 0; y = 0;
             incrX = 0; incrY = 0;
-            miPartida = p;
-            CargarImagen(nombreFichero);
+            CargarImagen(nombreFichero, c);
         }
 
         /// Mueve el elemento grafico a otra posicion
@@ -41,11 +40,12 @@ namespace minerXNA
         }
 
         /// Carga la imagen que representara a este elemento grafico
-        public void CargarImagen(string nombre)
+        public void CargarImagen(string nombre, ContentManager contenido)
         {
             //miImagen = Texture2D.FromStream(miPartida.GetGraphics(), 
             //    new FileStream ( nombre ,FileMode.Open ) );
-            miImagen = miPartida.Content.Load<Texture2D>( nombre );
+            miImagen = contenido.Load<Texture2D>( nombre );
+            //miGestorContenido = c;
             
             contieneImagen = true;
             contieneSecuencia = false;
