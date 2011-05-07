@@ -1,4 +1,28 @@
-﻿using Microsoft.Xna.Framework.Content;
+﻿/* =============================================================
+ * Parte de ManicMiner - Remake
+ * =============================================================
+   Versiones hasta la fecha:
+   
+   Num.   Fecha       Por / Cambios
+   ---------------------------------------------------
+
+   0.02x  08-02-2011  Nacho Cabanes: Clase "Personaje" básica
+
+   0.03x  12-02-2011  Nacho Cabanes: Usa "ContentManager", en vez de cargar imágenes al vuelo
+  
+   0.04x  12-02-2011  Nacho Cabanes: El constructor no recibe la partida como parámetro, sino
+                        el "ContentManager". Eliminados "using" innecesarios.
+ 
+   0.06x  29-04-2011  Nacho Cabanes: Ampliado para permitir saltar y caer.
+ 
+   0.07x  06-05-2011  Antonio Ramos: Agregar secuencia animada de movimiento.
+                      Alejandro Guillén: antes de mover, comprueba
+                        si es posible mover, mirando el mapa.
+                      Nacho Cabanes: Eliminada la posibilidad de mover arriba y abajo.
+
+ ============================================================= */
+
+using Microsoft.Xna.Framework.Content;
 
 namespace minerXNA
 {
@@ -16,30 +40,57 @@ namespace minerXNA
         public Personaje(ContentManager c)
             : base("personaje", c)
         {
+            vidas = 3;
+            MoverA(70, 352);
 
+            // Le añado secuencia al personaje de derecha a izquierda.
+            CargarSecuencia(DERECHA,
+                 new string[] {
+                  "personajeD01","personajeD01",
+                  "personajeD02","personajeD02",
+                  "personajeD03","personajeD03",
+                  "personajeD04","personajeD04",
+                  "personajeD05","personajeD05",
+                  "personajeD06","personajeD06",
+                  "personajeD07","personajeD07",
+                  "personajeD08","personajeD08"}, c
+                 );
+            CargarSecuencia(IZQUIERDA,
+                 new string[] {
+                  "personajeI01","personajeI01",
+                  "personajeI02","personajeI02",
+                  "personajeI03","personajeI03",
+                  "personajeI04","personajeI04",
+                  "personajeI05","personajeI05",
+                  "personajeI06","personajeI06",
+                  "personajeI07","personajeI07",
+                  "personajeI08","personajeI08"}, c
+                 );
+            direccion = DERECHA;
         }
 
 
         // Métodos de movimiento
-        public void MoverDerecha() 
+        public void MoverDerecha( Mapa m ) 
         {
-            x += 2;
+            if (m.EsPosibleMover(x + 2, y, x+2+ancho, y+alto))
+            {
+                x += 2;
+                SiguienteFotograma();
+                CambiarDireccion(ElemGrafico.DERECHA);
+            }
         }
 
-        public void MoverIzquierda()
+        public void MoverIzquierda( Mapa m )
         {
-            x -= 2;
+            if (m.EsPosibleMover(x - 2, y, x-2+ancho, y+alto))
+            {
+                x -= 2;
+                SiguienteFotograma();
+                CambiarDireccion(ElemGrafico.IZQUIERDA);
+            }
         }
 
-        public void MoverArriba()
-        {
-            y -= 2;
-        }
-
-        public void MoverAbajo()
-        {
-            y += 2;
-        }
 
         // Para cuando deba moverse solo, p.ej. saltando
         public new void Mover()
@@ -117,8 +168,11 @@ namespace minerXNA
             Saltar();
             incrXSalto = -incrX;
         }
-  
 
+        public int GetVidas()
+        {
+            return vidas;
+        }
 
     }
 

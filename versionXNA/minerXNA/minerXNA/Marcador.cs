@@ -14,15 +14,20 @@
                       Primera versión de la clase Marcador
    0.11  02-Ene-2011  Nacho Cabanes
                       Incluido el campo "Nombre", que muestra nombre de nivel
+   0.11  02-Ene-2011  Antonio Ramos
+                      Incluido los datos del marcador como Vidas, puntuacion,etc.
+  
  ---------------------------------------------------- */
 
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework;
 namespace minerXNA
 {
 
     public class Marcador
     {
+        protected Fuente fuente18;
         private ElemGrafico imgVidas, imgEnergia;
         private ElemGrafico imgAireRojo, imgAireRojoVacio, imgAireVerde, imgAireVerdeVacio;
         private ElemGrafico imgFondoMetal;
@@ -33,7 +38,6 @@ namespace minerXNA
         private string nombreNivel;
 
         //private Partida miPartida;
-        Fuente tipoDeLetra;
 
         public void SetVidas(int valor)
         {
@@ -55,6 +59,7 @@ namespace minerXNA
             imgAireVerde = new ElemGrafico("aireVerde", c);
             imgAireVerdeVacio = new ElemGrafico("aireVerdeV", c);
             imgFondoMetal = new ElemGrafico("metal", c);
+            fuente18 = new Fuente("Lucida Console", c);
         }
 
 
@@ -117,21 +122,26 @@ namespace minerXNA
         {
 
             // Carteles  
-            //Hardware.EscribirTextoOculta("Vidas: " + miPartida.GetPersonaje().GetVidas(),
-            //   280, 550, 0xAA, 0xAA, 0xAA, tipoDeLetra);
 
+            fuente18.EscribirTextoOculta("Vidas: " /*+ miPartida.GetPersonaje()*/,
+               280, 550, 0xFF, 0xFF, 0x00, listaSprites);
 
             // TODO: Por adaptar al formato de XNA
-            //Hardware.EscribirTextoOculta("Mejor puntuación: 000000",
-            //   200, 520, 0xFF, 0xFF, 0x00, tipoDeLetra);
-            //Hardware.EscribirTextoOculta("Puntos: " + puntuacion.ToString("000000"),
-            //   550, 520, 0xFF, 0xFF, 0x00, tipoDeLetra);
+            fuente18.EscribirTextoOculta("Mejor puntuación: 000000",
+                200, 520, 0xFF, 0xFF, 0x00, listaSprites);
+
+            fuente18.EscribirTextoOculta("Puntos: " + puntuacion.ToString("000000"),
+                550, 520, 0xFF, 0xFF, 0x00, listaSprites);
 
             // Borde superior e inferior y nombre de nivel (prefijado por ahora)
             imgFondoMetal.DibujarOculta(0, 0, listaSprites);
             imgFondoMetal.DibujarOculta(0, 420, listaSprites);
             //Hardware.EscribirTextoOculta(nombreNivel,
             //    350, 430, 0,0,0, tipoDeLetra);
+
+            //fuente18.EscribirTextoOculta(nombreNivel,
+            //    350, 430, Color.Black, listaSprites);
+
 
             // Medidor de aire
             int i;

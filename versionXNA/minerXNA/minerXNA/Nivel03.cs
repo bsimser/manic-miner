@@ -1,18 +1,17 @@
-﻿/** 
- *   Nivel03: Mapa de tiles del tercer nivel de juego
- *  
- *   @see Partida Nivel Mapa
- *   @author 1-DAI IES San Vicente 2010/11
- */
-
-/* --------------------------------------------------
+﻿/* =============================================================
+ * Parte de ManicMiner - Remake
+ * Nivel03: Mapa de tiles del nivel 3 de juego
+ * =============================================================
    Versiones hasta la fecha:
    
    Num.   Fecha       Por / Cambios
-   ---------------------------------------------------
-   0.11  02-Ene-2011  Nacho Cabanes
-                      Creada la clase Nivel03
- ---------------------------------------------------- */
+   --------------------------------------------------- 
+   0.11   02-Ene-2011  Nacho Cabanes
+                        Creada la clase Nivel03 para SDL
+   0.06x  29-04-2011  Nacho Cabanes: 
+                        Creada la adaptación a XNA del Nivel 3.
+
+ ============================================================= */
 
 
 using Microsoft.Xna.Framework.Content;

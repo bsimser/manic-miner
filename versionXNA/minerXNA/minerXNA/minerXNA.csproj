@@ -107,6 +107,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimacionFinDeJuego.cs" />
+    <Compile Include="Ayuda.cs" />
     <Compile Include="Creditos.cs" />
     <Compile Include="ElemGrafico.cs" />
     <Compile Include="Enemigo.cs" />
@@ -135,6 +137,7 @@
     <Compile Include="Nivel18.cs" />
     <Compile Include="Nivel19.cs" />
     <Compile Include="Nivel20.cs" />
+    <Compile Include="Opciones.cs" />
     <Compile Include="Personaje.cs" />
     <Compile Include="Presentacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

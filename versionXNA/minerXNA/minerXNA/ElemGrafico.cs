@@ -226,6 +226,19 @@ namespace minerXNA
         }
 
 
+        /// Devuelve el valor del ancho
+        public int GetAncho()
+        {
+            return ancho;
+        }
+
+        public int GetAlto()
+        {
+            return alto;
+        }
+
+
+
     }
 
 }

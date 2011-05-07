@@ -1,19 +1,19 @@
-﻿/** 
- *   Nivel07: Mapa de tiles del 07 nivel de juego
- *  
- *   @see Partida Nivel Mapa
- *   @author 1-DAI IES San Vicente 2010/11
- */
-
-/* --------------------------------------------------
+﻿
+/* =============================================================
+ * Parte de ManicMiner - Remake
+ * Nivel07: Mapa de tiles del nivel 7 de juego
+ * =============================================================
    Versiones hasta la fecha:
    
    Num.   Fecha       Por / Cambios
-   ---------------------------------------------------
-    0.13  07-Ene-2011 Miguel Angel Laguardia
-                      mapa nivel 07     
- ---------------------------------------------------- */
+   --------------------------------------------------- 
+   0.13  07-Ene-2011  Miguel Angel Laguardia
+                        Creada la clase Nivel07 para SDL
+                      
+   0.06x  29-04-2011  Nacho Cabanes: 
+                        Creada la adaptación a XNA del Nivel 7.
 
+ ============================================================= */
 
 using Microsoft.Xna.Framework.Content;
 namespace minerXNA

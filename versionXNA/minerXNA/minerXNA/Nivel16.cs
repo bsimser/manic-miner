@@ -1,18 +1,19 @@
-﻿/** 
- *   Nivel16: Mapa de tiles del 16 nivel de juego
- *  
- *   @see Partida Nivel Mapa
- *   @author 1-DAI IES San Vicente 2010/11
- */
-
-/* --------------------------------------------------
+﻿
+/* =============================================================
+ * Parte de ManicMiner - Remake
+ * Nivel16: Mapa de tiles del nivel 16 de juego
+ * =============================================================
    Versiones hasta la fecha:
    
    Num.   Fecha       Por / Cambios
-   ---------------------------------------------------
+   --------------------------------------------------- 
    0.13  07-Ene-2011  Ethan Martinez Carratala
-                      Creada la clase Nivel16
- ---------------------------------------------------- */
+                        Creada la clase Nivel16 para SDL
+                      
+   0.06x  29-04-2011  Nacho Cabanes: 
+                        Creada la adaptación a XNA del Nivel 16.
+
+ ============================================================= */
 
 
 using Microsoft.Xna.Framework.Content;

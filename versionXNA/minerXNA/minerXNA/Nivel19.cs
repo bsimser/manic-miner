@@ -1,18 +1,19 @@
-﻿/** 
- *   Nivel19: Mapa de tiles del 19 nivel de juego
- *  
- *   @see Partida Nivel Mapa
- *   @author 1-DAI IES San Vicente 2010/11
- */
-
-/* --------------------------------------------------
+﻿
+/* =============================================================
+ * Parte de ManicMiner - Remake
+ * Nivel19: Mapa de tiles del nivel 19 de juego
+ * =============================================================
    Versiones hasta la fecha:
    
    Num.   Fecha       Por / Cambios
-   ---------------------------------------------------
+   --------------------------------------------------- 
    0.13  07-Ene-2011  Ethan Martinez Carratala
-                      Creada la clase Nivel19
- ---------------------------------------------------- */
+                        Creada la clase Nivel19 para SDL
+                      
+   0.06x  29-04-2011  Nacho Cabanes: 
+                        Creada la adaptación a XNA del Nivel 19.
+
+ ============================================================= */
 
 using Microsoft.Xna.Framework.Content;
 namespace minerXNA

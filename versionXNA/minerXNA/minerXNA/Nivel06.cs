@@ -1,18 +1,19 @@
-﻿/** 
- *   Nivel06: Mapa de tiles del 06 nivel de juego
- *  
- *   @see Partida Nivel Mapa
- *   @author 1-DAI IES San Vicente 2010/11
- */
-
-/* --------------------------------------------------
+﻿
+/* =============================================================
+ * Parte de ManicMiner - Remake
+ * Nivel06: Mapa de tiles del nivel 6 de juego
+ * =============================================================
    Versiones hasta la fecha:
    
    Num.   Fecha       Por / Cambios
-   ---------------------------------------------------
+   --------------------------------------------------- 
    0.13  07-Ene-2011  Francisco Juan Royo Bua
-                      Creada la clase Nivel06
- ---------------------------------------------------- */
+                        Creada la clase Nivel06 para SDL
+                      
+   0.06x  29-04-2011  Nacho Cabanes: 
+                        Creada la adaptación a XNA del Nivel 6.
+
+ ============================================================= */
 
 
 using Microsoft.Xna.Framework.Content;

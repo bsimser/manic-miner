@@ -1,18 +1,19 @@
-﻿/** 
- *   Nivel08: Mapa de tiles del 08 nivel de juego
- *  
- *   @see Partida Nivel Mapa
- *   @author 1-DAI IES San Vicente 2010/11
- */
-
-/* --------------------------------------------------
+﻿
+/* =============================================================
+ * Parte de ManicMiner - Remake
+ * Nivel08: Mapa de tiles del nivel 8 de juego
+ * =============================================================
    Versiones hasta la fecha:
    
    Num.   Fecha       Por / Cambios
-   ---------------------------------------------------
+   --------------------------------------------------- 
    0.13  07-Ene-2011  Jose Manuel Rizo
-					Rellenar el array del nivel 8
- ---------------------------------------------------- */
+                        Creada la clase Nivel08 para SDL
+                      
+   0.06x  29-04-2011  Nacho Cabanes: 
+                        Creada la adaptación a XNA del Nivel 8.
+
+ ============================================================= */
 
 
 using Microsoft.Xna.Framework.Content;

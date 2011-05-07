@@ -1,22 +1,20 @@
-﻿/** 
- *   Nivel01: Mapa de tiles del primer nivel de juego
- *  
- *   @see Partida Nivel Mapa
- *   @author 1-DAI IES San Vicente 2010/11
- */
-
-/* --------------------------------------------------
+﻿/* =============================================================
+ * Parte de ManicMiner - Remake
+ * Nivel01: Mapa de tiles del nivel 1 de juego
+ * =============================================================
    Versiones hasta la fecha:
    
    Num.   Fecha       Por / Cambios
-   ---------------------------------------------------
-   0.11  02-Ene-2011  Nacho Cabanes
-                      Creada la clase Nivel01
+   --------------------------------------------------- 
+   0.11   02-Ene-2011  Nacho Cabanes
+                        Creada la clase Nivel02 para SDL
    0.14  23-Ene-2011  Nacho Cabanes
                       Incluidos dos enemigos: uno con movimiento horizontal
                         y otro vertical
+   0.06x  29-04-2011  Nacho Cabanes: 
+                        Creada la adaptación a XNA del Nivel 2.
 
- ---------------------------------------------------- */
+ ============================================================= */
 
 using Microsoft.Xna.Framework.Content;
 namespace minerXNA

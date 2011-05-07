@@ -1,19 +1,17 @@
-﻿/** 
- *   Nivel02: Mapa de tiles del segundo nivel de juego
- *  
- *   @see Partida Nivel Mapa
- *   @author 1-DAI IES San Vicente 2010/11
- */
-
-/* --------------------------------------------------
+﻿/* =============================================================
+ * Parte de ManicMiner - Remake
+ * Nivel02: Mapa de tiles del nivel 2 de juego
+ * =============================================================
    Versiones hasta la fecha:
    
    Num.   Fecha       Por / Cambios
-   ---------------------------------------------------
-   0.11  02-Ene-2011  Nacho Cabanes
-                      Creada la clase Nivel02
- ---------------------------------------------------- */
+   --------------------------------------------------- 
+   0.11   02-Ene-2011  Nacho Cabanes
+                        Creada la clase Nivel02 para SDL
+   0.06x  29-04-2011  Nacho Cabanes: 
+                        Creada la adaptación a XNA del Nivel 2.
 
+ ============================================================= */
 
 using Microsoft.Xna.Framework.Content;
 
