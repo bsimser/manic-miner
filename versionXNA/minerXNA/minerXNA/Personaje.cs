@@ -20,6 +20,9 @@
                         si es posible mover, mirando el mapa.
                       Nacho Cabanes: Eliminada la posibilidad de mover arriba y abajo.
 
+   0.08x  11-05-2011  Nacho Cabanes: Añadidos Morir y SetVidas, creada secuencia de
+                        salto y caída.
+
  ============================================================= */
 
 using Microsoft.Xna.Framework.Content;
@@ -34,13 +37,17 @@ namespace minerXNA
         int incrXSalto;
         int fotogramaMvto;
         int cantidadMovimientoSalto;
-        int[] pasosSaltoArriba = {-10, -10, -8, -8, -6, -6, -4, -2, -1, -1, 0,
-                             0, 1, 1, 2, 4, 6, 6, 8, 8, 10, 10 };
+        int[] pasosSaltoArriba = {
+             -8, -8, -8, -6, -6, -5, -5, -4, -4, -4, -3, -3, -2, -1, -1, 0, 0, 0,
+             0, 0, 0, 1, 1, 2, 3, 3, 4, 4, 4, 5, 5, 6, 6, 8, 8, 8 };
 
         public Personaje(ContentManager c)
             : base("personaje", c)
         {
             vidas = 3;
+            incrXSalto = 0;
+            cantidadMovimientoSalto = pasosSaltoArriba.Length;
+
             MoverA(70, 352);
 
             // Le añado secuencia al personaje de derecha a izquierda.
@@ -67,33 +74,44 @@ namespace minerXNA
                   "personajeI08","personajeI08"}, c
                  );
             direccion = DERECHA;
+
+            SetAnchoAlto(30, 48); // Si se carga secuencia, ancho y alto deben ir detras
         }
 
 
         // Métodos de movimiento
         public void MoverDerecha( Mapa m ) 
         {
-            if (m.EsPosibleMover(x + 2, y, x+2+ancho, y+alto))
+            if (saltando || cayendo) return; // No debe moverse mientras salta
+
+            CambiarDireccion(DERECHA);
+            if (m.EsPosibleMover(x + incrX, y + alto - 4,
+                      x + ancho + incrX, y + alto))
             {
-                x += 2;
+                x += incrX;
                 SiguienteFotograma();
-                CambiarDireccion(ElemGrafico.DERECHA);
             }
+            cayendo = true;
         }
+
 
         public void MoverIzquierda( Mapa m )
         {
-            if (m.EsPosibleMover(x - 2, y, x-2+ancho, y+alto))
+            if (saltando || cayendo) return; // No debe moverse mientras salta
+
+            CambiarDireccion(IZQUIERDA);
+            if (m.EsPosibleMover(x - incrX, y + alto - 4,
+                      x + ancho - incrX, y + alto))
             {
-                x -= 2;
+                x -= incrX;
                 SiguienteFotograma();
-                CambiarDireccion(ElemGrafico.IZQUIERDA);
             }
+            cayendo = true;
         }
 
 
         // Para cuando deba moverse solo, p.ej. saltando
-        public new void Mover()
+        public new void Mover(Mapa m)
         {
             if (saltando)
             {
@@ -103,11 +121,10 @@ namespace minerXNA
                 bool subiendoSalto = (pasosSaltoArriba[fotogramaMvto] < 0);
 
                 // Si todavía se puede mover, avanzo
-                // TODO: Falta comprobar colisiones
-                if (true) /* (miPartida.GetMapa().EsPosibleMover(
-                    xProxMov, yProxMov + alto - 4,
+                if (m.EsPosibleMover(
+                    xProxMov, yProxMov + alto - 2,
                     xProxMov + ancho, yProxMov + alto)
-                    || subiendoSalto)*/
+                    || subiendoSalto)
                 {
                     x = xProxMov;
                     y = yProxMov;
@@ -129,15 +146,14 @@ namespace minerXNA
             }
             else if (cayendo)
             {
-                // TODO: Falta comprobar colisiones
-                if (true) /*(miPartida.GetMapa().EsPosibleMover(
+                if (m.EsPosibleMover(
                     x, y + incrY + alto - 4,
-                   x + ancho, y + incrY + alto))*/
+                   x + ancho, y + incrY + alto))
                 {
                     y += incrY;
                 }
                 else
-                    cayendo = false;
+                     cayendo = false;
             }
 
         }
@@ -169,9 +185,21 @@ namespace minerXNA
             incrXSalto = -incrX;
         }
 
+
+        // Métodos de acceso a las vidas
         public int GetVidas()
         {
             return vidas;
+        }
+
+        public void SetVidas(short n)
+        {
+            vidas = n;
+        }
+
+        public void Morir()
+        {
+            vidas--;
         }
 
     }

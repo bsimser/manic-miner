@@ -1,4 +1,19 @@
-﻿/*
+﻿/* =============================================================
+ * Parte de ManicMiner - Remake
+ * =============================================================
+   Versiones hasta la fecha:
+   
+   Num.   Fecha       Por / Cambios
+   ---------------------------------------------------
+
+   0.07x  06-05-2011  Antonio Ramos: Agregar secuencia animada de movimiento.
+  
+   0.08x  11-05-2011  Nacho Cabanes: Permitir movimiento vertical también:
+                       Nuevas secuencias y corregido Mover (similar a SDL)
+
+ ============================================================= */
+
+/*
  * Fecha: 06-Mayo-2011
  * Hecho por: Antonio Ramos.
  * Modificaciones: Agregar secuencia de movimiento al personaje.
@@ -10,7 +25,6 @@ namespace minerXNA
 {
     public class Enemigo : ElemGrafico
     {
-        byte direccionMovimiento;
         // Constructor
         public Enemigo(ContentManager c)
             : base("enemigo", c)
@@ -18,63 +32,91 @@ namespace minerXNA
             //miPartida = p;   // Para enlazar con el resto de componentes
             x = 400;         // Resto de valores iniciales
             y = 300;
-            incrX = 2;
+            incrX = 1;
 
-            // Le añado secuencia al personaje de derecha a izquierda.
+            // Secuencias de movimiento
             CargarSecuencia(DERECHA,
                  new string[] {
-          "enemigoN01D01","enemigoN01D01",
-          "enemigoN01D02","enemigoN01D02",
-          "enemigoN01D03","enemigoN01D03",
-          "enemigoN01D04","enemigoN01D04",
-          "enemigoN01D05","enemigoN01D05",
-          "enemigoN01D06","enemigoN01D06",
-          "enemigoN01D07","enemigoN01D07",
-          "enemigoN01D08","enemigoN01D08"}, c
-                 );
-            CargarSecuencia(IZQUIERDA,
-                 new string[] {
-          "enemigoN01I01","enemigoN01I01",
-          "enemigoN01I02","enemigoN01I02",
-          "enemigoN01I03","enemigoN01I03",
-          "enemigoN01I04","enemigoN01I04",
-          "enemigoN01I05","enemigoN01I05",
-          "enemigoN01I06","enemigoN01I06",
-          "enemigoN01I07","enemigoN01I07",
-          "enemigoN01I08","enemigoN01I08"}, c
+                  "enemigoN01D01","enemigoN01D01",
+                  "enemigoN01D02","enemigoN01D02",
+                  "enemigoN01D03","enemigoN01D03",
+                  "enemigoN01D04","enemigoN01D04",
+                  "enemigoN01D05","enemigoN01D05",
+                  "enemigoN01D06","enemigoN01D06",
+                  "enemigoN01D07","enemigoN01D07",
+                  "enemigoN01D08","enemigoN01D08"}, c
                  );
 
-            direccionMovimiento = DERECHA;
+            CargarSecuencia(IZQUIERDA,
+                 new string[] {
+                  "enemigoN01I01","enemigoN01I01",
+                  "enemigoN01I02","enemigoN01I02",
+                  "enemigoN01I03","enemigoN01I03",
+                  "enemigoN01I04","enemigoN01I04",
+                  "enemigoN01I05","enemigoN01I05",
+                  "enemigoN01I06","enemigoN01I06",
+                  "enemigoN01I07","enemigoN01I07",
+                  "enemigoN01I08","enemigoN01I08"}, c
+                 );
+            CargarSecuencia(ARRIBA,
+                 new string[] {
+                  "enemigoN01D01","enemigoN01D01",
+                  "enemigoN01D02","enemigoN01D02",
+                  "enemigoN01D03","enemigoN01D03",
+                  "enemigoN01D04","enemigoN01D04",
+                  "enemigoN01D05","enemigoN01D05",
+                  "enemigoN01D06","enemigoN01D06",
+                  "enemigoN01D07","enemigoN01D07",
+                  "enemigoN01D08","enemigoN01D08"}, c
+                 );
+
+            CargarSecuencia(ABAJO,
+                 new string[] {
+                  "enemigoN01I01","enemigoN01I01",
+                  "enemigoN01I02","enemigoN01I02",
+                  "enemigoN01I03","enemigoN01I03",
+                  "enemigoN01I04","enemigoN01I04",
+                  "enemigoN01I05","enemigoN01I05",
+                  "enemigoN01I06","enemigoN01I06",
+                  "enemigoN01I07","enemigoN01I07",
+                  "enemigoN01I08","enemigoN01I08"}, c
+                 );
+
+            direccion = DERECHA;
         }
 
 
         // Métodos de movimiento
-        public void Mover()
+        public new void Mover()
         {
-            if (direccionMovimiento == DERECHA)
+            if (incrX != 0)
             {
                 x += incrX;
                 SiguienteFotograma();
-                CambiarDireccion(ElemGrafico.DERECHA);
 
-                if ((x < 100) ||(x > 700))
+                if ((x < minX) || (x > maxX))
                 {
-                    CambiarDireccion(ElemGrafico.IZQUIERDA);
-                    direccionMovimiento = IZQUIERDA;
+                    incrX = (short)(-incrX);
+                    if (incrX < 0)
+                        CambiarDireccion(IZQUIERDA);
+                    else
+                        CambiarDireccion(DERECHA);
                 }
             }
-
-            if (direccionMovimiento == IZQUIERDA)
+            if (incrY != 0)
             {
-                x -= incrX;
+                y += incrY;
                 SiguienteFotograma();
-                if ((x < 100) || (x > 700))
+
+                if ((y < minY) || (y > maxY))
                 {
-                    CambiarDireccion(ElemGrafico.DERECHA);
-                    direccionMovimiento = DERECHA;
+                    incrY = (short)(-incrY);
+                    if (incrY < 0)
+                        CambiarDireccion(ARRIBA);
+                    else
+                        CambiarDireccion(ABAJO);
                 }
             }
-
         }
 
 

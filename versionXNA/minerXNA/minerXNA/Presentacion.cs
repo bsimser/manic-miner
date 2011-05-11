@@ -59,10 +59,6 @@ namespace minerXNA
             private bool terminada;
 
             private int opcionEscogida = OPC_NINGUNA;
-            
-            // Colores del texto
-            byte rojo = 50, verde = 255, azul = 50;
-            int contadorFotogramas = 0;
             System.Random aleatorio;
 
             public Presentacion(GraphicsDeviceManager dispositivo, ContentManager c)

@@ -1,4 +1,19 @@
-﻿using Microsoft.Xna.Framework;
+﻿/* =============================================================
+ * Parte de ManicMiner - Remake
+ * =============================================================
+   Versiones hasta la fecha:
+   
+   Num.   Fecha       Por / Cambios
+   ---------------------------------------------------
+
+   0.08x  11-05-2011  Nacho Cabanes: Añadidos xOriginal, yOriginal,
+                       incrXOriginal, incrYOriginal. Se usan en MoverA,
+                       en SetVelocidad y en Reiniciar.
+
+ ============================================================= */
+
+
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -17,6 +32,11 @@ namespace minerXNA
         protected bool contieneSecuencia = false;
         protected bool visible;
         protected Texture2D[][] secuencia; // Para cuando sea secuencia de imágenes
+
+        protected short xOriginal;  // Para llevar a su posicion inicial
+        protected short yOriginal;
+        protected short incrXOriginal;
+        protected short incrYOriginal;
 
         protected byte numDirecciones = 10;
         protected byte direccion;
@@ -54,12 +74,41 @@ namespace minerXNA
         }
 
 
+        /// Devuelve el personaje a su posición inicial
+        public void Reiniciar()
+        {
+            x = xOriginal;
+            y = yOriginal;
+            incrX = incrXOriginal;
+            incrY = incrYOriginal;
+        } 
+
+
         /// Mueve el elemento grafico a otra posicion
         public void MoverA(int nuevaX, int nuevaY)
         {
             x = (short)nuevaX;
             y = (short)nuevaY;
+            if ((xOriginal == 0) && (yOriginal == 0))
+            {
+                xOriginal = (short)nuevaX;
+                yOriginal = (short)nuevaY;
+            }
         }
+
+
+        /// Cambia la velocidad (incrX e incrY) de un elemento
+        public void SetVelocidad(int vX, int vY)
+        {
+            incrX = (short)vX;
+            incrY = (short)vY;
+            if ((incrXOriginal == 0) && (incrYOriginal == 0))
+            {
+                incrXOriginal = (short)vX;
+                incrYOriginal = (short)vY;
+            }
+        }
+
 
         /// Carga la imagen que representara a este elemento grafico
         public void CargarImagen(string nombre, ContentManager contenido)
@@ -125,14 +174,6 @@ namespace minerXNA
         {
             alto = al;
             ancho = an;
-        }
-
-
-        /// Cambia la velocidad
-        public void SetVelocidad(int vx, int vy)
-        {
-            incrX = vx;
-            incrY = vy;
         }
 
 
