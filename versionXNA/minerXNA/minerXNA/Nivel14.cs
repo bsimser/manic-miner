@@ -44,6 +44,30 @@ namespace minerXNA
             datosNivelIniciales[14] = "L                              L";
             datosNivelIniciales[15] = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
 
+            numEnemigos = 3;
+            listaEnemigos = new Enemigo[numEnemigos];
+
+            listaEnemigos[0] = new Enemigo(c);
+            listaEnemigos[0].MoverA(200, 300);
+            listaEnemigos[0].SetVelocidad(2, 0);
+            listaEnemigos[0].setMinMaxY(200, 800);
+            listaEnemigos[0].SetAnchoAlto(36, 48);
+            //listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);
+
+            listaEnemigos[1] = new Enemigo(c);
+            listaEnemigos[1].MoverA(270, 370);
+            listaEnemigos[1].SetVelocidad(2, 0);
+            listaEnemigos[1].setMinMaxY(200, 800);
+            listaEnemigos[0].SetAnchoAlto(36, 48);
+            //listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);
+
+            listaEnemigos[2] = new Enemigo(c);
+            listaEnemigos[2].MoverA(150, 200);
+            listaEnemigos[2].SetVelocidad(2, 0);
+            listaEnemigos[2].setMinMaxY(200, 800);
+            listaEnemigos[0].SetAnchoAlto(36, 48);
+            //listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);
+
             Reiniciar();
         }
 

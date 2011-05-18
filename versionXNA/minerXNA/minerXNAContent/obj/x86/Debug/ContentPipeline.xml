@@ -523,6 +523,582 @@
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\pierna.xnb</Output>
       <Time>2011-05-06T12:22:34+02:00</Time>
     </Item>
+    <Item>
+      <Source>enemAranyaHilo.png</Source>
+      <Name>enemAranyaHilo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemAranyaHilo.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemAranyaTecho.png</Source>
+      <Name>enemAranyaTecho</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemAranyaTecho.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemBarril.png</Source>
+      <Name>enemBarril</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemBarril.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemCanguro.png</Source>
+      <Name>enemCanguro</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemCanguro.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemConejo.png</Source>
+      <Name>enemConejo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemConejo.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemEugene.png</Source>
+      <Name>enemEugene</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemEugene.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemFantasma.png</Source>
+      <Name>enemFantasma</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemFantasma.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemFoca.png</Source>
+      <Name>enemFoca</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemFoca.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemKong.png</Source>
+      <Name>enemKong</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemKong.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel09a.png</Source>
+      <Name>enemNivel09a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel09a.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel09b.png</Source>
+      <Name>enemNivel09b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel09b.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel11.png</Source>
+      <Name>enemNivel11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel11.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel13a.png</Source>
+      <Name>enemNivel13a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel13a.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel14.png</Source>
+      <Name>enemNivel14</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel14.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel15.png</Source>
+      <Name>enemNivel15</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel15.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel16.png</Source>
+      <Name>enemNivel16</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel16.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel17a.png</Source>
+      <Name>enemNivel17a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel17a.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel17b.png</Source>
+      <Name>enemNivel17b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel17b.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel18a.png</Source>
+      <Name>enemNivel18a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel18a.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel18b.png</Source>
+      <Name>enemNivel18b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel18b.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel19a.png</Source>
+      <Name>enemNivel19a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel19a.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel19b.png</Source>
+      <Name>enemNivel19b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel19b.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemNivel20.png</Source>
+      <Name>enemNivel20</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel20.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemOjo.png</Source>
+      <Name>enemOjo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemOjo.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemPacMan.png</Source>
+      <Name>enemPacMan</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemPacMan.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemPavo.png</Source>
+      <Name>enemPavo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemPavo.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemPinguino.png</Source>
+      <Name>enemPinguino</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemPinguino.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemRetrete.png</Source>
+      <Name>enemRetrete</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemRetrete.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>enemTelefono.png</Source>
+      <Name>enemTelefono</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemTelefono.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obstaculoNivel04.png</Source>
+      <Name>obstaculoNivel04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel04.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obstaculoNivel06.png</Source>
+      <Name>obstaculoNivel06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel06.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obstaculoNivel07.png</Source>
+      <Name>obstaculoNivel07</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel07.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obstaculoNivel10.png</Source>
+      <Name>obstaculoNivel10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel10.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obstaculoNivel15.png</Source>
+      <Name>obstaculoNivel15</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel15.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obstaculoNivel16.png</Source>
+      <Name>obstaculoNivel16</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel16.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obstaculoNivel17a.png</Source>
+      <Name>obstaculoNivel17a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel17a.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obstaculoNivel20.png</Source>
+      <Name>obstaculoNivel20</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel20.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>paredNivel10.png</Source>
+      <Name>paredNivel10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\paredNivel10.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>paredNivel15.png</Source>
+      <Name>paredNivel15</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\paredNivel15.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>premioNivel05.png</Source>
+      <Name>premioNivel05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel05.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>premioNivel06.png</Source>
+      <Name>premioNivel06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel06.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>premioNivel07.png</Source>
+      <Name>premioNivel07</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel07.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>premioNivel08a.png</Source>
+      <Name>premioNivel08a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel08a.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>premioNivel08b.png</Source>
+      <Name>premioNivel08b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel08b.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>premioNivel10.png</Source>
+      <Name>premioNivel10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel10.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>premioNivel11.png</Source>
+      <Name>premioNivel11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel11.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>premioNivel13.png</Source>
+      <Name>premioNivel13</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel13.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>premioNivel14.png</Source>
+      <Name>premioNivel14</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel14.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>premioNivel15.png</Source>
+      <Name>premioNivel15</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel15.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>premioNivel16.png</Source>
+      <Name>premioNivel16</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel16.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>premioNivel17.png</Source>
+      <Name>premioNivel17</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel17.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloNivel07.png</Source>
+      <Name>sueloNivel07</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel07.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloNivel10a.png</Source>
+      <Name>sueloNivel10a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel10a.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloNivel10b.png</Source>
+      <Name>sueloNivel10b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel10b.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloNivel13a.png</Source>
+      <Name>sueloNivel13a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel13a.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloNivel13b.png</Source>
+      <Name>sueloNivel13b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel13b.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloNivel14a.png</Source>
+      <Name>sueloNivel14a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel14a.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloNivel14b.png</Source>
+      <Name>sueloNivel14b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel14b.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloNivel14c.png</Source>
+      <Name>sueloNivel14c</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel14c.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloNivel15a.png</Source>
+      <Name>sueloNivel15a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel15a.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloNivel15b.png</Source>
+      <Name>sueloNivel15b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel15b.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloNivel17a.png</Source>
+      <Name>sueloNivel17a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel17a.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloNivel17b.png</Source>
+      <Name>sueloNivel17b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel17b.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>sueloNivel18.png</Source>
+      <Name>sueloNivel18</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel18.xnb</Output>
+      <Time>2010-01-01T22:00:00+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

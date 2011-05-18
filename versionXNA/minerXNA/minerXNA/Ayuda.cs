@@ -45,7 +45,16 @@ namespace minerXNA
 
         public void DibujarElementos(SpriteBatch spriteBatch)
         {
-            fuente18.EscribirTextoOculta("Ayuda:", 380, 0, 255, 0, 0, spriteBatch);
+            fuente18.EscribirTextoOculta("Ayuda:", 380, 100, 255, 0, 0, spriteBatch);
+
+            fuente18.EscribirTextoOculta("- Usa las flechas para mover a izquierda y derecha",
+                100, 200, 128, 128, 128, spriteBatch);
+            fuente18.EscribirTextoOculta("- Usa espacio para saltar",
+                100, 230, 128, 128, 128, spriteBatch);
+            fuente18.EscribirTextoOculta("- Recoge todas las llaves y abre la puerta para avanzar nivel",
+                100, 260, 128, 128, 128, spriteBatch);
+            fuente18.EscribirTextoOculta("- Pulsa ESC para abandonar la partida",
+                100, 290, 128, 128, 128, spriteBatch);
         }
 
 

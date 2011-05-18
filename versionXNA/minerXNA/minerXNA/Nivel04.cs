@@ -13,6 +13,8 @@
    0.06x  29-04-2011  Nacho Cabanes: 
                         Creada la adaptación a XNA del Nivel 4.
 
+   0.09x  16-05-2011  Ethan Martínez Carratalá: 
+                        Incluidos dos enemigos que se mueven de forma distinta.
  ============================================================= */
 
 
@@ -43,6 +45,23 @@ namespace minerXNA
             datosNivelIniciales[13] = "L                 SS           L";
             datosNivelIniciales[14] = "L                              L";
             datosNivelIniciales[15] = "LSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSL";
+
+            numEnemigos = 2;
+            listaEnemigos = new Enemigo[numEnemigos];
+
+            listaEnemigos[0] = new Enemigo("enemFoca", c);
+            listaEnemigos[0].MoverA(300, 352);
+            listaEnemigos[0].SetVelocidad(2, 0);
+            listaEnemigos[0].setMinMaxX(100, 700);
+            listaEnemigos[0].SetAnchoAlto(36, 48);
+            //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
+
+            listaEnemigos[1] = new Enemigo("enemFoca", c);
+            listaEnemigos[1].MoverA(400, 352);
+            listaEnemigos[1].SetVelocidad(2, 0);
+            listaEnemigos[1].setMinMaxX(100, 700);
+            listaEnemigos[1].SetAnchoAlto(36, 48);
+            //listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);
 
             Reiniciar();
         }

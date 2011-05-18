@@ -9,7 +9,9 @@
    0.08x  11-05-2011  Nacho Cabanes: Añadidos xOriginal, yOriginal,
                        incrXOriginal, incrYOriginal. Se usan en MoverA,
                        en SetVelocidad y en Reiniciar.
-
+   0.09x  17-05-2011  Nacho Cabanes
+                      CambiaDirección no falla si el elemento gráfico
+                        no contiene una secuencia.
  ============================================================= */
 
 
@@ -217,6 +219,9 @@ namespace minerXNA
         /// Mueve el elemento grafico a otra posicion
         public void CambiarDireccion(byte nuevaDir)
         {
+            if (!contieneSecuencia)
+                return;
+
             if (direccion != nuevaDir)
             {
                 direccion = nuevaDir;

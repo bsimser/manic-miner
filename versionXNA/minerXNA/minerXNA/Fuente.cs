@@ -15,6 +15,8 @@
                      Pedro Zalacain
             	      Clase "Fuente" para poder utilizar
                       "EscribirTextoOculta" con parámetros similares
+   0.09x  17-05-2011  Nacho Cabanes
+                      No falla si el texto es null
  ---------------------------------------------------- */
 
 using Microsoft.Xna.Framework.Graphics;
@@ -32,7 +34,7 @@ public class Fuente
 
     public void EscribirTextoOculta(string texto, int x, int y, Color miColor, SpriteBatch listaSprites)
     {
-        if (texto == "") 
+        if ((texto == null) || (texto == "") )
             return;
         listaSprites.DrawString(miLetra, texto, new Vector2(x, y), miColor);
     }

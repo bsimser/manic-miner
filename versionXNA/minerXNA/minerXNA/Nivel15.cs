@@ -12,7 +12,9 @@
                       
    0.06x  29-04-2011  Nacho Cabanes: 
                         Creada la adaptación a XNA del Nivel 15.
-
+ * 0.09   16-05-2011  Jose Manuel Rizo
+ *                    Rellenar el nivel 15 del juego Manic Miner
+ 
  ============================================================= */
 
 
@@ -42,6 +44,28 @@ namespace minerXNA
             datosNivelIniciales[13] = "L           SS               MML";
             datosNivelIniciales[14] = "L                         V  MML";
             datosNivelIniciales[15] = "LSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSL";
+
+            numEnemigos = 3;
+            listaEnemigos = new Enemigo[numEnemigos];
+
+            listaEnemigos[0] = new Enemigo(c);
+            listaEnemigos[0].MoverA(200, 60);
+            listaEnemigos[0].SetVelocidad(2, 0);
+            listaEnemigos[0].setMinMaxX(100, 700);
+            listaEnemigos[0].SetAnchoAlto(36, 48);
+            //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
+
+            listaEnemigos[1] = new Enemigo(c);
+            listaEnemigos[1].MoverA(300, 300);
+            listaEnemigos[1].SetVelocidad(0,1);
+            listaEnemigos[1].setMinMaxY(0, 350);
+            listaEnemigos[1].SetAnchoAlto(36, 48);
+
+            listaEnemigos[2] = new Enemigo(c);
+            listaEnemigos[2].MoverA(180, 160);
+            listaEnemigos[2].SetVelocidad(0, 1);
+            listaEnemigos[2].setMinMaxY(0, 350);
+            listaEnemigos[2].SetAnchoAlto(36, 48);
 
             Reiniciar();
         }

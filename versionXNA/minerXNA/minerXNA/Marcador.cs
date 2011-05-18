@@ -14,9 +14,11 @@
                       Primera versión de la clase Marcador
    0.11  02-Ene-2011  Nacho Cabanes
                       Incluido el campo "Nombre", que muestra nombre de nivel
-   0.11  02-Ene-2011  Antonio Ramos
+   0.xx  xx-xxx-2011  Antonio Ramos
                       Incluido los datos del marcador como Vidas, puntuacion,etc.
-  
+   0.09x  17-05-2011  Nacho Cabanes
+                      Muestra el nombre del nivel, que estaba desactivado por
+                        un fallo en EscribirTextoOculta
  ---------------------------------------------------- */
 
 using Microsoft.Xna.Framework.Content;
@@ -139,8 +141,8 @@ namespace minerXNA
             //Hardware.EscribirTextoOculta(nombreNivel,
             //    350, 430, 0,0,0, tipoDeLetra);
 
-            //fuente18.EscribirTextoOculta(nombreNivel,
-            //    350, 430, Color.Black, listaSprites);
+            fuente18.EscribirTextoOculta(nombreNivel,
+                350, 430, Color.Black, listaSprites);
 
 
             // Medidor de aire

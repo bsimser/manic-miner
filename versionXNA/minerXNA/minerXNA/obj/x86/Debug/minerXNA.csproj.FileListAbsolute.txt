@@ -126,3 +126,131 @@ C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projec
 C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\pierna.xnb
 C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\minerXNA.exe
 C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\minerXNA.pdb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemAranyaHilo.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemAranyaTecho.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemBarril.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemCanguro.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemConejo.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemEugene.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemFantasma.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemFoca.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemKong.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel09a.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel09b.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel11.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel13a.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel14.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel15.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel16.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel17a.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel17b.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel18a.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel18b.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel19a.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel19b.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel20.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemOjo.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemPacMan.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemPavo.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemPinguino.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemRetrete.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemTelefono.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel04.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel06.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel07.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel10.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel15.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel16.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel17a.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel20.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\paredNivel10.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\paredNivel15.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel05.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel06.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel07.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel08a.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel08b.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel10.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel11.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel13.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel14.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel15.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel16.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel17.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel07.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel10a.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel10b.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel13a.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel13b.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel14a.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel14b.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel14c.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel15a.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel15b.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel17a.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel17b.xnb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel18.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemAranyaHilo.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemAranyaTecho.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemBarril.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemCanguro.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemConejo.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemEugene.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemFantasma.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemFoca.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemKong.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel09a.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel09b.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel11.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel13a.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel14.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel15.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel16.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel17a.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel17b.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel18a.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel18b.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel19a.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel19b.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel20.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemOjo.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemPacMan.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemPavo.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemPinguino.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemRetrete.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemTelefono.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel04.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel06.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel07.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel10.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel15.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel16.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel17a.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\obstaculoNivel20.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\paredNivel10.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\paredNivel15.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel05.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel06.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel07.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel08a.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel08b.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel10.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel11.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel13.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel14.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel15.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel16.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\premioNivel17.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel07.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel10a.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel10b.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel13a.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel13b.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel14a.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel14b.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel14c.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel15a.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel15b.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel17a.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel17b.xnb
+C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\sueloNivel18.xnb

@@ -32,7 +32,9 @@
                       Al reiniciar (comenzar nueva partida), se vuelve al primer nivel.
    0.14  23-Ene-2011  Nacho Cabanes
                       Añadidos GetNumEnmigos y GetEnemigo(i), que delegan en Nivel
-
+  
+   0.09x  17-05-2011  Nacho Cabanes
+                      Pausa de 1 seg al final de "avanzar"
  ---------------------------------------------------- */
 
 using Microsoft.Xna.Framework.Graphics;
@@ -123,6 +125,9 @@ namespace minerXNA
             */
             nivelActual = listaNiveles[numeroNivelActual];
             nivelActual.Reiniciar();
+
+            // Pequeña pausa antes de lanza el nuevo nivel
+            System.Threading.Thread.Sleep(1000);
         }
 
         public string GetNombre()

@@ -12,7 +12,8 @@
                       
    0.06x  29-04-2011  Nacho Cabanes: 
                         Creada la adaptación a XNA del Nivel 13.
-
+ 
+   0.09x  16-05-2011  Alejandro Guijarro Terol
  ============================================================= */
 
 
@@ -42,6 +43,37 @@ namespace minerXNA
             datosNivelIniciales[13] = "LPPO                           L";
             datosNivelIniciales[14] = "LPPO                           L";
             datosNivelIniciales[15] = "LMMFFFFFFFFFFFFFFFFFFFFFFFFFFMML";
+
+            numEnemigos = 4;
+            listaEnemigos = new Enemigo[numEnemigos];
+
+            listaEnemigos[0] = new Enemigo(c);
+            listaEnemigos[0].MoverA(400, 208);
+            listaEnemigos[0].SetVelocidad(2, 0);
+            listaEnemigos[0].setMinMaxX(200, 700);
+            listaEnemigos[0].SetAnchoAlto(36, 48);
+           
+
+            listaEnemigos[1] = new Enemigo(c);
+            listaEnemigos[1].MoverA(227, 64);
+            listaEnemigos[1].SetVelocidad(2, 0);
+            listaEnemigos[1].setMinMaxX(200, 700);
+            listaEnemigos[1].SetAnchoAlto(36, 48);
+            
+
+            listaEnemigos[2] = new Enemigo(c);
+            listaEnemigos[2].MoverA(340, 352);
+            listaEnemigos[2].SetVelocidad(2, 0);
+            listaEnemigos[2].setMinMaxX(200, 700);
+            listaEnemigos[2].SetAnchoAlto(36, 48);
+
+
+            listaEnemigos[3] = new Enemigo(c);
+            listaEnemigos[3].MoverA(420, 352);
+            listaEnemigos[3].SetVelocidad(2, 0);
+            listaEnemigos[3].setMinMaxX(200, 700);
+            listaEnemigos[3].SetAnchoAlto(36, 48);
+
 
             Reiniciar();
         }

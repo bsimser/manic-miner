@@ -10,7 +10,10 @@
   
    0.08x  11-05-2011  Nacho Cabanes: Permitir movimiento vertical también:
                        Nuevas secuencias y corregido Mover (similar a SDL)
-
+ * 
+   0.09x  17-05-2011  Nacho Cabanes
+                      Creado un nuevo constructor a partir de un fichero,
+                        para poder crear otros enemigos que tengan imagen estática
  ============================================================= */
 
 /*
@@ -25,7 +28,7 @@ namespace minerXNA
 {
     public class Enemigo : ElemGrafico
     {
-        // Constructor
+        // Constructor por defecto: carga la secuencia del enemigo de nivel 1
         public Enemigo(ContentManager c)
             : base("enemigo", c)
         {
@@ -83,6 +86,14 @@ namespace minerXNA
                  );
 
             direccion = DERECHA;
+        }
+
+
+        // Constructor que carga una imagen estática
+        public Enemigo(string nombreFich, ContentManager c)
+            : base(nombreFich, c)
+        {
+
         }
 
 

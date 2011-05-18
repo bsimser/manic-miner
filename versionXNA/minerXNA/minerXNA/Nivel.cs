@@ -17,7 +17,8 @@
    0.14  23-Ene-2011  Nacho Cabanes
                       Incluye un array de enemigos y los Get para leer cantidad
                         y un enemigo concreto
-
+   0.09x  17-05-2011  Nacho Cabanes
+                      Muchos más elementos gráficos para fondo, premios y obstáculos
  ---------------------------------------------------- */
 
 using Microsoft.Xna.Framework.Content;
@@ -42,6 +43,18 @@ namespace minerXNA
         private ElemGrafico arbol, deslizante, ladrillo, ladrilloX, llave, puerta,
             sueloFino, sueloFragil, sueloFragil2, sueloGrueso, techo;
 
+        // Añadidos en la versión 0.09x
+        private ElemGrafico obstaculo04, obstaculo06, obstaculo07, obstaculo10, obstaculo15,
+            obstaculo16, obstaculo17, obstaculo20, pared10, pared15, premio05, premio06, premio07,
+             premio08a, premio08b, premio10, premio11, premio13, premio14, premio15,
+             premio16, premio17, suelo07, suelo10a, suelo10b, suelo13a, suelo13b, suelo14a, suelo14b,
+             suelo14c, suelo15a, suelo15b, suelo17a, suelo17b, suelo18;
+
+        // Lista de obstáculos, premios y elementos mortales
+        // para comprobar de forma rápida
+        private string listaObstaculos = "DFLMNOS[]|!-_=zxcCbnmasd";
+        private string listaPremios = "VvWwQqYyUuKkJ";
+        private string listaMortales = "AT$&/0%¬·@";
 
         protected string nombre = "(Nonamed)";
 
@@ -82,6 +95,43 @@ namespace minerXNA
             sueloFragil2 = new ElemGrafico("sueloFragil2", c);
             techo = new ElemGrafico("techo", c);
 
+            // Añadidos en la versión 0.09x
+            obstaculo04 = new ElemGrafico("obstaculoNivel04", c);
+            obstaculo06 = new ElemGrafico("obstaculoNivel06", c);
+            obstaculo07 = new ElemGrafico("obstaculoNivel07", c);
+            obstaculo10 = new ElemGrafico("obstaculoNivel10", c);
+            obstaculo15 = new ElemGrafico("obstaculoNivel15", c);
+            obstaculo16 = new ElemGrafico("obstaculoNivel16", c);
+            obstaculo17 = new ElemGrafico("obstaculoNivel17a", c);
+            obstaculo20 = new ElemGrafico("obstaculoNivel20", c);
+            pared10 = new ElemGrafico("paredNivel10", c);
+            pared15 = new ElemGrafico("paredNivel15", c);
+            premio05 = new ElemGrafico("premioNivel05", c);
+            premio06 = new ElemGrafico("premioNivel06", c);
+            premio07 = new ElemGrafico("premioNivel07", c);
+            premio08a = new ElemGrafico("premioNivel08a", c);
+            premio08b = new ElemGrafico("premioNivel08b", c);
+            premio10 = new ElemGrafico("premioNivel10", c);
+            premio11 = new ElemGrafico("premioNivel11", c);
+            premio13 = new ElemGrafico("premioNivel13", c);
+            premio14 = new ElemGrafico("premioNivel14", c);
+            premio15 = new ElemGrafico("premioNivel15", c);
+            premio16 = new ElemGrafico("premioNivel16", c);
+            premio17 = new ElemGrafico("premioNivel17", c);
+            suelo07 = new ElemGrafico("sueloNivel07", c);
+            suelo10a = new ElemGrafico("sueloNivel10a", c);
+            suelo10b = new ElemGrafico("sueloNivel10b", c);
+            suelo13a = new ElemGrafico("sueloNivel13a", c);
+            suelo13b = new ElemGrafico("sueloNivel13b", c);
+            suelo14a = new ElemGrafico("sueloNivel14a", c);
+            suelo14b = new ElemGrafico("sueloNivel14b", c);
+            suelo14c = new ElemGrafico("sueloNivel14c", c);
+            suelo15a = new ElemGrafico("sueloNivel15a", c);
+            suelo15b = new ElemGrafico("sueloNivel15b", c);
+            suelo17a = new ElemGrafico("sueloNivel17a", c);
+            suelo17b = new ElemGrafico("sueloNivel17b", c);
+            suelo18 = new ElemGrafico("sueloNivel18", c);
+
             datosNivel = new string[altoMapa];
 
             numEnemigos = 0;
@@ -105,19 +155,74 @@ namespace minerXNA
                     int posY = fila * altoTile + margenSuperior;
                     switch (datosNivel[fila][colum])
                     {
-                        case 'A': arbol.DibujarOculta(posX, posY, listaSprites); break;
+                        // Paredes y suelos
                         case 'D': deslizante.DibujarOculta(posX, posY, listaSprites); break;
                         case 'F': sueloFragil.DibujarOculta(posX, posY, listaSprites); break;
                         case 'L': ladrillo.DibujarOculta(posX, posY, listaSprites); break;
                         case 'M': ladrilloX.DibujarOculta(posX, posY, listaSprites); break;
                         case 'N': sueloGrueso.DibujarOculta(posX, posY, listaSprites); break;
                         case 'O': sueloFragil2.DibujarOculta(posX, posY, listaSprites); break;
-                        case 'P': puerta.DibujarOculta(posX, posY, listaSprites); break;
                         case 'S': sueloFino.DibujarOculta(posX, posY, listaSprites); break;
-                        case 'T': techo.DibujarOculta(posX, posY, listaSprites); break;
                         case '[': sueloFino.DibujarOculta(posX, posY, listaSprites); break;
                         case ']': sueloFino.DibujarOculta(posX, posY, listaSprites); break;
+                        case '|': pared10.DibujarOculta(posX, posY, listaSprites); break;
+                        case '!': pared15.DibujarOculta(posX, posY, listaSprites); break;
+
+                        case '-': suelo07.DibujarOculta(posX, posY, listaSprites); break;
+                        case '_': suelo10a.DibujarOculta(posX, posY, listaSprites); break;
+                        case '=': suelo10b.DibujarOculta(posX, posY, listaSprites); break;
+                        case 'z': suelo13a.DibujarOculta(posX, posY, listaSprites); break;
+                        case 'x': suelo13b.DibujarOculta(posX, posY, listaSprites); break;
+                        case 'c': suelo14a.DibujarOculta(posX, posY, listaSprites); break;
+                        case 'C': suelo14b.DibujarOculta(posX, posY, listaSprites); break;
+                        case 'b': suelo14c.DibujarOculta(posX, posY, listaSprites); break;
+                        case 'n': suelo15a.DibujarOculta(posX, posY, listaSprites); break;
+                        case 'm': suelo15b.DibujarOculta(posX, posY, listaSprites); break;
+                        case 'a': suelo17a.DibujarOculta(posX, posY, listaSprites); break;
+                        case 's': suelo17b.DibujarOculta(posX, posY, listaSprites); break;
+                        case 'd': suelo18.DibujarOculta(posX, posY, listaSprites); break;
+
+                        // Obstáculos "que matan"
+                        case 'A': arbol.DibujarOculta(posX, posY, listaSprites); break;
+                        case 'T': techo.DibujarOculta(posX, posY, listaSprites); break;
+                        case '$': obstaculo04.DibujarOculta(posX, posY, listaSprites); break;
+                        case '&': obstaculo06.DibujarOculta(posX, posY, listaSprites); break;
+                        case '/': obstaculo07.DibujarOculta(posX, posY, listaSprites); break;
+                        case '0': obstaculo10.DibujarOculta(posX, posY, listaSprites); break;
+                        case '%': obstaculo15.DibujarOculta(posX, posY, listaSprites); break;
+                        case '¬': obstaculo16.DibujarOculta(posX, posY, listaSprites); break;
+                        case '·': obstaculo17.DibujarOculta(posX, posY, listaSprites); break;
+                        case '@': obstaculo20.DibujarOculta(posX, posY, listaSprites); break;
+
+                        // Puertas
+                        case 'P': puerta.DibujarOculta(posX, posY, listaSprites); break;
+
+                        // Llaves y premios que permiten obtener puntos y pasar de nivel
                         case 'V': llave.DibujarOculta(posX, posY, listaSprites);
+                            llavesRestantes++; break;
+                        case 'v': premio05.DibujarOculta(posX, posY, listaSprites);
+                            llavesRestantes++; break;
+                        case 'W': premio06.DibujarOculta(posX, posY, listaSprites);
+                            llavesRestantes++; break;
+                        case 'w': premio07.DibujarOculta(posX, posY, listaSprites);
+                            llavesRestantes++; break;
+                        case 'Q': premio08a.DibujarOculta(posX, posY, listaSprites);
+                            llavesRestantes++; break;
+                        case 'q': premio08b.DibujarOculta(posX, posY, listaSprites);
+                            llavesRestantes++; break;
+                        case 'Y': premio10.DibujarOculta(posX, posY, listaSprites);
+                            llavesRestantes++; break;
+                        case 'y': premio11.DibujarOculta(posX, posY, listaSprites);
+                            llavesRestantes++; break;
+                        case 'U': premio13.DibujarOculta(posX, posY, listaSprites);
+                            llavesRestantes++; break;
+                        case 'u': premio14.DibujarOculta(posX, posY, listaSprites);
+                            llavesRestantes++; break;
+                        case 'K': premio15.DibujarOculta(posX, posY, listaSprites);
+                            llavesRestantes++; break;
+                        case 'k': premio16.DibujarOculta(posX, posY, listaSprites);
+                            llavesRestantes++; break;
+                        case 'J': premio17.DibujarOculta(posX, posY, listaSprites);
                             llavesRestantes++; break;
                     }
                 }
@@ -136,13 +241,8 @@ namespace minerXNA
                     if ((posX + anchoTile > x) && (posY + altoTile > y)
                         && (xmax > posX) && (ymax > posY))
                         // Y no es espacio blanco, llave, puerta o arbol
-                        if ((datosNivel[fila][colum] != ' ')
-                            && (datosNivel[fila][colum] != 'V')
-                            && (datosNivel[fila][colum] != 'P')
-                            && (datosNivel[fila][colum] != 'A'))
-                        {
+                        if (listaObstaculos.Contains("" + datosNivel[fila][colum]))
                             return false;
-                        }
                 }
 
             return true;
@@ -163,12 +263,11 @@ namespace minerXNA
                         && (xmax > posX) && (ymax > posY))
                     {
                         // Si choca con el techo o con un arbol
-                        if ((datosNivel[fila][colum] == 'T')
-                                 || (datosNivel[fila][colum] == 'A'))
+                        if (listaMortales.Contains("" + datosNivel[fila][colum]))
                             return -1; // (puntuacion -1: perder vida)
 
                         // Si toca una llave
-                        if (datosNivel[fila][colum] == 'V')
+                        if ( listaPremios.Contains(""+datosNivel[fila][colum]) )
                         {
                             // datosNivel[fila][colum] = ' '; (No valido en C#: 2 pasos)
                             datosNivel[fila] = datosNivel[fila].Remove(colum, 1);

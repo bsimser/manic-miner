@@ -56,7 +56,7 @@ namespace minerXNA
             listaEnemigos[1].MoverA(150, 200);
             listaEnemigos[1].SetVelocidad(0, 2);
             listaEnemigos[1].setMinMaxY(100, 300);
-            listaEnemigos[0].SetAnchoAlto(36, 48);
+            listaEnemigos[1].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);
 
             Reiniciar();
