@@ -1,0 +1,12 @@
+Manic-Miner remake.
+
+Mejoras previstas para las próximas versiones:
+
+- Opción que permita escoger el nivel inicial, para facilitar las pruebas
+- Corregir los fallos del salto del personaje
+- Corregir los tiles y enemigos que aún no son correctos
+- Ajustar un poco más las posiciones y los rangos de movimiento de cada enemigo
+- Animación para el resto de enemigos
+- Suelo móvil
+- Suelo que se hunde
+- "Rayo láser" en el nivel 19 (Solar Power Generator)

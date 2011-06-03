@@ -575,7 +575,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemEugene.xnb</Output>
-      <Time>2010-01-01T22:00:00+01:00</Time>
+      <Time>2011-05-19T00:53:03.8022529+02:00</Time>
     </Item>
     <Item>
       <Source>enemFantasma.png</Source>
@@ -584,7 +584,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemFantasma.xnb</Output>
-      <Time>2010-01-01T22:00:00+01:00</Time>
+      <Time>2011-05-19T00:40:07.791212+02:00</Time>
     </Item>
     <Item>
       <Source>enemFoca.png</Source>
@@ -593,7 +593,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemFoca.xnb</Output>
-      <Time>2010-01-01T22:00:00+01:00</Time>
+      <Time>2011-05-19T00:53:47.3272798+02:00</Time>
     </Item>
     <Item>
       <Source>enemKong.png</Source>
@@ -647,7 +647,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel14.xnb</Output>
-      <Time>2010-01-01T22:00:00+01:00</Time>
+      <Time>2011-05-19T01:04:35.5151363+02:00</Time>
     </Item>
     <Item>
       <Source>enemNivel15.png</Source>
@@ -710,7 +710,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel19a.xnb</Output>
-      <Time>2010-01-01T22:00:00+01:00</Time>
+      <Time>2011-05-19T01:02:38.1054209+02:00</Time>
     </Item>
     <Item>
       <Source>enemNivel19b.png</Source>
@@ -719,7 +719,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemNivel19b.xnb</Output>
-      <Time>2010-01-01T22:00:00+01:00</Time>
+      <Time>2011-05-19T01:04:01.5651945+02:00</Time>
     </Item>
     <Item>
       <Source>enemNivel20.png</Source>
@@ -764,7 +764,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemPinguino.xnb</Output>
-      <Time>2010-01-01T22:00:00+01:00</Time>
+      <Time>2011-05-19T00:45:04.2008512+02:00</Time>
     </Item>
     <Item>
       <Source>enemRetrete.png</Source>
@@ -773,7 +773,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemRetrete.xnb</Output>
-      <Time>2010-01-01T22:00:00+01:00</Time>
+      <Time>2011-05-19T00:47:08.6436535+02:00</Time>
     </Item>
     <Item>
       <Source>enemTelefono.png</Source>
@@ -782,7 +782,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Nacho\Documents\Visual Studio 2010\Projects\minerXNA\minerXNA\minerXNA\bin\x86\Debug\Content\enemTelefono.xnb</Output>
-      <Time>2010-01-01T22:00:00+01:00</Time>
+      <Time>2011-05-19T00:49:33.1710061+02:00</Time>
     </Item>
     <Item>
       <Source>obstaculoNivel04.png</Source>

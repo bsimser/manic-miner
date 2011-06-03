@@ -13,8 +13,8 @@
    0.06x  29-04-2011  Nacho Cabanes: 
                         Creada la adaptación a XNA del Nivel 5.
    0.09x  16-05-2011  Aitor Salgado: 
-                        Introducir Enemigos del nivel 1 en el nivel 5 segun
- *                      corresponda al mapa original.
+                        Introducir Enemigos en el nivel 5 segun
+                        corresponda al mapa original.
 
  ============================================================= */
 
@@ -49,21 +49,21 @@ namespace minerXNA
             numEnemigos = 3;
             listaEnemigos = new Enemigo[numEnemigos];
 
-            listaEnemigos[0] = new Enemigo(c);
+            listaEnemigos[0] = new Enemigo("enemRetrete", c);
             listaEnemigos[0].MoverA(400, 352);
             listaEnemigos[0].SetVelocidad(2, 0);
             listaEnemigos[0].setMinMaxX(100, 700);
             listaEnemigos[0].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
 
-            listaEnemigos[1] = new Enemigo(c);
-            listaEnemigos[1].MoverA(150, 200);
+            listaEnemigos[1] = new Enemigo("enemEugene", c);
+            listaEnemigos[1].MoverA(380, 100);
             listaEnemigos[1].SetVelocidad(0, 2);
             listaEnemigos[1].setMinMaxY(100, 300);
             listaEnemigos[0].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);
 
-            listaEnemigos[2] = new Enemigo(c);
+            listaEnemigos[2] = new Enemigo("enemRetrete", c);
             listaEnemigos[2].MoverA(150, 200);
             listaEnemigos[2].SetVelocidad(0, 2);
             listaEnemigos[2].setMinMaxY(100, 300);

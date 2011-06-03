@@ -12,8 +12,11 @@
                       
    0.06x  29-04-2011  Nacho Cabanes: 
                         Creada la adaptación a XNA del Nivel 10.
-   0.09   16-05-2011  Antonio Ramos:
+   0.09x  16-05-2011  Antonio Ramos:
                         Añadidos enemigos a este nivel.
+   0.10x  18-05-2011  Antonio Ramos:
+                        Añadida nueva apariencia al enemigo, 
+                        intentando movimiento nuevo.
   
 
  ============================================================= */
@@ -51,31 +54,31 @@ namespace minerXNA
             numEnemigos = 4;
             listaEnemigos = new Enemigo[numEnemigos];
 
-            listaEnemigos[0] = new Enemigo(c);
+            listaEnemigos[0] = new Enemigo("enemConejo", c);
             listaEnemigos[0].MoverA(400, 352);
             listaEnemigos[0].SetVelocidad(2, 0);
             listaEnemigos[0].setMinMaxX(100, 700);
             listaEnemigos[0].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
 
-            listaEnemigos[1] = new Enemigo(c);
-            listaEnemigos[1].MoverA(280, 220);
+            listaEnemigos[1] = new Enemigo("enemConejo", c);
+            listaEnemigos[1].MoverA(400, 200);
             listaEnemigos[1].SetVelocidad(2, 0);
-            listaEnemigos[1].setMinMaxY(350, 350);
+            listaEnemigos[1].setMinMaxY(200, 400);
             listaEnemigos[0].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);
 
-            listaEnemigos[2] = new Enemigo(c);
-            listaEnemigos[2].MoverA(420, 520);
+            listaEnemigos[2] = new Enemigo("enemConejo", c);
+            listaEnemigos[2].MoverA(400, 250);
             listaEnemigos[2].SetVelocidad(2, 0);
-            listaEnemigos[2].setMinMaxY(100, 300);
+            listaEnemigos[2].setMinMaxY(200, 400);
             listaEnemigos[0].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);
 
-            listaEnemigos[3] = new Enemigo(c);
-            listaEnemigos[3].MoverA(150, 200);
+            listaEnemigos[3] = new Enemigo("enemConejo", c);
+            listaEnemigos[3].MoverA(600, 100);
             listaEnemigos[3].SetVelocidad(2, 0);
-            listaEnemigos[3].setMinMaxY(100, 300);
+            listaEnemigos[3].setMinMaxY(550, 750);
             listaEnemigos[0].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);
 

@@ -9,6 +9,11 @@
    --------------------------------------------------- 
    0.07x  06-05-2011  Héctor Pastor Pérez 
                         Creada la clase Opciones
+   0.10x  18-05-2011  David Guerra Abad
+                        Cambio en opciones para que se
+                           pueda seleccionar nivel (no terminado)
+                      Nacho Cabanes
+                        Se muestra el nivel escogido; ligeros cambios estéticos
 
  ============================================================= */
 
@@ -25,6 +30,7 @@ namespace minerXNA
         Fuente fuente18;
         string activado;
         bool guardado;
+        int nivelInicio;
 
         // Opciones posibles
         private bool terminada;
@@ -34,6 +40,7 @@ namespace minerXNA
             guardado = false;
             activado = "No";
             contenido = c;
+            nivelInicio = 0;
         }
 
         public void CargarContenido()
@@ -52,21 +59,30 @@ namespace minerXNA
                 else activado = "No";
             if (Keyboard.GetState().IsKeyDown(Keys.G))
                 guardado = true;
+            if (Keyboard.GetState().IsKeyDown(Keys.Left))
+                if(nivelInicio != 0)
+                    nivelInicio --;
+            if (Keyboard.GetState().IsKeyDown(Keys.Right))
+                if (nivelInicio != 19)
+                    nivelInicio ++;
         }
 
         public void DibujarElementos(SpriteBatch spriteBatch)
         {
             fuente18.EscribirTextoOculta
-                ("Opciones:", 300, 0, 255, 0, 0, spriteBatch);
+                ("Opciones:", 300, 100, 255, 0, 0, spriteBatch);
             fuente18.EscribirTextoOculta
-                ("(M) Musica:", 300, 100, 255, 0, 0, spriteBatch);
+                ("(M) Musica: " + activado + " (todavía no implementado)", 
+                100, 200, 128, 128, 128, spriteBatch);
             fuente18.EscribirTextoOculta
-                (activado, 450, 100, 255, 0, 0, spriteBatch);
+                ("(<-) Nivel Inicio : " + (nivelInicio + 1) + " (->)  (todavía no efectivo)",
+                100, 250, 128, 128, 128, spriteBatch);
             fuente18.EscribirTextoOculta
-                ("(G) Guardar Partida:", 300, 150, 255, 0, 0, spriteBatch);
+                ("(G) Guardar Partida (todavía no implementado):",
+                100, 300, 128, 128, 128, spriteBatch);
             if (guardado)
                 fuente18.EscribirTextoOculta
-                    ("Partida guardada", 300, 200, 255, 0, 0, spriteBatch);
+                    ("Partida guardada (todavía no implementado)", 120, 350, 128, 128, 128, spriteBatch);
         }
 
 

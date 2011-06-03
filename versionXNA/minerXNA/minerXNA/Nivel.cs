@@ -19,6 +19,9 @@
                         y un enemigo concreto
    0.09x  17-05-2011  Nacho Cabanes
                       Muchos más elementos gráficos para fondo, premios y obstáculos
+   0.10x  18-05-2011  Andrés Marotta
+                      Elementos gráficos "aranya" e "hiloAranya". // Falta implementarlos en el "case"
+                      Solucionado el problema con los pisos del nivel 14.
  ---------------------------------------------------- */
 
 using Microsoft.Xna.Framework.Content;
@@ -40,6 +43,8 @@ namespace minerXNA
         protected int numEnemigos;
         protected Enemigo[] listaEnemigos;
 
+        protected int xIniPersonaje = 70, yIniPersonaje = 352;
+
         private ElemGrafico arbol, deslizante, ladrillo, ladrilloX, llave, puerta,
             sueloFino, sueloFragil, sueloFragil2, sueloGrueso, techo;
 
@@ -49,6 +54,9 @@ namespace minerXNA
              premio08a, premio08b, premio10, premio11, premio13, premio14, premio15,
              premio16, premio17, suelo07, suelo10a, suelo10b, suelo13a, suelo13b, suelo14a, suelo14b,
              suelo14c, suelo15a, suelo15b, suelo17a, suelo17b, suelo18;
+
+        // Añadidos en la versión 0.10x
+        private ElemGrafico aranya, hiloAranya;
 
         // Lista de obstáculos, premios y elementos mortales
         // para comprobar de forma rápida
@@ -132,6 +140,10 @@ namespace minerXNA
             suelo17b = new ElemGrafico("sueloNivel17b", c);
             suelo18 = new ElemGrafico("sueloNivel18", c);
 
+            // Añadidos en la versión 0.10x
+            aranya = new ElemGrafico("enemAranyaTecho", c);
+            hiloAranya = new ElemGrafico("enemAranyaHilo", c);
+
             datosNivel = new string[altoMapa];
 
             numEnemigos = 0;
@@ -163,8 +175,8 @@ namespace minerXNA
                         case 'N': sueloGrueso.DibujarOculta(posX, posY, listaSprites); break;
                         case 'O': sueloFragil2.DibujarOculta(posX, posY, listaSprites); break;
                         case 'S': sueloFino.DibujarOculta(posX, posY, listaSprites); break;
-                        case '[': sueloFino.DibujarOculta(posX, posY, listaSprites); break;
-                        case ']': sueloFino.DibujarOculta(posX, posY, listaSprites); break;
+                        case '[': suelo14a.DibujarOculta(posX, posY, listaSprites); break;
+                        case ']': suelo14b.DibujarOculta(posX, posY, listaSprites); break;
                         case '|': pared10.DibujarOculta(posX, posY, listaSprites); break;
                         case '!': pared15.DibujarOculta(posX, posY, listaSprites); break;
 
@@ -173,8 +185,6 @@ namespace minerXNA
                         case '=': suelo10b.DibujarOculta(posX, posY, listaSprites); break;
                         case 'z': suelo13a.DibujarOculta(posX, posY, listaSprites); break;
                         case 'x': suelo13b.DibujarOculta(posX, posY, listaSprites); break;
-                        case 'c': suelo14a.DibujarOculta(posX, posY, listaSprites); break;
-                        case 'C': suelo14b.DibujarOculta(posX, posY, listaSprites); break;
                         case 'b': suelo14c.DibujarOculta(posX, posY, listaSprites); break;
                         case 'n': suelo15a.DibujarOculta(posX, posY, listaSprites); break;
                         case 'm': suelo15b.DibujarOculta(posX, posY, listaSprites); break;
@@ -307,6 +317,16 @@ namespace minerXNA
                 return listaEnemigos[i];
 
             return null;
+        }
+
+        public int GetXIniPersonaje()
+        {
+            return xIniPersonaje;
+        }
+
+        public int GetYIniPersonaje()
+        {
+            return yIniPersonaje;
         }
 
     } /* fin de la clase Mapa */

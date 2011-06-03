@@ -15,6 +15,10 @@
  
    0.09x  16-May-2011   Denys Demyanchuk
                           Creado movimiento de los enemigos Nivel 7.
+ 
+   0.10x  18-May-2011   Denys Demyanchuk
+                          Completar Nivel 7.
+
  ============================================================= */
 
 using Microsoft.Xna.Framework.Content;
@@ -47,27 +51,27 @@ namespace minerXNA
             numEnemigos = 3;
             listaEnemigos = new Enemigo[numEnemigos];
 
-            listaEnemigos[0] = new Enemigo(c);
-            listaEnemigos[0].MoverA(450, 352);
+            listaEnemigos[0] = new Enemigo("enemCanguro",c);
+            listaEnemigos[0].MoverA(430, 350);
             listaEnemigos[0].SetVelocidad(2, 0);
-            listaEnemigos[0].setMinMaxX(450, 730);
+            listaEnemigos[0].setMinMaxX(430, 726);
             listaEnemigos[0].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
 
-            listaEnemigos[1] = new Enemigo(c);
-            listaEnemigos[1].MoverA(350, 230);
+            listaEnemigos[1] = new Enemigo("enemCanguro", c);
+            listaEnemigos[1].MoverA(70, 231);
             listaEnemigos[1].SetVelocidad(2, 0);
-            listaEnemigos[1].setMinMaxX(100, 340);
+            listaEnemigos[1].setMinMaxX(70, 275);
             listaEnemigos[0].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
 
-            listaEnemigos[2] = new Enemigo(c);
-            listaEnemigos[2].MoverA(200, 75);
+            listaEnemigos[2] = new Enemigo("enemCanguro", c);
+            listaEnemigos[2].MoverA(375, 64);
             listaEnemigos[2].SetVelocidad(2, 0);
-            listaEnemigos[2].setMinMaxX(100, 700);
+            listaEnemigos[2].setMinMaxX(375, 726);
             listaEnemigos[0].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
-            
+
             Reiniciar();
         }
 

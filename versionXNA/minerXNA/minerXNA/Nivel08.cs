@@ -15,6 +15,8 @@
    
    0.09x  29-04-2011  Pedro Zalacain: 
                         Agregados los enemigos del nivel.
+   0.10x  29-04-2011  Pedro Zalacain: 
+                        Modificadas imagenes del nivel.
  ============================================================= */
 
 
@@ -28,22 +30,22 @@ namespace minerXNA
             : base(c)
         {
             nombre = "Miner Willy Meets The Kong Beast";
-            datosNivelIniciales[0] = "M T   L   L      ML M          M";
-            datosNivelIniciales[1] = "M                M  M          M";
-            datosNivelIniciales[2] = "M            V DDM           DDM";
-            datosNivelIniciales[3] = "M                M             M";
-            datosNivelIniciales[4] = "M                M             M";
-            datosNivelIniciales[5] = "MDDD     DDDDDD  MDD           M";
-            datosNivelIniciales[6] = "M             V  M   DDDD     DM";
-            datosNivelIniciales[7] = "M DDD            M         D   M";
-            datosNivelIniciales[8] = "M V     DDD      M             M";
-            datosNivelIniciales[9] = "M                MDDDDDD       M";
-            datosNivelIniciales[10] = "MD          DDD  M         DDDDM";
-            datosNivelIniciales[11] = "M        DD      M             M";
-            datosNivelIniciales[12] = "M   DD           M    DDDDD    M";
-            datosNivelIniciales[13] = "M          NNNMPPMDD         V M";
+            datosNivelIniciales[ 0] = "M T   q   T      Mq M          M";
+            datosNivelIniciales[ 1] = "M                M  M          M";
+            datosNivelIniciales[ 2] = "M            Q SSM           SSM";
+            datosNivelIniciales[ 3] = "M                M             M";
+            datosNivelIniciales[ 4] = "M                M             M";
+            datosNivelIniciales[ 5] = "MSSS     SSSSSS  MSS           M";
+            datosNivelIniciales[ 6] = "M             Q  M   SSSS     SM";
+            datosNivelIniciales[ 7] = "M SSS            M         S   M";
+            datosNivelIniciales[ 8] = "M Q     SSS      M             M";
+            datosNivelIniciales[ 9] = "M                MSSSSSS       M";
+            datosNivelIniciales[10] = "MS          SSS  M         SSSSM";
+            datosNivelIniciales[11] = "M        SS      M             M";
+            datosNivelIniciales[12] = "M   SS           M    SSSSS    M";
+            datosNivelIniciales[13] = "M          NNNMPPMSS         Q M";
             datosNivelIniciales[14] = "M             MPPM     A       M";
-            datosNivelIniciales[15] = "MDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDM";
+            datosNivelIniciales[15] = "MSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSM";
 
             numEnemigos = 2;
             listaEnemigos = new Enemigo[numEnemigos];

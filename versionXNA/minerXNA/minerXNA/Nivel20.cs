@@ -14,6 +14,8 @@
                         Creada la adaptación a XNA del Nivel 20.
  * 0.09   16-5-2011   Julio Antoraz Ros
  *                      Enemigos nivel
+ * 0.10   16-5-2011   Julio Antoraz Ros
+ *                      Enemigos nivel
 
  ============================================================= */
 
@@ -56,21 +58,21 @@ namespace minerXNA
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
 
             listaEnemigos[1] = new Enemigo(c);
-            listaEnemigos[1].MoverA(150, 200);
+            listaEnemigos[1].MoverA(600, 300);
             listaEnemigos[1].SetVelocidad(0, 2);
-            listaEnemigos[1].setMinMaxY(100, 300);
+            listaEnemigos[1].setMinMaxY(200, 350);
             listaEnemigos[0].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);
 
             listaEnemigos[2] = new Enemigo(c);
-            listaEnemigos[2].MoverA(100 ,235);
+            listaEnemigos[2].MoverA(100 ,233);
             listaEnemigos[2].SetVelocidad(2, 0);
-            listaEnemigos[2].setMinMaxX(100, 700);
+            listaEnemigos[2].setMinMaxX(100, 500);
             listaEnemigos[0].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
 
             listaEnemigos[3] = new Enemigo(c);
-            listaEnemigos[3].MoverA(400, 352);
+            listaEnemigos[3].MoverA(420, 100);
             listaEnemigos[3].SetVelocidad(2, 0);
             listaEnemigos[3].setMinMaxX(100, 700);
             listaEnemigos[0].SetAnchoAlto(36, 48);

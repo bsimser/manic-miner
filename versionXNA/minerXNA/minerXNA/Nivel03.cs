@@ -12,6 +12,8 @@
                         Creada la adaptación a XNA del Nivel 3.
    0.09x  16-05-2011  Andrés Marotta: Creados los enemigos del Nivel 3.
                       Nacho Cabanes: los enemigos son de tipo "pavo"
+   0.10x  18-05-2011  Andrés Marotta: Cambiadas las imagenes para que sean
+                       las del nivel original // Faltan las arañas
 
  ============================================================= */
 
@@ -26,16 +28,16 @@ namespace minerXNA
             : base(c)
         {
             nombre = "The Menagerie";
-            datosNivelIniciales[0] = "M    V   T     V  T    V   T   M";
-            datosNivelIniciales[1] = "M                              M";
-            datosNivelIniciales[2] = "M                              M";
-            datosNivelIniciales[3] = "M                              M";
-            datosNivelIniciales[4] = "M                              M";
-            datosNivelIniciales[5] = "MNNNNOOOOOOOOOOOOOOOOOOOOOO  OOM";
-            datosNivelIniciales[6] = "M                    V        VM";
-            datosNivelIniciales[7] = "MNNNNNN                    NNNNM";
-            datosNivelIniciales[8] = "MT                             M";
-            datosNivelIniciales[9] = "M     DDDDDD                   M";
+            datosNivelIniciales[ 0] = "M    V   T     V  T    V   T   M";
+            datosNivelIniciales[ 1] = "M                              M";
+            datosNivelIniciales[ 2] = "M                              M";
+            datosNivelIniciales[ 3] = "M                              M";
+            datosNivelIniciales[ 4] = "M                              M";
+            datosNivelIniciales[ 5] = "MNNNNOOOOOOOOOOOOOOOOOOOOOO  OOM";
+            datosNivelIniciales[ 6] = "M                    V        VM";
+            datosNivelIniciales[ 7] = "MNNNNNN                    NNNNM";
+            datosNivelIniciales[ 8] = "MT                             M";
+            datosNivelIniciales[ 9] = "M     DDDDDD                   M";
             datosNivelIniciales[10] = "M                        NNNNNNM";
             datosNivelIniciales[11] = "M             NNNNN          PPM";
             datosNivelIniciales[12] = "M    NNNNNN                  PPM";
@@ -53,13 +55,13 @@ namespace minerXNA
             listaEnemigos[0].SetAnchoAlto(36, 48);
 
             listaEnemigos[1] = new Enemigo("enemPavo", c);
-            listaEnemigos[1].MoverA(150, 110);
-            listaEnemigos[1].SetVelocidad(2, 0);
+            listaEnemigos[1].MoverA(300, 110);
+            listaEnemigos[1].SetVelocidad(-2, 0);
             listaEnemigos[1].setMinMaxX(50, 725);
             listaEnemigos[1].SetAnchoAlto(36, 48);
 
             listaEnemigos[2] = new Enemigo("enemPavo", c);
-            listaEnemigos[2].MoverA(200, 110);
+            listaEnemigos[2].MoverA(350, 110);
             listaEnemigos[2].SetVelocidad(2, 0);
             listaEnemigos[2].setMinMaxX(50, 725);
             listaEnemigos[2].SetAnchoAlto(36, 48);

@@ -14,6 +14,8 @@
                         Creada la adaptación a XNA del Nivel 15.
  * 0.09   16-05-2011  Jose Manuel Rizo
  *                    Rellenar el nivel 15 del juego Manic Miner
+ * 0.10   18-05-2011  Jose Manuel Rizo
+ *                    Rellenar el nivel 15 del juego Manic Miner
  
  ============================================================= */
 
@@ -48,23 +50,23 @@ namespace minerXNA
             numEnemigos = 3;
             listaEnemigos = new Enemigo[numEnemigos];
 
-            listaEnemigos[0] = new Enemigo(c);
-            listaEnemigos[0].MoverA(200, 60);
+            listaEnemigos[0] = new Enemigo("enemNivel15", c);
+            listaEnemigos[0].MoverA(200, 65);
             listaEnemigos[0].SetVelocidad(2, 0);
-            listaEnemigos[0].setMinMaxX(100, 700);
+            listaEnemigos[0].setMinMaxX(100, 670);
             listaEnemigos[0].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
 
-            listaEnemigos[1] = new Enemigo(c);
-            listaEnemigos[1].MoverA(300, 300);
-            listaEnemigos[1].SetVelocidad(0,1);
-            listaEnemigos[1].setMinMaxY(0, 350);
+            listaEnemigos[1] = new Enemigo("enemNivel15", c);
+            listaEnemigos[1].MoverA(250, 300);
+            listaEnemigos[1].SetVelocidad(0,2);
+            listaEnemigos[1].setMinMaxY(140, 350);
             listaEnemigos[1].SetAnchoAlto(36, 48);
 
-            listaEnemigos[2] = new Enemigo(c);
-            listaEnemigos[2].MoverA(180, 160);
-            listaEnemigos[2].SetVelocidad(0, 1);
-            listaEnemigos[2].setMinMaxY(0, 350);
+            listaEnemigos[2] = new Enemigo("enemNivel15", c);
+            listaEnemigos[2].MoverA(520, 160);
+            listaEnemigos[2].SetVelocidad(0, 2);
+            listaEnemigos[2].setMinMaxY(140, 350);
             listaEnemigos[2].SetAnchoAlto(36, 48);
 
             Reiniciar();

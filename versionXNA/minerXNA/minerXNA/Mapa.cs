@@ -145,5 +145,15 @@ namespace minerXNA
             return nivelActual.GetEnemigo(i);
         }
 
+        public int GetXIniPersonaje()
+        {
+            return nivelActual.GetXIniPersonaje();
+        }
+
+        public int GetYIniPersonaje()
+        {
+            return nivelActual.GetYIniPersonaje();
+        }
+
     } /* fin de la clase Mapa */
 }

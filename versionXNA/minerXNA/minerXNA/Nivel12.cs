@@ -14,6 +14,8 @@
                         Creada la adaptación a XNA del Nivel 12.
    0.09x  16-05-2011  Alejandro Guillen: 
                         Enemigos y sus movimientos
+   0.10x  16-05-2011  Alejandro Guillen: 
+                        Imagenes de los enemigos y seguir añadiendolos
 
  ============================================================= */
 
@@ -44,36 +46,29 @@ namespace minerXNA
             datosNivelIniciales[14] = "L             LPPL             L";
             datosNivelIniciales[15] = "LFFFFFFFFFFFFFLLLLFFFFFFFFFFFFFL";
 
-            numEnemigos = 2;
+            numEnemigos = 3;
             listaEnemigos = new Enemigo[numEnemigos];
 
-            listaEnemigos[0] = new Enemigo(c);
+            listaEnemigos[0] = new Enemigo("enemBarril", c);
             listaEnemigos[0].MoverA(200, 352);
             listaEnemigos[0].SetVelocidad(2, 0);
             listaEnemigos[0].setMinMaxX(150, 300);
             listaEnemigos[0].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
 
-            listaEnemigos[1] = new Enemigo(c);
+            listaEnemigos[1] = new Enemigo("enemBarril", c);
             listaEnemigos[1].MoverA(280, 300);
             listaEnemigos[1].SetVelocidad(2, 0);
             listaEnemigos[1].setMinMaxX(280, 380);
             listaEnemigos[1].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);
 
-            /*listaEnemigos[2] = new Enemigo(c);
-            listaEnemigos[2].MoverA(150, 200);
-            listaEnemigos[2].SetVelocidad(0, 2);
-            listaEnemigos[2].setMinMaxY(100, 300);
-            listaEnemigos[0].SetAnchoAlto(36, 48);
+            listaEnemigos[2] = new Enemigo("enemBarril", c);
+            listaEnemigos[2].MoverA(625, 185);
+            listaEnemigos[2].SetVelocidad(2, 0);
+            listaEnemigos[2].setMinMaxX(625, 725);
+            listaEnemigos[2].SetAnchoAlto(36, 48);
             //listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);
-
-            listaEnemigos[2] = new Enemigo(c);
-            listaEnemigos[2].MoverA(150, 200);
-            listaEnemigos[2].SetVelocidad(0, 2);
-            listaEnemigos[2].setMinMaxY(100, 300);
-            listaEnemigos[0].SetAnchoAlto(36, 48);
-            //listaEnemigos[0].CambiarDireccion(ElemGrafico.ABAJO);*/
 
             Reiniciar();
         }

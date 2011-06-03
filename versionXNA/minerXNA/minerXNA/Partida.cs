@@ -35,6 +35,10 @@
                         DibujarElementos actualiza todos los datos del marcador.
                         ComprobarColisiones sigue la lógica de la versión de SDL.
 
+   0.08x  11-05-2011  Nacho Cabanes: 
+                        Eliminado "miEnemigo" (los enemigos ya pertenecen a cada nivel)
+
+ 
  ============================================================= */
 
 using Microsoft.Xna.Framework;
@@ -54,7 +58,6 @@ namespace minerXNA
         ContentManager contenido;
 
         Personaje miPersonaje;
-        Enemigo miEnemigo;
         Mapa miPantallaJuego;
         Marcador miMarcador;
 
@@ -201,8 +204,6 @@ namespace minerXNA
             partidaTerminada = false;
             miPersonaje = new Personaje(contenido);
             miPersonaje.SetVelocidad(2,2);
-            miEnemigo = new Enemigo(contenido);
-            miEnemigo.MoverA(500, 300);
             miPantallaJuego = new Mapa(contenido);
             miMarcador = new Marcador(contenido);
         }

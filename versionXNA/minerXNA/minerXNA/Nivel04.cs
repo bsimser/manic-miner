@@ -15,6 +15,9 @@
 
    0.09x  16-05-2011  Ethan Martínez Carratalá: 
                         Incluidos dos enemigos que se mueven de forma distinta.
+   
+   0.10x  18-05.2011  Ethan Martínez Carratalá:
+                        Añadidas nuevas imagenes y los enemigos originales. 
  ============================================================= */
 
 
@@ -29,7 +32,7 @@ namespace minerXNA
             : base(c)
         {
             nombre = "Abandoned Uranium Workings";
-            datosNivelIniciales[0] = "LV     T      LLLLLLLLLLLLLLLLLL";
+            datosNivelIniciales[0] = "LV     $      LLLLLLLLLLLLLLLLLL";
             datosNivelIniciales[1] = "L           V            V   PPL";
             datosNivelIniciales[2] = "L                            PPL";
             datosNivelIniciales[3] = "L                  SSSSSS      L";
@@ -41,7 +44,7 @@ namespace minerXNA
             datosNivelIniciales[9] = "L                 SSS          L";
             datosNivelIniciales[10] = "LDDD                          SL";
             datosNivelIniciales[11] = "L           SSS       SSS      L";
-            datosNivelIniciales[12] = "L     SS               T    SSSL";
+            datosNivelIniciales[12] = "L     SS               $    SSSL";
             datosNivelIniciales[13] = "L                 SS           L";
             datosNivelIniciales[14] = "L                              L";
             datosNivelIniciales[15] = "LSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSL";
