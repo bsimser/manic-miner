@@ -12,6 +12,9 @@
    ---------------------------------------------------
    0.11  02-Ene-2011  Nacho Cabanes
                       Creada la clase Nivel03
+   0.15  09-Dic-2011  Nacho Cabanes: incluido el contenido de la 0.10x (XNA)
+                      Andrés Marotta: Cambiadas las imagenes para que sean
+                       las del nivel original // Faltan las arañas
  ---------------------------------------------------- */
 
 
@@ -37,6 +40,27 @@ public class Nivel03 : Nivel
         datosNivelIniciales[13] = "M                    NNNNNNNNNNM";
         datosNivelIniciales[14] = "M                              M";
         datosNivelIniciales[15] = "MNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNM";
+
+        numEnemigos = 3;
+        listaEnemigos = new Enemigo[numEnemigos];
+
+        listaEnemigos[0] = new Enemigo("imagenes/enemPavo.png", miPartida);
+        listaEnemigos[0].MoverA(400, 352);
+        listaEnemigos[0].SetVelocidad(2, 0);
+        listaEnemigos[0].setMinMaxX(100, 480);
+        listaEnemigos[0].SetAnchoAlto(36, 48);
+
+        listaEnemigos[1] = new Enemigo("imagenes/enemPavo.png", miPartida);
+        listaEnemigos[1].MoverA(300, 110);
+        listaEnemigos[1].SetVelocidad(-2, 0);
+        listaEnemigos[1].setMinMaxX(50, 725);
+        listaEnemigos[1].SetAnchoAlto(36, 48);
+
+        listaEnemigos[2] = new Enemigo("imagenes/enemPavo.png", miPartida);
+        listaEnemigos[2].MoverA(350, 110);
+        listaEnemigos[2].SetVelocidad(2, 0);
+        listaEnemigos[2].setMinMaxX(50, 725);
+        listaEnemigos[2].SetAnchoAlto(36, 48);
 
         Reiniciar();
     }

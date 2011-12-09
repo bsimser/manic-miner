@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" xmlns:Conversion="urn:Conversion" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A0ED5A1-73E1-4BE2-951F-EF5CD47F54BE}</ProjectGuid>
+    <RootNamespace>juego</RootNamespace>
+    <AssemblyName>juego</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <ApplicationIcon />
+    <WarningLevel>4</WarningLevel>
+    <NoWarn />
+    <StartupObject />
+    <NoStdLib>False</NoStdLib>
+    <NoConfig>False</NoConfig>
+    <RunPostBuildEvent>OnSuccessfulBuild</RunPostBuildEvent>
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <Optimize>False</Optimize>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants />
+    <OutputPath>..\</OutputPath>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>False</DebugSymbols>
+    <Optimize>True</Optimize>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants />
+    <OutputPath>..\</OutputPath>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\</OutputPath>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.Sdl">
+      <HintPath>..\fuentes\Tao.Sdl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\fuentes\Creditos.cs" />
+    <Compile Include="..\fuentes\ElemGrafico.cs" />
+    <Compile Include="..\fuentes\Enemigo.cs" />
+    <Compile Include="..\fuentes\Fuente.cs" />
+    <Compile Include="..\fuentes\Hardware.cs" />
+    <Compile Include="..\fuentes\Imagen.cs" />
+    <Compile Include="..\fuentes\Juego.cs" />
+    <Compile Include="..\fuentes\Mapa.cs" />
+    <Compile Include="..\fuentes\Marcador.cs" />
+    <Compile Include="..\fuentes\Nivel.cs" />
+    <Compile Include="..\fuentes\Nivel01.cs" />
+    <Compile Include="..\fuentes\Nivel02.cs" />
+    <Compile Include="..\fuentes\Nivel03.cs" />
+    <Compile Include="..\fuentes\Nivel04.cs" />
+    <Compile Include="..\fuentes\Nivel05.cs" />
+    <Compile Include="..\fuentes\Nivel06.cs" />
+    <Compile Include="..\fuentes\Nivel07.cs" />
+    <Compile Include="..\fuentes\Nivel08.cs" />
+    <Compile Include="..\fuentes\Nivel09.cs" />
+    <Compile Include="..\fuentes\Nivel10.cs" />
+    <Compile Include="..\fuentes\Nivel11.cs" />
+    <Compile Include="..\fuentes\Nivel12.cs" />
+    <Compile Include="..\fuentes\Nivel13.cs" />
+    <Compile Include="..\fuentes\Nivel14.cs" />
+    <Compile Include="..\fuentes\Nivel15.cs" />
+    <Compile Include="..\fuentes\Nivel16.cs" />
+    <Compile Include="..\fuentes\Nivel17.cs" />
+    <Compile Include="..\fuentes\Nivel18.cs" />
+    <Compile Include="..\fuentes\Nivel19.cs" />
+    <Compile Include="..\fuentes\Nivel20.cs" />
+    <Compile Include="..\fuentes\Opciones.cs" />
+    <Compile Include="..\fuentes\Partida.cs" />
+    <Compile Include="..\fuentes\Personaje.cs" />
+    <Compile Include="..\fuentes\Presentacion.cs" />
+    <Compile Include="..\fuentes\Sonido.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="fuentes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>

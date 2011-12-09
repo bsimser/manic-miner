@@ -30,6 +30,9 @@
                       Añadidos GetAncho y GetAlto
    0.14  23-Ene-2011  Nacho Cabanes
                       Añadidos minX, maxX, minY, maxY y sus Set correspondientes
+   0.15  09-Dic-2011  Nacho Cabanes
+                      No falla en SiguienteFotograma ni en CambiarDireccion
+                        si hay imagen estática en vez de secuencia
  ---------------------------------------------------- */
 
 
@@ -158,6 +161,7 @@ public class ElemGrafico
     /// Mueve el elemento grafico a otra posicion
     public  void CambiarDireccion(byte nuevaDir)
     {
+      if (!contieneSecuencia) return;
       if (direccion != nuevaDir)
       {
         direccion = nuevaDir;
@@ -235,6 +239,8 @@ public class ElemGrafico
     /// un personaje
     public void SiguienteFotograma()
     {
+      if (!contieneSecuencia) return;
+
       if (fotogramaActual < secuencia[direccion].Length -1 )
         fotogramaActual ++;
       else 

@@ -12,6 +12,9 @@
    ---------------------------------------------------
    0.11  02-Ene-2011  Nacho Cabanes
                       Creada la clase Nivel02
+   0.15  09-Dic-2011  Nacho Cabanes: incluido el contenido de la 0.10x (XNA)
+                      Raquel Lloréns Gambín: Añadidos enemigos al nivel
+                      Nacho Cabanes: los enemigos son de tipo "pingüino"
  ---------------------------------------------------- */
 
 
@@ -36,6 +39,23 @@ public class Nivel02 : Nivel
         datosNivelIniciales[13] = "L       FFFF                 PPL";
         datosNivelIniciales[14] = "L                            PPL";
         datosNivelIniciales[15] = "LSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSL";
+
+        numEnemigos = 2;
+        listaEnemigos = new Enemigo[numEnemigos];
+
+        // Le damos valores al primer enemigo
+        listaEnemigos[0] = new Enemigo("imagenes/enemPinguino.png", miPartida);
+        listaEnemigos[0].MoverA(400, 352);
+        listaEnemigos[0].SetVelocidad(2, 0);
+        listaEnemigos[0].setMinMaxX(45, 680);
+        listaEnemigos[0].SetAnchoAlto(36, 48);
+
+        // Le damos valores al segundo enemigo
+        listaEnemigos[1] = new Enemigo("imagenes/enemPinguino.png", miPartida);
+        listaEnemigos[1].MoverA(45, 110);
+        listaEnemigos[1].SetVelocidad(2, 0);
+        listaEnemigos[1].setMinMaxX(45, 465);
+        listaEnemigos[1].SetAnchoAlto(36, 48);
 
         Reiniciar();
     }

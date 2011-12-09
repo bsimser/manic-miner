@@ -10,8 +10,10 @@
    
    Num.   Fecha       Por / Cambios
    ---------------------------------------------------
-    0.13  07-Ene-2011 Miguel Angel Laguardia
-                      mapa nivel 07     
+    0.13  07-Ene-2011  Miguel Angel Laguardia
+                       mapa nivel 07     
+    0.15  09-Dic-2011  Nacho Cabanes: incluido el contenido de la 0.10x (XNA)
+                       Denys Demyanchuk: Completar Nivel 7.
  ---------------------------------------------------- */
 
 
@@ -37,6 +39,30 @@ public class Nivel07 : Nivel
         datosNivelIniciales[13] = "M       NNN   MPP              M";
         datosNivelIniciales[14] = "M             MPP              M";
         datosNivelIniciales[15] = "MNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMM";
+
+        numEnemigos = 3;
+        listaEnemigos = new Enemigo[numEnemigos];
+
+        listaEnemigos[0] = new Enemigo("imagenes/enemCanguro.png", miPartida);
+        listaEnemigos[0].MoverA(430, 350);
+        listaEnemigos[0].SetVelocidad(2, 0);
+        listaEnemigos[0].setMinMaxX(430, 726);
+        listaEnemigos[0].SetAnchoAlto(36, 48);
+        //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
+
+        listaEnemigos[1] = new Enemigo("imagenes/enemCanguro.png", miPartida);
+        listaEnemigos[1].MoverA(70, 231);
+        listaEnemigos[1].SetVelocidad(2, 0);
+        listaEnemigos[1].setMinMaxX(70, 275);
+        listaEnemigos[0].SetAnchoAlto(36, 48);
+        //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
+
+        listaEnemigos[2] = new Enemigo("imagenes/enemCanguro.png", miPartida);
+        listaEnemigos[2].MoverA(375, 64);
+        listaEnemigos[2].SetVelocidad(2, 0);
+        listaEnemigos[2].setMinMaxX(375, 726);
+        listaEnemigos[0].SetAnchoAlto(36, 48);
+        //listaEnemigos[0].CambiarDireccion(ElemGrafico.DERECHA);
 
         Reiniciar();
     }

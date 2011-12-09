@@ -13,6 +13,8 @@
    ---------------------------------------------------
    0.13  07-Ene-2011  Alejandro Guijarro Terol
                       Creada la clase Nivel09
+   0.15  09-Dic-2011  Nacho Cabanes: incluido el contenido de la 0.10x (XNA)
+                      Antonio Pérez: Añadidos 4 enemigos y su movimiento.
  ---------------------------------------------------- */
 
 
@@ -38,6 +40,45 @@ public class Nivel09 : Nivel
         datosNivelIniciales[13] = "L                            SSL";
         datosNivelIniciales[14] = "L                              L";
         datosNivelIniciales[15] = "LSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSL";
+
+        numEnemigos = 5;
+        listaEnemigos = new Enemigo[numEnemigos];
+
+        listaEnemigos[0] = new Enemigo("imagenes/enemNivel09b.png", miPartida);
+        listaEnemigos[0].MoverA(150, 200);
+        listaEnemigos[0].SetVelocidad(0, 2);
+        listaEnemigos[0].setMinMaxY(100, 350);
+        listaEnemigos[0].SetAnchoAlto(30, 39);
+
+        listaEnemigos[1] = new Enemigo("imagenes/enemNivel09b.png", miPartida);
+        listaEnemigos[1].MoverA(275, 200);
+        listaEnemigos[1].SetVelocidad(0, 2);
+        listaEnemigos[1].setMinMaxY(100, 350);
+        listaEnemigos[1].SetAnchoAlto(30, 39);
+
+        listaEnemigos[2] = new Enemigo("imagenes/enemNivel09b.png", miPartida);
+        listaEnemigos[2].MoverA(500, 200);
+        listaEnemigos[2].SetVelocidad(0, 2);
+        listaEnemigos[2].setMinMaxY(100, 350);
+        listaEnemigos[2].SetAnchoAlto(30, 39);
+
+        listaEnemigos[3] = new Enemigo("imagenes/enemNivel09b.png", miPartida);
+        listaEnemigos[3].MoverA(625, 200);
+        listaEnemigos[3].SetVelocidad(0, 2);
+        listaEnemigos[3].setMinMaxY(100, 350);
+        listaEnemigos[3].SetAnchoAlto(30, 39);
+
+        listaEnemigos[4] = new Enemigo("imagenes/enemNivel09a.png", miPartida);
+        listaEnemigos[4].MoverA(310, 110);
+        listaEnemigos[4].SetVelocidad(2, 0);
+        listaEnemigos[4].setMinMaxX(310, 470);
+        listaEnemigos[4].SetAnchoAlto(30, 48);
+
+        /*listaEnemigos[5] = new Enemigo("enemNivel09a", c);
+        listaEnemigos[5].MoverA(310, 110);
+        listaEnemigos[5].SetVelocidad(2, 0);
+        listaEnemigos[5].setMinMaxX(310, 470);
+        listaEnemigos[5].SetAnchoAlto(30, 48);*/
 
         Reiniciar();
     }

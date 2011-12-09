@@ -28,7 +28,10 @@
                       Mover se fija en MinX y MaxX para permitir movimiento limitado
                         en horizontal y en vertical
                       Añadidas secuencia arriba y Abajo, para un segundo enemigo de prueba
-
+   0.15  09-Dic-2011  Nacho Cabanes
+                      Creado un nuevo constructor a partir de un fichero,
+                        para poder crear otros enemigos que tengan imagen estática
+ 
  ---------------------------------------------------- */
 
 public class Enemigo : ElemGrafico
@@ -81,8 +84,17 @@ public class Enemigo : ElemGrafico
 
     CambiarDireccion(DERECHA);
   }
-  
-  
+
+
+  // Constructor que carga una imagen estática
+  public Enemigo(string nombreFich, Partida p)
+      : base(nombreFich)
+  {
+      miPartida = p;
+      // Sin más contenido
+  }
+
+
   // Métodos de movimiento
   public new void Mover() 
   {
